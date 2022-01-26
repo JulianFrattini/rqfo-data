@@ -1,0 +1,41 @@
+{
+    "name": "Quality Attribute",
+    "fields": [
+        {
+            "name": "ID",
+            "type": "identifier",
+            "format": "QA^0\\d{3}$",
+            "unique": true,
+            "mandatory": true
+        }, {
+            "name": "Name",
+            "type": "string",
+            "unique": true,
+            "mandatory": true
+        }, {
+            "name": "Reference IDs",
+            "type": "reflist",
+            "elements": "reference",
+            "mandatory": true
+        }, {
+            "name": "Aspect",
+            "type": "enum",
+            "values": ["Ambiguity", "Completeness", "Verifiability"],
+            "mandatory": true
+        }, {
+            "name": "Linguistic Complexity",
+            "type": "enum",
+            "values": ["lexical", "structural", "syntactical", "semantic", "pragmatic"],
+            "mandatory": true
+        }, {
+            "name": "Scope",
+            "type": "enum",
+            "values": ["Word", "Phrase", "Sentence", "Structured/tabular text", "Requirement", "Section", "Document", "Global"],
+            "mandatory": true
+        }, {
+            "name": "Synonym to",
+            "type": "reflist",
+            "elements": "quality-attributes"
+        }
+    ]
+}

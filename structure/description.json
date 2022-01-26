@@ -1,0 +1,37 @@
+{
+    "name": "Description",
+    "fields": [
+        {
+            "name": "ID",
+            "type": "identifier",
+            "format": "D^0\\d{3}$",
+            "unique": true,
+            "mandatory": true
+        }, {
+            "name": "QA-ID",
+            "type": "ref",
+            "elements": "quality-attribute",
+            "mandatory": true
+        }, {
+            "name": "Reference IDs",
+            "type": "reflist",
+            "elements": "reference",
+            "mandatory": true
+        }, {
+            "name": "Definition",
+            "type": "String",
+            "mandatory": true
+        }, {
+            "name": "Impact",
+            "type": "String"
+        },  {
+            "name": "Empirical Evidence",
+            "type": "boolean",
+            "mandatory": true
+        }, {
+            "name": "Practitioners involved",
+            "type": "boolean",
+            "mandatory": true
+        }
+    ]
+}

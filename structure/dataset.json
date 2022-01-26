@@ -1,0 +1,49 @@
+{
+    "name": "Dataset",
+    "fields": [
+        {
+            "name": "ID",
+            "type": "identifier",
+            "format": "DS^0\\d{3}$",
+            "unique": true,
+            "mandatory": true
+        }, {
+            "name": "Embedded information",
+            "type": "reflist",
+            "elements": "description"
+        }, {
+            "name": "Name",
+            "type": "string"
+        }, {
+            "name": "Description",
+            "type": "string",
+            "mandatory": true
+        }, {
+            "name": "Origin",
+            "type": "enum",
+            "values": ["Practitioner Data", "Student Data", "Mocked Data", "Unknown"],
+            "mandatory": true
+        }, {
+            "name": "Ground Truch Annotators",
+            "type": "enum",
+            "values": ["Practitioners", "Researchers", "Students", "Authors", "Inherent", "None", "Unknown"],
+            "mandatory": true
+        }, {
+            "name": "Size",
+            "type": "numeric"
+        }, {
+            "name": "Granularity",
+            "type": "enum",
+            "values": ["Word", "Phrase", "Sentence", "Structured/tabular text", "Requirement", "Section", "Document", "Global"],
+            "mandatory": true
+        }, {
+            "name": "Accessibility",
+            "type": "enum",
+            "values": ["Available in Paper", "Open Access Link", "Reachable Link", "Broken Link", "No Link", "Upon Request", "Private"],
+            "mandatory": true
+        }, {
+            "name": "Source Link",
+            "type": "string"
+        }
+    ]
+}

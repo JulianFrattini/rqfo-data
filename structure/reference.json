@@ -1,0 +1,17 @@
+{
+    "name": "Reference",
+    "fields": [
+        {
+            "name": "ID",
+            "type": "identifier",
+            "format": "R^0\\d{3}$",
+            "unique": true,
+            "mandatory": true
+        }, {
+            "name": "Refstring",
+            "type": "string",
+            "unique": true,
+            "mandatory": true
+        }
+    ]
+}
