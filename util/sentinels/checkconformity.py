@@ -20,6 +20,18 @@ def read_elements(basepath, read):
         elements[elementname] = element
     return elements
 
+# return a list of indices identifying a set of entries
+def get_id_list(df, fn):
+    if fn == 'ID':
+        # if the currently investigated field is the ID, then use the dataframe index, as the ID might be NaN
+        return list(df.index.values)
+    else:
+        # if the currently investigated field is not the ID, try to use the dedicated ID for identification (as long as no ID is NaN)
+        if len(df[df['ID'].isnull()]) > 0:
+            return list(df.index.values)
+        else:
+            return list(df['ID'])
+
 def check_conformity(structure, taxonomy):
     fields = structure['fields']
 
@@ -27,7 +39,9 @@ def check_conformity(structure, taxonomy):
         fn = field['name']
         if 'mandatory' in field.keys() and field['mandatory'] == True:
             # the current field is mandatory
-            print(taxonomy[fn].isnull().values.any())
+            missingvalues = taxonomy[taxonomy[fn].isnull()]
+            if len(missingvalues) > 0:
+                print('Error: mandatory field ' + str(fn) + ' is empty for the following entries with the following index: ' + str(get_id_list(missingvalues, fn)))
 
 def analyze():
     structures = read_elements('structure', read_structure)
