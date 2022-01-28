@@ -42,6 +42,12 @@ def check_conformity(structure, taxonomy):
             missingvalues = taxonomy[taxonomy[fn].isnull()]
             if len(missingvalues) > 0:
                 print('Error: mandatory field ' + str(fn) + ' is empty for the following entries with the following index: ' + str(get_id_list(missingvalues, fn)))
+        if 'unique' in field.keys() and field['unique'] == True:
+            # the values of the current field should be unique
+            duplicates = taxonomy.duplicated(subset=fn, keep='first')
+            indices = list(duplicates[duplicates].index.values)
+            if len(indices) > 0:
+                print('Error: unique field ' + str(fn) + ' has duplicate values at the following indices: ' + str(indices))
 
 def analyze():
     structures = read_elements('structure', read_structure)
