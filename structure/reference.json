@@ -4,7 +4,7 @@
         {
             "name": "ID",
             "type": "identifier",
-            "format": "R^0\\d{3}$",
+            "format": "^R\\d{3}$",
             "unique": true,
             "mandatory": true
         }, {

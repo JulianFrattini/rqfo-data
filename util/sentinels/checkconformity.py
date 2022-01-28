@@ -1,6 +1,7 @@
 import os
 import json
 import pandas as pd
+import re
 
 def read_structure(path):
     with open(path, 'r') as f:
@@ -37,17 +38,31 @@ def check_conformity(structure, taxonomy):
 
     for field in fields:
         fn = field['name']
+
+        # ATTRIBUTE: MANDATORY
         if 'mandatory' in field.keys() and field['mandatory'] == True:
             # the current field is mandatory
             missingvalues = taxonomy[taxonomy[fn].isnull()]
             if len(missingvalues) > 0:
                 print('Error: mandatory field ' + str(fn) + ' is empty for the following entries with the following index: ' + str(get_id_list(missingvalues, fn)))
+
+        # ATTRIBUTE: UNIQUE
         if 'unique' in field.keys() and field['unique'] == True:
             # the values of the current field should be unique
             duplicates = taxonomy.duplicated(subset=fn, keep='first')
             indices = list(duplicates[duplicates].index.values)
             if len(indices) > 0:
                 print('Error: unique field ' + str(fn) + ' has duplicate values at the following indices: ' + str(indices))
+
+        # ATTRIBUTE: NAME
+        if field['type'] == 'identifier':
+            form = str(field['format'])
+            pattern = re.compile(form)
+            matches = taxonomy[fn].apply(lambda v: pattern.match(v) == None)
+            nonconformant = list(matches[matches].index.values)
+            if len(nonconformant) > 0:
+                noncindices = taxonomy.iloc[nonconformant]
+                print('Error: field ' + str(fn) + ' needs to follow the pattern ' + str(form) + ', but the objects with the following IDs are non-compliant: ' + str(list(noncindices['ID'].values)))
 
 def analyze():
     structures = read_elements('structure', read_structure)

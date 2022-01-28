@@ -4,7 +4,7 @@
         {
             "name": "ID",
             "type": "identifier",
-            "format": "QA^0\\d{3}$",
+            "format": "^QA\\d{3}$",
             "unique": true,
             "mandatory": true
         }, {
