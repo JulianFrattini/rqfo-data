@@ -1,23 +1,32 @@
+from cProfile import label
 import os
 import json
+from numpy import NaN
 import pandas as pd
 import re
 
-def read_structure(path):
+def read_structure(path, structure=None):
     with open(path, 'r') as f:
         data = json.load(f)
         return data
 
-def read_content(path):
-    table = pd.read_csv(path, sep=',')
+def read_content(path, structure):
+    # define specific converters
+    converters = {}
+    # go through the structure and find all fields, that are reflists
+    for field in structure['fields']:
+        if field['type'] == 'reflist':
+            converters[field['name']] = (lambda x: (x.split(';') if len(x)>0 else None))
+
+    table = pd.read_csv(path, sep=',', converters=converters, na_values=[' ', ''])
     return table
 
-def read_elements(basepath, read):
+def read_elements(basepath, read, structures=None):
     filenames = os.listdir(basepath)
     elements = {}
     for filename in filenames:
         elementname = filename.split('.')[0]
-        element = read(basepath + '/' + filename)
+        element = read(basepath + '/' + filename, (structures[elementname] if structures != None else None))
         elements[elementname] = element
     return elements
 
@@ -33,7 +42,9 @@ def get_id_list(df, fn):
         else:
             return list(df['ID'])
 
-def check_conformity(structure, taxonomy):
+def check_conformity(structures, taxonomies, taxkey):
+    structure = structures[taxkey]
+    taxonomy = taxonomies[taxkey]
     fields = structure['fields']
 
     for field in fields:
@@ -68,17 +79,32 @@ def check_conformity(structure, taxonomy):
             nonconformant = taxonomy[~taxonomy[fn].isin(values)]
             if len(nonconformant) > 0:
                 print('Error: field ' + str(fn) + ' only takes values ' + str(values) + ', but the objects of the following ID contain other values: ' + str(nonconformant['ID'].values))
-                print(nonconformant)
+        elif field['type'] == 'reflist':
+            # for reflists, make sure that all referenced keys are contained in the referenced taxonomy objects
+
+            # obtain the targeted reference keys
+            targetname = field['elements']
+            targetkeys = set(taxonomies[targetname]['ID'].values)
+
+            # obtain the source reference keys
+            sourcekeys = set()
+            taxonomy.apply(lambda row: (sourcekeys.update(row[fn]) if row[fn] else None), axis=1)
+            if len(sourcekeys) > 0:
+                # check if there are keys in the source set that are not contained in the target set
+                invalidkeys = list(sourcekeys-targetkeys)
+                if len(invalidkeys) > 0:
+                    print('Error: in the ' + str(taxkey) + ' taxonomy, the following keys referring to objects of the ' + str(targetname) + ' taxonomy are not valid: ' + str(invalidkeys))
+
 
 def analyze():
     structures = read_elements('structure', read_structure)
-    taxonomies = read_elements('content', read_content)
+    taxonomies = read_elements('content', read_content, structures)
 
-    for taxonomy in taxonomies.keys():
-        if taxonomy not in structures.keys():
-            print("Error: there is no structure file found for the taxonomy '" + str(taxonomy) + "'")
+    for taxkey in taxonomies.keys():
+        if taxkey not in structures.keys():
+            print("Error: there is no structure file found for the taxonomy '" + str(taxkey) + "'")
         else:
-            check_conformity(structures[taxonomy], taxonomies[taxonomy])
+            check_conformity(structures, taxonomies, taxkey)
 
 if __name__ == "__main__":
     analyze()
