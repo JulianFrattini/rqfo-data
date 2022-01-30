@@ -19,8 +19,8 @@
             "mandatory": true
         }, {
             "name": "Aspect",
-            "type": "enum",
-            "values": ["Ambiguity", "Completeness", "Verifiability"],
+            "type": "menum",
+            "values": ["Ambiguity", "Completeness", "Understandability", "Verifiability"],
             "mandatory": true
         }, {
             "name": "Linguistic Complexity",

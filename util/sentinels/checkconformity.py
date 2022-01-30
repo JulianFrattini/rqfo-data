@@ -15,7 +15,7 @@ def read_content(path, structure):
     converters = {}
     # go through the structure and find all fields, that are reflists
     for field in structure['fields']:
-        if field['type'] == 'reflist':
+        if field['type'] in ['reflist', 'menum']:
             converters[field['name']] = (lambda x: (x.split(';') if len(x)>0 else None))
 
     table = pd.read_csv(path, sep=',', converters=converters, na_values=[' ', ''])
@@ -75,10 +75,18 @@ def check_conformity(structures, taxonomies, taxkey):
                 noncindices = taxonomy.iloc[nonconformant]
                 print('Error: field ' + str(fn) + ' needs to follow the pattern ' + str(form) + ', but the objects with the following IDs are non-compliant: ' + str(list(noncindices['ID'].values)))
         elif field['type'] == 'enum':
+            # for enums, make sure that the used value is contained in the list of possible values
             values = field['values']
             nonconformant = taxonomy[~taxonomy[fn].isin(values)]
             if len(nonconformant) > 0:
                 print('Error: field ' + str(fn) + ' only takes values ' + str(values) + ', but the objects of the following ID contain other values: ' + str(nonconformant['ID'].values))
+        elif field['type'] == 'menum':
+            # for multiple enums, make sure that all used values are contained in the list of possible values
+            values = field['values']
+            nonconformant = taxonomy.apply(lambda row: not all(value in values for value in row[fn]), axis=1)
+            nonconformantindices = list(nonconformant[nonconformant].index.values)
+            if len(nonconformantindices) > 0:
+                print('Error: the following objects contain values in the multiple-enumerator ' + str(fn) + ' which are not in the list of allowed values: ' + str(nonconformantindices))
         elif field['type'] == 'reflist':
             # for reflists, make sure that all referenced keys are contained in the referenced taxonomy objects
 
