@@ -54,7 +54,7 @@ def check_conformity(structure, taxonomy):
             if len(indices) > 0:
                 print('Error: unique field ' + str(fn) + ' has duplicate values at the following indices: ' + str(indices))
 
-        # ATTRIBUTE: NAME
+        # ATTRIBUTE: TYPE
         if field['type'] == 'identifier':
             form = str(field['format'])
             pattern = re.compile(form)
@@ -63,6 +63,12 @@ def check_conformity(structure, taxonomy):
             if len(nonconformant) > 0:
                 noncindices = taxonomy.iloc[nonconformant]
                 print('Error: field ' + str(fn) + ' needs to follow the pattern ' + str(form) + ', but the objects with the following IDs are non-compliant: ' + str(list(noncindices['ID'].values)))
+        elif field['type'] == 'enum':
+            values = field['values']
+            nonconformant = taxonomy[~taxonomy[fn].isin(values)]
+            if len(nonconformant) > 0:
+                print('Error: field ' + str(fn) + ' only takes values ' + str(values) + ', but the objects of the following ID contain other values: ' + str(nonconformant['ID'].values))
+                print(nonconformant)
 
 def analyze():
     structures = read_elements('structure', read_structure)
