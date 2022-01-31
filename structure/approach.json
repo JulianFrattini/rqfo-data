@@ -16,7 +16,7 @@
             "name": "Shortcut",
             "type": "string"
         }, {
-            "name": "Detected Descriptions",
+            "name": "Descriptions",
             "type": "reflist",
             "elements": "description",
             "mandatory": true
@@ -43,12 +43,12 @@
             "mandatory": true
         }, {
             "name": "Releases",
-            "type": "cluster",
+            "type": "menum",
             "dimensions": ["Tool", "Webservice", "Library", "API", "Source Code", "Notebook", "Pre-Trained Model"],
             "values": ["y", "?", "n"]
         }, {
             "name": "Necessary Information",
-            "type": "cluster",
+            "type": "menum",
             "dimensions": ["POS tags", "Dependency tags", "Consistyency tags", "Lemmatization", "Stemming", "Phrase Chunks", "Stop word removal", "Semantic role labeling", "Thesaurus", "Named Entity Recognition", "Parse Tree"],
             "values": ["y", "?", "n"]
         }

@@ -1,7 +1,5 @@
-from cProfile import label
 import os
 import json
-from numpy import NaN
 import pandas as pd
 import re
 
@@ -13,7 +11,7 @@ def read_structure(path, structure=None):
 def read_content(path, structure):
     # define specific converters
     converters = {}
-    # go through the structure and find all fields, that are reflists
+    # go through the structure and find all fields, that contain lists (reflist, menum)
     for field in structure['fields']:
         if field['type'] in ['reflist', 'menum']:
             converters[field['name']] = (lambda x: (x.split(';') if len(x)>0 else None))
@@ -87,6 +85,15 @@ def check_conformity(structures, taxonomies, taxkey):
             nonconformantindices = list(nonconformant[nonconformant].index.values)
             if len(nonconformantindices) > 0:
                 print('Error: the following objects contain values in the multiple-enumerator ' + str(fn) + ' which are not in the list of allowed values: ' + str(nonconformantindices))
+        elif field['type'] == 'ref':
+            # for a single reference, make sure that the referred ID exists in the referenced taxonomy objects
+            # obtain the targeted reference keys
+            targetname = field['elements']
+            targetkeys = set(taxonomies[targetname]['ID'].values)
+
+            nonconformant = taxonomy[~taxonomy[fn].isin(targetkeys)]
+            if len(nonconformant) > 0:
+                print('Error: field ' + str(fn) + ' contains references to the taxonomy ' + str(targetname) + ' that do not exist: ' + str(list(nonconformant[fn].values)))            
         elif field['type'] == 'reflist':
             # for reflists, make sure that all referenced keys are contained in the referenced taxonomy objects
 
