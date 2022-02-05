@@ -1,5 +1,7 @@
-import os, json
+import os, sys, json
 from datetime import datetime
+
+from util.parsers.referenceparser import read_records
 
 def parse_extraction(path):
     with open(path, 'r') as f:
@@ -61,7 +63,19 @@ def order_extractions(extractions):
 
     return exts
 
+def create_databases(extractions, references):
+    # create blank databases 
+
+    for reference in references['ID']:
+        # select the most recent extraction for each reference
+        extraction = extractions[reference][0]
+        print(extraction)
+        
+
 if __name__ == "__main__":
     extractions = parse_extractions('extractions')
-    order_extractions(extractions)
+    refexts = order_extractions(extractions)
+    references = read_records()
+
+    create_databases(refexts, references)
     #print(extractions)
