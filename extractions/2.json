@@ -1,7 +1,7 @@
 {
     "extractor": "Julian Frattini",
     "reference": "R024",
-    "timestamp": "2022-01-31 16:25:00",
+    "timestamp": "2022-01-31 16:27:00",
     "quality attributes": [
         {
             "ID": "QA024",
@@ -9,12 +9,24 @@
             "Aspects": ["Completeness"],
             "Linguistic Complexity": "lexical",
             "Scope": "User Story"
+        }, {
+            "ID": "QA025",
+            "Name": "Atomicity",
+            "Aspects": ["Reusability"],
+            "Linguistic Complexity": "semantic",
+            "Scope": "User Story"
         }
     ],
     "descriptions": [
         {
             "QA-ID": "QA024",
             "Definition": "each story has at least a role and a means",
+            "Impact": "",
+            "Empirical Evidence": false,
+            "Practitioners Involved": false
+        }, {
+            "QA-ID": "QA025",
+            "Definition": "each story expresses a requirement for one feature",
             "Impact": "",
             "Empirical Evidence": false,
             "Practitioners Involved": false
@@ -32,5 +44,17 @@
             "Source Link": "ID"
         }
     ], 
-    "approaches": []
+    "approaches": [
+        {
+            "Name": "Automatic Quality User Story Artisan",
+            "Short": "AQUSA",
+            "Type": "Rule-based",
+            "Accessibility": "Open Source",
+            "Source Link": "https://github.com/gglucass/AQUSA",
+            "Empirical method applied": true,
+            "Practitioners involved": true,
+            "Release": ["Source Coide"],
+            "Necessary Information": []
+        }
+    ]
 }
