@@ -1,7 +1,7 @@
 {
-    "extractor": "Julian Frattini",
+    "extractor": "jfr",
     "reference": "R024",
-    "timestamp": "2022-01-31 16:25:00",
+    "timestamp": "2022-01-31 16:20:00",
     "quality attributes": [
         {
             "ID": "QA024",
@@ -20,17 +20,6 @@
             "Practitioners Involved": false
         }
     ],
-    "data sets": [
-        {
-            "Embedded Information": ["D019", "D020"],
-            "Description": "User stories from one team of a large eCommerce Company working on a next edition of the platform",
-            "Origin": "Practitioner Data",
-            "Ground Truth Annotator": "None",
-            "Size": 176,
-            "Granularity": "User Story",
-            "Accessibility": "No Link",
-            "Source Link": "ID"
-        }
-    ], 
+    "data sets": [], 
     "approaches": []
 }

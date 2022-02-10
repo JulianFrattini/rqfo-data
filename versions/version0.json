@@ -1,0 +1,15 @@
+{
+    "version": {
+        "ontology": 1,
+        "taxonomy": 0,
+        "content": 0
+    },
+    "timestamp": "2022-01-31 16:20:00",
+    "references": ["R024"],
+    "extraction": {
+        "current": {
+            "R024": "R024-0"
+        },
+        "obsolete": []
+    }
+}

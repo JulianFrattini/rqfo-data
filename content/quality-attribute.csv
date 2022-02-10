@@ -1,5 +1,0 @@
-ID,Name,Reference IDs,Aspect,Linguistic Complexity,Scope,Synonym to
-QA001,Anaphora,R073,Ambiguity;Understandability,syntactical,Sentence,
-QA003,Passive Voice,R073;R039,Ambiguity,syntactical,Sentence,
-QA014,Well-formedness,R024,Completeness,lexical,User Story
-QA015,Atomicity,R024,Reusability,semantic,User Story
