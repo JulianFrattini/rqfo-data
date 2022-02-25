@@ -1,0 +1,39 @@
+{
+    "name": "Description",
+    "fields": [
+        {
+            "name": "id",
+            "type": "identifier",
+            "format": "^D\\d{3}$",
+            "unique": true,
+            "mandatory": true
+        }, {
+            "name": "QF-ID",
+            "type": "ref",
+            "elements": "quality-factor",
+            "mandatory": true
+        }, {
+            "name": "R IDs",
+            "type": "reflist",
+            "elements": "reference",
+            "mandatory": true
+        }, {
+            "name": "definition",
+            "type": "scope note",
+            "mandatory": true
+        }, {
+            "name": "impact",
+            "type": "scope note"
+        },  {
+            "name": "empirical evidence",
+            "type": "dimension",
+            "values": [true, false],
+            "mandatory": true
+        }, {
+            "name": "practitioners involved",
+            "type": "dimension",
+            "values": [true, false],
+            "mandatory": true
+        }
+    ]
+}

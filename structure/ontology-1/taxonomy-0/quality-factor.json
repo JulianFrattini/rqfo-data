@@ -1,0 +1,168 @@
+{
+    "name": "Quality Factor",
+    "attributes": [
+        {
+            "name": "id",
+            "type": "identifier",
+            "format": "^QA\\d{3}$",
+            "unique": true,
+            "mandatory": true
+        }, {
+            "name": "name",
+            "type": "scope note",
+            "description": "The name of a quality factor shall reflect the quality factor in relation to the whole set of quality factors. This means that the name can be extracted from the paper directly, but if the name does not sufficiently demarcate the quality factor from others, then it is feasible to select a new name. This is due to the fact that several publications propose and name a quality factor without awareness of other quality factors, which makes demarcation by design impossible.",
+            "unique": true,
+            "mandatory": true,
+            "rule": "If the publication explicity names the quality factor and this name sufficiently demarcates the factor from all other existing factors, use the name mentioned in the publication. Otherwise, select a name representing the factor in respect to all other factors."
+        }, {
+            "name": "R IDs",
+            "type": "reflist",
+            "elements": "reference",
+            "mandatory": true
+        }, {
+            "name": "aspect",
+            "type": "dimension cluster",
+            "description": "This dimension-cluster is built on the conceptual notion that a quality factor is a normative rule, where a violation against it is hypothesized to have an impact of the type aspect on an activity in which the requirement is used. It captures all quality aspects that are explicitly mentioned in the description of the impact of the QA.",
+            "extraction rule": "A violation against the quality attribute has an impact on",
+            "dimensions": [
+                {
+                    "dimension": "adequacy",
+                    "description": ""
+                }, {
+                    "dimension": "ambiguity",
+                    "description": "The unique interpretation of a requirement"
+                }, {
+                    "dimension": "atomicity",
+                    "description": ""
+                }, {
+                    "dimension":  "completeness",
+                    "description": "The explicit availability of all relevant information"
+                }, {
+                    "dimension":  "complexity",
+                    "description": "The intricacy of the written text"
+                }, {
+                    "dimension":  "compliance",
+                    "description": ""
+                }, {
+                    "dimension":  "consistency",
+                    "description": "The satisfiability of all requirements in conjunction"
+                }, {
+                    "dimension":  "correctness",
+                    "description": "The alignment of the stated text with the intended objects"
+                }, {
+                    "dimension":  "design-independence",
+                    "description": ""
+                }, {
+                    "dimension":  "feasibility",
+                    "description": ""
+                }, {
+                    "dimension":  "maintainability",
+                    "description": ""
+                }, {
+                    "dimension":  "modifiability",
+                    "description": ""
+                }, {
+                    "dimension":  "precision",
+                    "description": ""
+                }, {
+                    "dimension":  "redundancy",
+                    "description": "The exclusivity of written text"
+                }, {
+                    "dimension":  "relevancy",
+                    "description": "The necessity of written information existing"
+                }, {
+                    "dimension":  "reusability",
+                    "description": "The ease of reuse"
+                }, {
+                    "dimension":  "traceability",
+                    "description": "The explicit connections to other artifacts"
+                }, {
+                    "dimension":  "understandability",
+                    "description": "The comprehensibility of written text"
+                }, {
+                    "dimension":  "verifiability",
+                    "description": "The ability to assess whether a requirement is met"
+                }
+            ],
+            "characteristics": [
+                {
+                    "value": "-",
+                    "description": "in a negative way"
+                }, {
+                    "value": "+",
+                    "description": "in a positive way"
+                }, {
+                    "value": "?",
+                    "description": "in an unknown way"
+                }, {
+                    "value": "",
+                    "description": "no way at all"
+                }
+            ],
+            "mandatory": true
+        }, {
+            "name": "linguistic complexity",
+            "type": "dimension",
+            "description": "The linguistic complexity classifies a quality factor regarding the type of information that needs to be available to determine a violation against the quality factor. This informs about the complexity of automatically detecting this quality factor: while lexical factors can be decided for example using regular expressions, syntactic factors using POS, constituency or dependency parsing, and structural using metadata, semantic factors require an understanding of the input, which might only be approximated using thesauri or a relationship to an ontology.",
+            "extraction rule": "In order to determine a violation against the quality factor, one must know at least …",
+            "characteristics": [
+                {
+                    "value": "lexical",
+                    "description": "the literal words (i.e., a regular expression can be used to automate the rule)."
+                }, {
+                    "value": "structural",
+                    "description": "the structure of sentences (i.e., metadata (headings, emphasis, …) is necessary to automate the rule)."
+                }, {
+                    "value": "syntactic",
+                    "description": "the grammatical relationships between words (i.e., POS tags, constituency tags, dependency tags, etc. can be used to automate the rule)."
+                }, {
+                    "value": "semantic",
+                    "description": "the meaning of the words (i.e., a semantic comprehension of the text is necessary to automate the rule)."
+                }, {
+                    "value": "pragmatic",
+                    "description": "Pragmatic ambiguity occurs when a sentence has several meanings in the context in which it is uttered."
+                }
+            ],
+            "mandatory": true
+        }, {
+            "name": "Scope",
+            "type": "dimension",
+            "description": "The scope classifies a quality factor regarding the extent of information that is necessary in order to determine a violation against the formal rule of the quality factor. The minimal scope shall be chosen, i.e., for one violation against a given quality factor, how much textual information must be seen to detect that violation? The classification of the scope shall not be approached from a standpoint of 'ensuring that a given input document is free of violations against that factor', because that would always entail a global/document scope.",
+            "extraction rule": "To determine one violation against the formal rule of the quality attribute, it suffices to see …",
+            "characteristics": [
+                {
+                    "value": "word",
+                    "description": "a single token/word"
+                }, {
+                    "value": "phrase",
+                    "description": "a substring of a sentence"
+                }, {
+                    "value": "sentence",
+                    "description": "a full, grammatically correct sentence"
+                }, {
+                    "value": "structured/tabular text",
+                    "description": "a structured text (use case specification, user story, feature table)"
+                }, {
+                    "value": "user Story",
+                    "description": ""
+                }, {
+                    "value": "use case",
+                    "description": ""
+                }, {
+                    "value": "requirement",
+                    "description": "a structured functional, non-functional, or process requirement"
+                }, {
+                    "value": "section",
+                    "description": "a full, coherent section"
+                }, {
+                    "value": "document",
+                    "description": "a full, coherent document"
+                }, {
+                    "value": "global",
+                    "description": "all textual requirements artifacts associated to the product/service"
+                }
+            ],
+            "mandatory": true
+        }
+    ]
+}
