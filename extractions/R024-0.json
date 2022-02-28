@@ -1,25 +1,58 @@
 {
-    "extractor": "jfr",
-    "reference": "R024",
-    "timestamp": "2022-01-31 16:20:00",
-    "quality attributes": [
-        {
-            "ID": "QA024",
-            "Name": "Well-formedness",
-            "Aspects": ["Completeness"],
-            "Linguistic Complexity": "lexical",
-            "Scope": "User Story"
-        }
-    ],
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R024",
+        "Refstring": "Lucassen, G., Dalpiaz, F., van der Werf, J. M. E., & Brinkkemper, S. (2017, February). Improving user story practice with the Grimm Method: A multiple case study in the software industry. In International Working Conference on Requirements Engineering: Foundation for Software Quality (pp. 235-252). Springer, Cham."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "quality factors": [],
     "descriptions": [
         {
-            "QA-ID": "QA024",
-            "Definition": "each story has at least a role and a means",
-            "Impact": "",
-            "Empirical Evidence": false,
-            "Practitioners Involved": false
+            "id": "D019",
+            "qf id": "QA014",
+            "reference": "R024",
+            "definition": "\"each story has at least a role and a means\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D020",
+            "qf id": "QA015",
+            "reference": "R024",
+            "definition": "\"each story expresses a requirement for one feature\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D021",
+            "qf id": "QA016",
+            "reference": "R024",
+            "definition": "\"each story contains only role, means, and ends\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D022",
+            "qf id": "QA017",
+            "reference": "R024",
+            "definition": "\"all written stories employ the same template\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D023",
+            "qf id": "QA018",
+            "reference": "R024",
+            "definition": "\"each story is unique, duplicates are avoided\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
         }
     ],
-    "data sets": [], 
+    "data sets": [],
     "approaches": []
 }

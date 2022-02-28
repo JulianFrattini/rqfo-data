@@ -1,0 +1,37 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R030",
+        "Refstring": "Rago, A., Marcos, C., & Diaz-Pace, J. A. (2016). Identifying duplicate functionality in textual use cases by aligning semantic actions. Software & Systems Modeling, 15(2), 579-603."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "quality factors": [],
+    "descriptions": [
+        {
+            "id": "D011",
+            "qf id": "QA007",
+            "reference": "R030",
+            "definition": "\"Duplicating functionality is the action of repeating the description of some interactions between the system and actors\"",
+            "impact": "\"[D]uplicate functionality in use cases [...] [impact] on later development stages such as architectural design, implementation, testing and maintenance. [...] Although duplication is not always a quality defect, and it might be there for the sake of readability of non-technical stakeholders, the issues entailed to lack of modularity and abstraction can have a profound (negative) effect on the developers conducting activities such as effort estimation, project planning, architectural design, change impact analysis and evolution management.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "data sets": [],
+    "approaches": [
+        {
+            "id": "DS05",
+            "reference": "R030",
+            "descriptions": [
+                "D011"
+            ],
+            "name": "ReqAligner",
+            "acronym": "",
+            "type": "Supervised ML",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "pracitioners involved": true
+        }
+    ]
+}

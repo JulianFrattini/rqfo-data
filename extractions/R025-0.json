@@ -1,0 +1,467 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R025",
+        "Refstring": "Parra, E., Dimou, C., Llorens, J., Moreno, V., & Fraga, A. (2015). A methodology for the classification of quality of requirements using machine learning techniques. Information and Software Technology, 67, 180-195."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "quality factors": [
+        {
+            "id": "QA003",
+            "name": "Passive Voice",
+            "linguistic complexity": "Syntactic",
+            "scope": "Sentence",
+            "ambiguity": "-",
+            "understandability": "-"
+        },
+        {
+            "id": "QA154",
+            "name": "Ambiguous expressions",
+            "linguistic complexity": "Lexical",
+            "scope": "Word",
+            "ambiguity": "-",
+            "understandability": "-"
+        },
+        {
+            "id": "QA155",
+            "name": "Boilerplate conformant",
+            "linguistic complexity": "Syntactic",
+            "scope": "Sentence",
+            "correctness": "+"
+        },
+        {
+            "id": "QA156",
+            "name": "Assertive",
+            "linguistic complexity": "Syntactic",
+            "scope": "Sentence"
+        },
+        {
+            "id": "QA157",
+            "name": "Low number of connectors",
+            "linguistic complexity": "Lexical",
+            "scope": "Sentence",
+            "atomicity": "-"
+        },
+        {
+            "id": "QA158",
+            "name": "Low number of references",
+            "linguistic complexity": "Structural",
+            "scope": "Requirement",
+            "understandability": "-"
+        },
+        {
+            "id": "QA159",
+            "name": "Free of design expressions",
+            "linguistic complexity": "Lexical",
+            "scope": "Word"
+        },
+        {
+            "id": "QA160",
+            "name": "Low number of domain concepts used",
+            "linguistic complexity": "Lexical",
+            "scope": "Word",
+            "adequacy": "-",
+            "design-independence": "-"
+        },
+        {
+            "id": "QA161",
+            "name": "Low number of domain verbs used",
+            "linguistic complexity": "Lexical",
+            "scope": "Word",
+            "adequacy": "-"
+        },
+        {
+            "id": "QA162",
+            "name": "Free of flow expressions",
+            "linguistic complexity": "Lexical",
+            "scope": "Requirement",
+            "design-independence": "-"
+        },
+        {
+            "id": "QA163",
+            "name": "Imperative",
+            "linguistic complexity": "Syntactic",
+            "scope": "Sentence"
+        },
+        {
+            "id": "QA164",
+            "name": "Explicit",
+            "linguistic complexity": "Syntactic",
+            "scope": "Sentence",
+            "atomicity": "-"
+        },
+        {
+            "id": "QA165",
+            "name": "Free of incompleteness expressions",
+            "linguistic complexity": "Lexical",
+            "scope": "Sentence",
+            "completeness": "-"
+        },
+        {
+            "id": "QA166",
+            "name": "Low number of in-links",
+            "linguistic complexity": "Structural",
+            "scope": "Requirement",
+            "understandability": "+"
+        },
+        {
+            "id": "QA167",
+            "name": "Positive",
+            "linguistic complexity": "Syntactic",
+            "scope": "Sentence",
+            "understandability": "+"
+        },
+        {
+            "id": "QA168",
+            "name": "Flat hierarchy",
+            "linguistic complexity": "Structural",
+            "scope": "Document",
+            "understandability": "+"
+        },
+        {
+            "id": "QA169",
+            "name": "Correct punctuation",
+            "linguistic complexity": "Lexical",
+            "scope": "Section",
+            "understandability": "+"
+        },
+        {
+            "id": "QA170",
+            "name": "Low number of out-links",
+            "linguistic complexity": "Structural",
+            "scope": "Requirement",
+            "understandability": "+"
+        },
+        {
+            "id": "QA171",
+            "name": "Justification-free",
+            "linguistic complexity": "Semantic",
+            "scope": "Requirement"
+        },
+        {
+            "id": "QA172",
+            "name": "Readable",
+            "linguistic complexity": "Lexical",
+            "scope": "Requirement",
+            "understandability": "+"
+        },
+        {
+            "id": "QA173",
+            "name": "Decisive",
+            "linguistic complexity": "Lexical",
+            "scope": "Word",
+            "ambiguity": "+"
+        },
+        {
+            "id": "QA174",
+            "name": "Objective",
+            "linguistic complexity": "Lexical",
+            "scope": "Word"
+        },
+        {
+            "id": "QA175",
+            "name": "Number of paragraphs",
+            "linguistic complexity": "Structural",
+            "scope": "Requirement",
+            "atomicity": "-",
+            "design-independence": "-",
+            "redundancy": "-"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D165",
+            "qf id": "QA154",
+            "reference": "R025",
+            "definition": "\"Using ambiguous expressions [...]. The expressions are defined in a list of ambiguous expressions.\"",
+            "impact": "\"Using ambiguous expressions may render the requirement difficult to understand.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D166",
+            "qf id": "QA155",
+            "reference": "R025",
+            "definition": "\"[T]he requirement is represented by boilerplates in the system\"",
+            "impact": "\"[T]he requirement has a correct semantic and syntactic structure\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D167",
+            "qf id": "QA156",
+            "reference": "R025",
+            "definition": "\"The requirement should be written in assertive way\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D168",
+            "qf id": "QA157",
+            "reference": "R025",
+            "definition": "\"The number of connectors on the requirement text\"",
+            "impact": "\"Using multiple connectors may indicate different needs in the same requirement and therefore compromise the atomicity\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D169",
+            "qf id": "QA158",
+            "reference": "R025",
+            "definition": "\"Number of links in or out of the requirement\"",
+            "impact": "\"A large number of references can hinder the understanding of the requirement\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D170",
+            "qf id": "QA159",
+            "reference": "R025",
+            "definition": "\"The requirement should focus a necessity instead of expressing a solution\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D171",
+            "qf id": "QA160",
+            "reference": "R025",
+            "definition": "\"[using] domain concepts\"",
+            "impact": "\"A large number of domain concepts used in the same requirement can indicate over-specification.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D172",
+            "qf id": "QA161",
+            "reference": "R025",
+            "definition": "\"[using] domain verbs\"",
+            "impact": "\"Too many domain verbs may indicate that the requirement expressed too many needs\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D173",
+            "qf id": "QA162",
+            "reference": "R025",
+            "definition": "\"The requirement should avoid pseudocode and flow expressions\"",
+            "impact": "\"... to avoid specifying the solution to the problem\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D174",
+            "qf id": "QA163",
+            "reference": "R025",
+            "definition": "\"The requirement should have at least one imperative verb\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D175",
+            "qf id": "QA164",
+            "reference": "R025",
+            "definition": "\"The requirement should be explicit, it should be avoided the use of pronouns\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D176",
+            "qf id": "QA165",
+            "reference": "R025",
+            "definition": "\"Some sentences such as \u2018\u2018etc.\u2019\u2019, \u2018\u2018not limited to\u2019\u2019, \u2018\u2018as a minimum\u2019\u2019 clearly demonstrate that the requirement has not a clear scope.\"",
+            "impact": "\"Incompleteness expressions must be avoided because the requirement should be atomic.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D177",
+            "qf id": "QA166",
+            "reference": "R025",
+            "definition": "\"Number of links that the requirement is object (in-links).\"",
+            "impact": "\"A high number of links can hinder the understanding of the requirements\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D178",
+            "qf id": "QA167",
+            "reference": "R025",
+            "definition": "\"Number of negative expressions\"",
+            "impact": "\"Include one or more negative expressions can make the requirement is hard to understand\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D179",
+            "qf id": "QA168",
+            "reference": "R025",
+            "definition": "\"Number of hierarchy levels\"",
+            "impact": "\"Too many levels of hierarchy in the requirements may lead to difficulties in understanding the requirement\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D180",
+            "qf id": "QA169",
+            "reference": "R025",
+            "definition": "\"No. of character between punctuation\"",
+            "impact": "\"It is incorrect to write several sentences without using punctuation marks because it hinders the readability of the requirement\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D181",
+            "qf id": "QA170",
+            "reference": "R025",
+            "definition": "\"Number of links to other requirements (out-links).\"",
+            "impact": "\"A high number of links can hinder the understanding of the requirements\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D182",
+            "qf id": "QA003",
+            "reference": "R025",
+            "definition": "\"No. of verbs in the passive voice\"",
+            "impact": "\"The use of verbs in passive voice may hinder understanding of the requirement\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D183",
+            "qf id": "QA171",
+            "reference": "R025",
+            "definition": "\"Avoid using justification in the requirement\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D184",
+            "qf id": "QA172",
+            "reference": "R025",
+            "definition": "\"Expressed numerically by a mathematical formula described in [2]\"",
+            "impact": "\"A bad readability requirement may cause confusion\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D185",
+            "qf id": "QA173",
+            "reference": "R025",
+            "definition": "\"No. of speculative expressions\"",
+            "impact": "\"[T]he use of speculative expressions may indicate that the real need of the requirement is not clear.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D186",
+            "qf id": "QA174",
+            "reference": "R025",
+            "definition": "\"Avoid the expression of the author\u2019s view in the requirement\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D187",
+            "qf id": "QA175",
+            "reference": "R025",
+            "definition": "\"The requirement should not be expressed in too many paragraphs.\"",
+            "impact": "\"[...] to avoid over-specification, redundancy of information and express\nvarious needs in the same requirement\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D188",
+            "qf id": "QA153",
+            "reference": "R025",
+            "definition": "\"The requirement should not have an excessive number of words\"",
+            "impact": "\"[...] to avoid over-specification, redundancy of information and express\nvarious needs in the same requirement\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "data sets": [
+        {
+            "id": "DS54",
+            "reference": "R025",
+            "embedded information": [
+                "D165",
+                "D166",
+                "D167",
+                "D168",
+                "D169",
+                "D170",
+                "D171",
+                "D172",
+                "D173",
+                "D174",
+                "D175",
+                "D176",
+                "D177",
+                "D178",
+                "D179",
+                "D180",
+                "D181",
+                "D182",
+                "D183",
+                "D184",
+                "D185",
+                "D186",
+                "D187",
+                "D188"
+            ],
+            "description": "A corpus of requirements supplied by the requirements qorking group of INCOSE",
+            "origin": "Unknown",
+            "ground truth annotators": "Unknown",
+            "size": 1035,
+            "granularity": "Requirements",
+            "accessibility": "No link",
+            "source link": ""
+        }
+    ],
+    "approaches": [
+        {
+            "id": "DS30",
+            "reference": "R025",
+            "descriptions": [
+                "D165",
+                "D166",
+                "D167",
+                "D168",
+                "D169",
+                "D170",
+                "D171",
+                "D172",
+                "D173",
+                "D174",
+                "D175",
+                "D176",
+                "D177",
+                "D178",
+                "D179",
+                "D180",
+                "D181",
+                "D182",
+                "D183",
+                "D184",
+                "D185",
+                "D186",
+                "D187",
+                "D188"
+            ],
+            "name": "Extension to RQA",
+            "acronym": "",
+            "type": "Supervised ML",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "pracitioners involved": false
+        }
+    ]
+}

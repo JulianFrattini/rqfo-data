@@ -1,0 +1,60 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R037",
+        "Refstring": "Natt och Dag, J., Regnell, B., Carlshamre, P., Andersson, M., & Karlsson, J. (2002). A feasibility study of automated natural language requirements analysis in market-driven development. Requirements Engineering, 7(1), 20-33."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "quality factors": [
+        {
+            "id": "QA006",
+            "name": "Similarity",
+            "linguistic complexity": "Lexical",
+            "scope": "Words",
+            "redundancy": "-"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D010",
+            "qf id": "QA004",
+            "reference": "R037",
+            "definition": "\"A requirement may be similar to another to the extent that it is regarded as a duplicate and thus eliminated.\"",
+            "impact": "\"The duplicates are important to find to avoid doing the same job twice, assigning the same requirement to different developers, or getting two solutions to the same problem.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "data sets": [
+        {
+            "id": "DS05",
+            "reference": "R037",
+            "embedded information": [
+                "D010"
+            ],
+            "description": "Requirements database by Telelogic",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "Practitioners",
+            "size": 1920,
+            "granularity": "Requirement",
+            "accessibility": "No Link",
+            "source link": ""
+        }
+    ],
+    "approaches": [
+        {
+            "id": "DS04",
+            "reference": "R037",
+            "descriptions": [
+                "D010"
+            ],
+            "name": "",
+            "acronym": "",
+            "type": "Rule-based",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "pracitioners involved": true
+        }
+    ]
+}

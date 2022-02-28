@@ -1,0 +1,59 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R022",
+        "Refstring": "Al Balushi, T., Khod, O., Sampaio, P. R. F., Patel, M., Manchester, B. S. W., Corcho, O., & Loucopoulos, P. (2008). Identifying NFRs conflicts using quality ontologies. Combining SOA and BPM Technologies for Cross-System Process Automation, 929."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "quality factors": [
+        {
+            "id": "QA104",
+            "name": "Free of NFR-Class Conflicts",
+            "linguistic complexity": "Semantic",
+            "scope": "Requirement (NFR)"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D116",
+            "qf id": "QA104",
+            "reference": "R022",
+            "definition": "\"NFRs [...] conflict with each other when they make contradicting statements about some software attribute, and they cooperate when they mutually enforce such attributes.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "data sets": [
+        {
+            "id": "DS36",
+            "reference": "R022",
+            "embedded information": [
+                "D116"
+            ],
+            "description": "Quality requirements for a university helpdesk web application",
+            "origin": "Student Data",
+            "ground truth annotators": "None",
+            "size": 11,
+            "granularity": "Requirements",
+            "accessibility": "Available in Paper",
+            "source link": ""
+        }
+    ],
+    "approaches": [
+        {
+            "id": "DS23",
+            "reference": "R022",
+            "descriptions": [
+                "D116"
+            ],
+            "name": "Extension to the ElicitO tool",
+            "acronym": "",
+            "type": "Rule-based",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "pracitioners involved": true
+        }
+    ]
+}
