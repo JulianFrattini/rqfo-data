@@ -1,7 +1,7 @@
 [
     {
-        "ID": "jfr",
-        "Name": "Julian Frattini",
-        "Contact": "julian.frattini@bth.se"
+        "id": "jfr",
+        "name": "Julian Frattini",
+        "contact": "julian.frattini@bth.se"
     }
 ]

@@ -1,10 +1,11 @@
 {
     "name": "Quality Factor",
+    "description": "A quality factor (QF) represents a normative metric which maps a textual requirement of a specific granularity to a scale and therefore informs about the quality of that input.",
     "attributes": [
         {
             "name": "id",
             "type": "identifier",
-            "format": "^QA\\d{3}$",
+            "format": "^QF\\d{3}$",
             "unique": true,
             "mandatory": true
         }, {
@@ -15,7 +16,7 @@
             "mandatory": true,
             "rule": "If the publication explicity names the quality factor and this name sufficiently demarcates the factor from all other existing factors, use the name mentioned in the publication. Otherwise, select a name representing the factor in respect to all other factors."
         }, {
-            "name": "R IDs",
+            "name": "r ids",
             "type": "reflist",
             "elements": "reference",
             "mandatory": true

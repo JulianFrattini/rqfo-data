@@ -1,6 +1,7 @@
 {
     "name": "Description",
-    "fields": [
+    "description": "A description object explains (a) what the quality factor means and (b) how this quality factor is hypothesized to inform about the quality of the requirement. A quality attribute can be associated with multiple descriptions, which may be the result of parallel work or updating definitions or impact descriptions.",
+    "attributes": [
         {
             "name": "id",
             "type": "identifier",
@@ -8,31 +9,51 @@
             "unique": true,
             "mandatory": true
         }, {
-            "name": "QF-ID",
+            "name": "qf id",
             "type": "ref",
             "elements": "quality-factor",
             "mandatory": true
         }, {
-            "name": "R IDs",
+            "name": "r ids",
             "type": "reflist",
             "elements": "reference",
             "mandatory": true
         }, {
             "name": "definition",
             "type": "scope note",
+            "description": "A definition is an informal rule, which must be complied with in order to ensure good quality of the requirement according to the authors. The definition may be simply postulated, but can also be derived empirically from data or developed in collaboration with industry.",
             "mandatory": true
         }, {
             "name": "impact",
-            "type": "scope note"
+            "type": "scope note",
+            "description": "The impact scope note explicitly describes how the QA affects the actual quality of the requirements. A manuscript should make the hypothesized impact explicit, but does not need to in order to be included."
         },  {
             "name": "empirical evidence",
             "type": "dimension",
-            "values": [true, false],
+            "description": "This dimension captures whether the given description and/or impact is rooted in any sort of empirical evidence. This may simply be practitioners reporting violations against the quality factor as a challenge, or an investigation of requirements artifacts. Empirical evidence for the description or impact corroborates the relevance of this QF.",
+            "characteristics": [
+                {
+                    "value": true,
+                    "description": "An empirical method has been applied to validate the definition or the impact (or both) of the quality attribute."
+                }, {
+                    "value": false,
+                    "description": "The quality attribute has simply been postulated without any empirical validation of its definition or impact."
+                }
+            ],
             "mandatory": true
         }, {
             "name": "practitioners involved",
             "type": "dimension",
-            "values": [true, false],
+            "description": "This dimension indicates whether practitioners - collaborators working primarily in industry - were involved in the creation or validation of the quality attribute.",
+            "characteristics": [
+                {
+                    "value": true,
+                    "description": "Practitioners were involved in the validation of the description or impact of the quality attribute."
+                }, {
+                    "value": false,
+                    "description": "No practitioners were involved in the validation of the description or impact of the quality attribute or there was no empirical method applied at all."
+                }
+            ],
             "mandatory": true
         }
     ]
