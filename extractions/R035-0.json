@@ -5,30 +5,11 @@
         "Refstring": "Din, C. Y., & Rine, D. C. (2008). Requirements content goodness and complexity measurement based on NP chunks. VDM Publishing."
     },
     "timestamp": "2022-02-24 10:00:00",
-    "quality factors": [
-        {
-            "id": "QA057",
-            "name": "Sentence/Requirements Statement Level Complexity",
-            "linguistic complexity": "Syntactic",
-            "scope": "Sentence"
-        },
-        {
-            "id": "QA058",
-            "name": "Intra-Section Level Complexity",
-            "linguistic complexity": "Syntactic",
-            "scope": "Document"
-        },
-        {
-            "id": "QA059",
-            "name": "Inter-Section Level Complexity",
-            "linguistic complexity": "Syntactic",
-            "scope": "Document"
-        }
-    ],
+    "quality factors": [],
     "descriptions": [
         {
             "id": "D062",
-            "qf id": "QA057",
+            "qf id": "QF057",
             "reference": "R035",
             "definition": "\"The sentence level complexity metric, or NPC-Sentence, can be calculated as follows. For each NP chunk, the occurrence count in a sentence is divided by the total occurrence counts in all sentences. Then all the frequency distributions of the NP chunks in the sentence are added together to form the final complexity value. The requirements statement level complexity metric, or NPC Req, is the aggregation of NPC-Sentence of the component sentences.\"",
             "impact": "",
@@ -37,7 +18,7 @@
         },
         {
             "id": "D063",
-            "qf id": "QA058",
+            "qf id": "QF058",
             "reference": "R035",
             "definition": "\"The proposed NPC-Cohesion metric is a normalized cluster size that can be calculated using the sum of all cluster sizes in a requirement section divided by the size of the requirements section. Here a cluster is defined as the collection of adjacent sentences in a requirements section that shares the same NP chunks.\"",
             "impact": "",
@@ -46,7 +27,7 @@
         },
         {
             "id": "D064",
-            "qf id": "QA059",
+            "qf id": "QF059",
             "reference": "R035",
             "definition": "\"The proposed NPC-Coupling metric value is the sum of the spatial distances between its internal and external NP chunks. If an NP chunk belongs to a cluster, then the centroid of the cluster is used to calculate its distance to the external NP chunks.\"",
             "impact": "",
@@ -54,39 +35,6 @@
             "practitioners involved": false
         }
     ],
-    "data sets": [
-        {
-            "id": "DS30",
-            "reference": "R035",
-            "embedded information": [
-                "D062",
-                "D063",
-                "D064"
-            ],
-            "description": "Requirements document of a Federal Aviation Agency",
-            "origin": "Unknown",
-            "ground truth annotators": "None",
-            "size": 1,
-            "granularity": "Document",
-            "accessibility": "Broken Link",
-            "source link": "M. Ricker, Requirements Specification\nUnderstandability Evaluation with Cohesion, Context,\nand Coupling, Doctoral Dissertation, George Mason\nUniversity, Fairfax, VA, 1995"
-        },
-        {
-            "id": "DS31",
-            "reference": "R035",
-            "embedded information": [
-                "D062",
-                "D063",
-                "D064"
-            ],
-            "description": "Four versions of the interactive matching and geocoding system II (IMAGS II) requirements document for US bureau of census",
-            "origin": "Practitioner Data",
-            "ground truth annotators": "None",
-            "size": 4,
-            "granularity": "Documents",
-            "accessibility": "Private",
-            "source link": ""
-        }
-    ],
+    "data sets": [],
     "approaches": []
 }

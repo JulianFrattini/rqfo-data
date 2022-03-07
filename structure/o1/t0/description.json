@@ -11,7 +11,7 @@
         }, {
             "name": "qf id",
             "type": "ref",
-            "elements": "quality-factor",
+            "elements": "factor",
             "mandatory": true
         }, {
             "name": "r ids",

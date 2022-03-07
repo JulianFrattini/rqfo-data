@@ -9,7 +9,7 @@
     "descriptions": [
         {
             "id": "D001",
-            "qf id": "QA003",
+            "qf id": "QF003",
             "reference": "R027",
             "definition": "\"in passive sentences it is unclear who is performing a certain action on the system\"",
             "impact": "\"The results indicate that while the commonly discussed danger of missing actors did not show to be substantial, there is a statistically signi\ufb01cant gap in the understanding of how concepts are related in a sentence in passive voice.\"",
@@ -17,21 +17,6 @@
             "practitioners involved": false
         }
     ],
-    "data sets": [
-        {
-            "id": "DS00",
-            "reference": "R027",
-            "embedded information": [
-                "D001"
-            ],
-            "description": "Seven sentences with passive voice, and the same seven sentences with corrected active voice.",
-            "origin": "Unknown",
-            "ground truth annotators": "Unknown",
-            "size": 14,
-            "granularity": "Requirement",
-            "accessibility": "Available in Paper\nBroken Link",
-            "source link": "https://www.in.tum.de/i04/~femmer/data/passives_experiment.zip"
-        }
-    ],
+    "data sets": [],
     "approaches": []
 }

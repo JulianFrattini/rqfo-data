@@ -30,17 +30,11 @@
                     "dimension": "adequacy",
                     "description": ""
                 }, {
-                    "dimension": "ambiguity",
-                    "description": "The unique interpretation of a requirement"
-                }, {
                     "dimension": "atomicity",
                     "description": ""
                 }, {
                     "dimension":  "completeness",
                     "description": "The explicit availability of all relevant information"
-                }, {
-                    "dimension":  "complexity",
-                    "description": "The intricacy of the written text"
                 }, {
                     "dimension":  "compliance",
                     "description": ""
@@ -63,20 +57,23 @@
                     "dimension":  "modifiability",
                     "description": ""
                 }, {
-                    "dimension":  "precision",
-                    "description": ""
-                }, {
-                    "dimension":  "redundancy",
+                    "dimension":  "necessity",
                     "description": "The exclusivity of written text"
                 }, {
-                    "dimension":  "relevancy",
-                    "description": "The necessity of written information existing"
+                    "dimension":  "precision",
+                    "description": ""
                 }, {
                     "dimension":  "reusability",
                     "description": "The ease of reuse"
                 }, {
+                    "dimension":  "simplicity",
+                    "description": "The intricacy of the written text"
+                }, {
                     "dimension":  "traceability",
                     "description": "The explicit connections to other artifacts"
+                }, {
+                    "dimension": "unambiguouseness",
+                    "description": "The unique interpretation of a requirement"
                 }, {
                     "dimension":  "understandability",
                     "description": "The comprehensibility of written text"
@@ -126,7 +123,7 @@
             ],
             "mandatory": true
         }, {
-            "name": "Scope",
+            "name": "scope",
             "type": "dimension",
             "description": "The scope classifies a quality factor regarding the extent of information that is necessary in order to determine a violation against the formal rule of the quality factor. The minimal scope shall be chosen, i.e., for one violation against a given quality factor, how much textual information must be seen to detect that violation? The classification of the scope shall not be approached from a standpoint of 'ensuring that a given input document is free of violations against that factor', because that would always entail a global/document scope.",
             "extraction rule": "To determine one violation against the formal rule of the quality attribute, it suffices to see …",

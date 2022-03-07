@@ -5,47 +5,11 @@
         "Refstring": "Rago, A. M., Frade, P., Ruival, M., & Marcos, C. (2014). An Approach for Automating Use Case Refactoring."
     },
     "timestamp": "2022-02-24 10:00:00",
-    "quality factors": [
-        {
-            "id": "QA007",
-            "name": "Functional Duplication",
-            "linguistic complexity": "Semantic",
-            "scope": "Structured/tabular text (Use Case)",
-            "adequacy": "-",
-            "atomicity": "-",
-            "reusability": "-",
-            "understandability": "+",
-            "verifiability": "-"
-        },
-        {
-            "id": "QA008",
-            "name": "Lack of Modularization",
-            "linguistic complexity": "",
-            "scope": "Structured/tabular text (Use Case)"
-        },
-        {
-            "id": "QA009",
-            "name": "Meaningless actor",
-            "linguistic complexity": "Semantic",
-            "scope": "Structured/tabular text (Use Case)"
-        },
-        {
-            "id": "QA010",
-            "name": "Meaningless use case",
-            "linguistic complexity": "Semantic",
-            "scope": "Structured/tabular text (Use Case)"
-        },
-        {
-            "id": "QA013",
-            "name": "Happy use cases",
-            "linguistic complexity": "Structural",
-            "scope": "Structured/tabular text (Use Case)"
-        }
-    ],
+    "quality factors": [],
     "descriptions": [
         {
             "id": "D012",
-            "qf id": "QA007",
+            "qf id": "QF007",
             "reference": "R020",
             "definition": "\"Sections in the specifications that, although written in different terms, describe the very same behavior\"",
             "impact": "",
@@ -54,7 +18,7 @@
         },
         {
             "id": "D013",
-            "qf id": "QA008",
+            "qf id": "QF008",
             "reference": "R020",
             "definition": "\"functional/non-functional requirements are not encapsulated and well modularized\"",
             "impact": "",
@@ -63,7 +27,7 @@
         },
         {
             "id": "D014",
-            "qf id": "QA009",
+            "qf id": "QF009",
             "reference": "R020",
             "definition": "\"Wrongly defined or meaningless actors\"",
             "impact": "",
@@ -72,7 +36,7 @@
         },
         {
             "id": "D015",
-            "qf id": "QA010",
+            "qf id": "QF010",
             "reference": "R020",
             "definition": "\"Wrongly defined or meaningless use cases\"",
             "impact": "",
@@ -81,7 +45,7 @@
         },
         {
             "id": "D018",
-            "qf id": "QA013",
+            "qf id": "QF013",
             "reference": "R020",
             "definition": "\"[U]se cases [..] without alternative flows\"",
             "impact": "",
@@ -89,127 +53,6 @@
             "practitioners involved": false
         }
     ],
-    "data sets": [
-        {
-            "id": "DS06",
-            "reference": "R020",
-            "embedded information": [
-                "D011",
-                "D012",
-                "D013",
-                "D014",
-                "D015",
-                "D016",
-                "D017",
-                "D018"
-            ],
-            "description": "Use cases for DLibraCRM, a web-based system for cataloging and selling book-related goods online",
-            "origin": "Student Data",
-            "ground truth annotators": "None",
-            "size": 16,
-            "granularity": "Structured/tabular text (Use Cases)",
-            "accessibility": "Available in Paper",
-            "source link": "Ciemniewska, A., & Jurkiewicz, J. (2007). Automatic detection of defects in use cases. Master's thesis, Poznan University of Technology--Faculty of Computer Science and Management--Institute of Computer Science."
-        },
-        {
-            "id": "DS07",
-            "reference": "R020",
-            "embedded information": [
-                "D011",
-                "D012",
-                "D013",
-                "D014",
-                "D015",
-                "D016",
-                "D017",
-                "D018"
-            ],
-            "description": "Use cases for MobileNews, a news feed system for delivering the latest bulletins to mobile devices",
-            "origin": "Student Data",
-            "ground truth annotators": "None",
-            "size": 15,
-            "granularity": "Structured/tabular text (Use Cases)",
-            "accessibility": "Available in Paper",
-            "source link": "Ciemniewska, A., & Jurkiewicz, J. (2007). Automatic detection of defects in use cases. Master's thesis, Poznan University of Technology--Faculty of Computer Science and Management--Institute of Computer Science."
-        },
-        {
-            "id": "DS08",
-            "reference": "R020",
-            "embedded information": [
-                "D011",
-                "D012",
-                "D013",
-                "D014",
-                "D015",
-                "D016",
-                "D017",
-                "D018"
-            ],
-            "description": "Use cases for WebJSARA, an information management system with publishing, searching, uploading, and downloading capabilities",
-            "origin": "Student Data",
-            "ground truth annotators": "None",
-            "size": 29,
-            "granularity": "Structured/tabular text (Use Cases)",
-            "accessibility": "Available in Paper",
-            "source link": "Ciemniewska, A., & Jurkiewicz, J. (2007). Automatic detection of defects in use cases. Master's thesis, Poznan University of Technology--Faculty of Computer Science and Management--Institute of Computer Science."
-        },
-        {
-            "id": "DS09",
-            "reference": "R020",
-            "embedded information": [
-                "D011",
-                "D012",
-                "D013",
-                "D014",
-                "D015",
-                "D016",
-                "D017",
-                "D018"
-            ],
-            "description": "Use cases for Course Registration System (CRS), a distributed system to be used for managing university courses and subscriptions",
-            "origin": "Practitioner Data",
-            "ground truth annotators": "None",
-            "size": 8,
-            "granularity": "Structured/tabular text (Use Cases)",
-            "accessibility": "Available in Paper\nBroken Link",
-            "source link": "http://www.comp.lancs.ac.uk/~greenwop/tao/"
-        },
-        {
-            "id": "DS10",
-            "reference": "R020",
-            "embedded information": [
-                "D011",
-                "D012",
-                "D013",
-                "D014",
-                "D015",
-                "D016",
-                "D017",
-                "D018"
-            ],
-            "description": "Use cases for the Health Watcher System (HWS), a web-based system that serves as a mediator between citizens and the municipal government",
-            "origin": "Practitioner Data",
-            "ground truth annotators": "None",
-            "size": 9,
-            "granularity": "Structured/tabular text (Use Cases)",
-            "accessibility": "Available in Paper\nBroken Link",
-            "source link": "http://sce.uhcl.edu/helm/RUP_course_example/courseregistrationproject/indexcourse.htm"
-        }
-    ],
-    "approaches": [
-        {
-            "id": "DS06",
-            "reference": "R020",
-            "descriptions": [
-                "D012"
-            ],
-            "name": "ReUse",
-            "acronym": "",
-            "type": "Supervised ML",
-            "accessibility": "No Link",
-            "source link": "",
-            "empirical method applied": true,
-            "pracitioners involved": true
-        }
-    ]
+    "data sets": [],
+    "approaches": []
 }

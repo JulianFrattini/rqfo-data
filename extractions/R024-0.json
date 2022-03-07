@@ -9,7 +9,7 @@
     "descriptions": [
         {
             "id": "D019",
-            "qf id": "QA014",
+            "qf id": "QF014",
             "reference": "R024",
             "definition": "\"each story has at least a role and a means\"",
             "impact": "",
@@ -18,7 +18,7 @@
         },
         {
             "id": "D020",
-            "qf id": "QA015",
+            "qf id": "QF015",
             "reference": "R024",
             "definition": "\"each story expresses a requirement for one feature\"",
             "impact": "",
@@ -27,7 +27,7 @@
         },
         {
             "id": "D021",
-            "qf id": "QA016",
+            "qf id": "QF016",
             "reference": "R024",
             "definition": "\"each story contains only role, means, and ends\"",
             "impact": "",
@@ -36,7 +36,7 @@
         },
         {
             "id": "D022",
-            "qf id": "QA017",
+            "qf id": "QF017",
             "reference": "R024",
             "definition": "\"all written stories employ the same template\"",
             "impact": "",
@@ -45,7 +45,7 @@
         },
         {
             "id": "D023",
-            "qf id": "QA018",
+            "qf id": "QF018",
             "reference": "R024",
             "definition": "\"each story is unique, duplicates are avoided\"",
             "impact": "",

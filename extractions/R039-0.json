@@ -5,64 +5,11 @@
         "Refstring": "Ferrari, A., Gori, G., Rosadini, B., Trotta, I., Bacherini, S., Fantechi, A., & Gnesi, S. (2018). Detecting requirements defects with NLP patterns: an industrial experience in the railway domain. Empirical Software Engineering, 23(6), 3684-3733."
     },
     "timestamp": "2022-02-24 10:00:00",
-    "quality factors": [
-        {
-            "id": "QA001",
-            "name": "Anaphora",
-            "linguistic complexity": "Syntactic",
-            "scope": "Sentence",
-            "ambiguity": "-"
-        },
-        {
-            "id": "QA005",
-            "name": "Coordination",
-            "linguistic complexity": "Structural",
-            "scope": "Sentence",
-            "ambiguity": "-"
-        },
-        {
-            "id": "QA230",
-            "name": "Modal",
-            "linguistic complexity": "Lexical",
-            "scope": "Word"
-        },
-        {
-            "id": "QA028",
-            "name": "Requirements length",
-            "linguistic complexity": "Lexical",
-            "scope": "Requirement",
-            "ambiguity": "-",
-            "understandability": "-"
-        },
-        {
-            "id": "QA211",
-            "name": "No incomplete conditions",
-            "linguistic complexity": "Syntactic",
-            "scope": "Sentence"
-        },
-        {
-            "id": "QA231",
-            "name": "Measurement Units",
-            "linguistic complexity": "Lexical",
-            "scope": "Words"
-        },
-        {
-            "id": "QA047",
-            "name": "Referential Integrity",
-            "linguistic complexity": "Lexical",
-            "scope": "Word"
-        },
-        {
-            "id": "QA232",
-            "name": "Undefined Term",
-            "linguistic complexity": "Lexical",
-            "scope": "Word"
-        }
-    ],
+    "quality factors": [],
     "descriptions": [
         {
             "id": "D261",
-            "qf id": "QA001",
+            "qf id": "QF001",
             "reference": "R039",
             "definition": "\"Anaphora occurs in a text whenever a pronoun (e.g., he, it, that, this, which, etc.) refers to a previous part of the text. The referred part of the text is normally called antecedent. An anaphoric ambiguity occurs if the text offers more than one antecedent options (Yang et al. 2011), either in the same sentence (e.g., The system shall send a message to the receiver, and it provides an acknowledge message - it = system or receiver?) or in previous sentences.\"",
             "impact": "",
@@ -71,7 +18,7 @@
         },
         {
             "id": "D262",
-            "qf id": "QA005",
+            "qf id": "QF005",
             "reference": "R039",
             "definition": "\"Coordination ambiguity occurs when the use of coordinating conjunctions (e.g., and or or) leads to multiple potential interpretations of a sentence (Chantree et al. 2006).\"",
             "impact": "",
@@ -80,7 +27,7 @@
         },
         {
             "id": "D263",
-            "qf id": "QA060",
+            "qf id": "QF060",
             "reference": "R039",
             "definition": "\"Vagueness occurs whenever a sentence admits borderline cases, i.e., cases in which the truth value of the sentence cannot be decided (Berry et al. 2003).\"",
             "impact": "",
@@ -89,7 +36,7 @@
         },
         {
             "id": "D264",
-            "qf id": "QA230",
+            "qf id": "QF230",
             "reference": "R039",
             "definition": "\"Modal adverbs (e.g., positively, permanently, clearly) are modifiers that express a quality associated to a predicate. As noted by Gleich et al. (2010), adverbs are discouraged in requirements as potential source of ambiguity.\"",
             "impact": "",
@@ -98,7 +45,7 @@
         },
         {
             "id": "D265",
-            "qf id": "QA003",
+            "qf id": "QF003",
             "reference": "R039",
             "definition": "\"The use of passive voice is a defect of clarity in requirements, and can lead to ambiguous interpretations in those cases in which the passive verb is not followed by the subject that performs the action expressed by the verb [...]\"",
             "impact": "",
@@ -107,7 +54,7 @@
         },
         {
             "id": "D266",
-            "qf id": "QA028",
+            "qf id": "QF028",
             "reference": "R039",
             "definition": "\"[...] all the sentences that are longer than 60 tokens.",
             "impact": "\"Longer sentences are typically harder to process than short sentences, and can be source of unclarity.\"",
@@ -116,7 +63,7 @@
         },
         {
             "id": "D267",
-            "qf id": "QA211",
+            "qf id": "QF211",
             "reference": "R039",
             "definition": "To be considered complete, each requirement expressing a condition through the if clause, shall have a corresponding else or otherwise clause.",
             "impact": "",
@@ -125,7 +72,7 @@
         },
         {
             "id": "D268",
-            "qf id": "QA231",
+            "qf id": "QF231",
             "reference": "R039",
             "definition": "\"Each number is required to have an associated unit of measurement, unless the number represents a reference [...]\"",
             "impact": "",
@@ -134,7 +81,7 @@
         },
         {
             "id": "D269",
-            "qf id": "QA047",
+            "qf id": "QF047",
             "reference": "R039",
             "definition": "\"This defect occurs when a reference that appears in the text in the form Ref. <X> does not appear in the list of references of the requirements document.\"",
             "impact": "",
@@ -143,7 +90,7 @@
         },
         {
             "id": "D270",
-            "qf id": "QA232",
+            "qf id": "QF232",
             "reference": "R039",
             "definition": "\"[...] all the terms that follow the textual form used in the company for defining glossary terms [...]\"",
             "impact": "",

@@ -7,22 +7,15 @@
     "timestamp": "2022-02-24 10:00:00",
     "quality factors": [
         {
-            "id": "QA060",
-            "name": "Vague",
-            "linguistic complexity": "Lexical",
-            "scope": "Word",
-            "ambiguity": "-"
-        },
-        {
-            "id": "QA086",
+            "id": "QF086",
             "name": "Syntactic",
             "linguistic complexity": "Syntactic",
             "scope": "Phrase"
         },
         {
-            "id": "QA088",
+            "id": "QF088",
             "name": "Pragmatic",
-            "linguistic complexity": "Pragmatic",
+            "linguistic complexity": "Semantic",
             "scope": "Sentence"
         }
     ],

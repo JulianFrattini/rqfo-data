@@ -5,50 +5,11 @@
         "Refstring": "Antinyan, V., & Staron, M. (2017). Rendex: A method for automated reviews of textual requirements. Journal of Systems and Software, 131, 63-77."
     },
     "timestamp": "2022-02-24 10:00:00",
-    "quality factors": [
-        {
-            "id": "QA091",
-            "name": "Conjunctive Complexity",
-            "linguistic complexity": "Lexical",
-            "scope": "Sentence",
-            "complexity": "-",
-            "understandability": "-"
-        },
-        {
-            "id": "QA150",
-            "name": "QA060, QA150",
-            "linguistic complexity": "Lexical",
-            "scope": "Word",
-            "ambiguity": "-"
-        },
-        {
-            "id": "QA151",
-            "name": "Referring to fixed terms",
-            "linguistic complexity": "Lexical",
-            "scope": "Word",
-            "understandability": "+"
-        },
-        {
-            "id": "QA152",
-            "name": "Referring to other documents",
-            "linguistic complexity": "Lexical",
-            "scope": "Word",
-            "reusability": "+",
-            "understandability": "+"
-        },
-        {
-            "id": "QA153",
-            "name": "Number of words",
-            "linguistic complexity": "Lexical",
-            "scope": "Requirement",
-            "maintainability": "-",
-            "understandability": "-"
-        }
-    ],
+    "quality factors": [],
     "descriptions": [
         {
             "id": "D160",
-            "qf id": "QA091",
+            "qf id": "QF091",
             "reference": "R021",
             "definition": "\"[L]inguistic conjunctions that indicate a relation of two related actions in a requirement\"",
             "impact": "\"When the number of conjunctions increases the number of relations between actions also increases. This leads to a complex description of many actions and relations, which creates difficult for understanding how to implement and test the given requirement. Particularly, it becomes hard to follow how the actions comply with or has mandate over each other, and what the sequences of actions are in relation to one another.\"",
@@ -57,7 +18,7 @@
         },
         {
             "id": "D161",
-            "qf id": "QA150",
+            "qf id": "QF060",
             "reference": "R021",
             "definition": "\"[P]hrases that indicate either imprecise definition or multiple interpretations of a requirement\"",
             "impact": "\"[T]he vague phrases indicate the unclearness of the actions or actors, and their relations. In other words vague phrases introduce interpretative nature to the requirement description\"",
@@ -66,7 +27,7 @@
         },
         {
             "id": "D162",
-            "qf id": "QA151",
+            "qf id": "QF151",
             "reference": "R021",
             "definition": "\"[V]ariables such as state, sensor data, and module names in a requirement\"",
             "impact": "\"Many such variable names in a requirement indicate that much knowledge is required to understand how all these variables can and will interact together. We observed that for requirements of component level these references are one of the main constituents of the requirements and by the perception of the software engineers a high number of NR can indicate problems\"",
@@ -75,7 +36,7 @@
         },
         {
             "id": "D163",
-            "qf id": "QA152",
+            "qf id": "QF152",
             "reference": "R021",
             "definition": "\"[R]eferences to standards and other documents in a requirement\"",
             "impact": "\"[W]hen designers encounter reference documents in requirements, they have to look through them in order to understand how the implemented requirement should comply or be consistent with the documents. Often, there were no specifics on how exactly the requirement should comply with the referred document.\"",
@@ -84,7 +45,7 @@
         },
         {
             "id": "D164",
-            "qf id": "QA153",
+            "qf id": "QF153",
             "reference": "R021",
             "definition": "\"The number of words of a requirement\"",
             "impact": "\"[I]f an artifact is too big then it is hard to understand and manage\"",

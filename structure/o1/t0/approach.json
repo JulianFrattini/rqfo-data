@@ -145,7 +145,7 @@
                 }
             ]
         }, {
-            "name": "Necessary Information",
+            "name": "necessary information",
             "type": "dimension cluster",
             "description": "The necessary information classifies an approach regarding the type of information that needs to be available in order to automatically determine a violation against the formal rule.", 
             "extraction rule": "To automatically determine a violation against the formal rule of the quality factor, ", 
