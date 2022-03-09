@@ -25,7 +25,7 @@
             "descriptions": [
                 "D011"
             ],
-            "name": "ReQFligner",
+            "name": "ReqAligner",
             "acronym": "",
             "type": "Supervised ML",
             "accessibility": "No Link",

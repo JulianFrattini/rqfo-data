@@ -4,6 +4,7 @@
         "taxonomy": 0,
         "content": 0
     },
+    "description": "Initial version of the requirements quality factor ontology. This work is the first version towards a holistic view on requirements quality factors and its content is in no way final. Rather, the content shall be used as a starting point and the structure as a conceptual framework to iteratively improve the quality of requirements quality research.",
     "timestamp": "2022-03-06 16:00:00",
     "references": [
         "R003",

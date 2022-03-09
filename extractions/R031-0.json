@@ -7,6 +7,12 @@
     "timestamp": "2022-02-24 10:00:00",
     "factors": [
         {
+            "id": "QF037",
+            "name": "Ontological Completeness",
+            "linguistic complexity": "Semantic",
+            "scope": "Global"
+        },
+        {
             "id": "QF123",
             "name": "Ontological Correctness",
             "linguistic complexity": "Semantic",

@@ -36,12 +36,6 @@
             "name": "Obsoleteness",
             "linguistic complexity": "Lexical",
             "scope": "Requirement"
-        },
-        {
-            "id": "QF037",
-            "name": "Ontological Completeness",
-            "linguistic complexity": "Semantic",
-            "scope": "Global"
         }
     ],
     "descriptions": [
@@ -149,7 +143,7 @@
             "source link": "https://sourceforge.net/projects/gnlq/",
             "empirical method applied": true,
             "practitioners involved": true,
-            "source code": "y"
+            "code": "y"
         }
     ]
 }
