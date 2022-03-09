@@ -1,0 +1,240 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R009",
+        "Refstring": "Phalp, K. T., Vincent, J., & Cox, K. (2007). Assessing the quality of use case descriptions. Software Quality Journal, 15(1), 69-97."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF110",
+            "name": "Appropriate span",
+            "linguistic complexity": "Semantic",
+            "scope": "Use Case"
+        },
+        {
+            "id": "QF111",
+            "name": "Appropriate scope",
+            "linguistic complexity": "Semantic",
+            "scope": "Use Case"
+        },
+        {
+            "id": "QF112",
+            "name": "Cogent text order",
+            "linguistic complexity": "Semantic",
+            "scope": "Use Case"
+        },
+        {
+            "id": "QF113",
+            "name": "Cogent dependencies",
+            "linguistic complexity": "Semantic",
+            "scope": "Use Case"
+        },
+        {
+            "id": "QF114",
+            "name": "Rational Answer",
+            "linguistic complexity": "Semantic",
+            "scope": "Use Case"
+        },
+        {
+            "id": "QF115",
+            "name": "Coherent",
+            "linguistic complexity": "Syntactic",
+            "scope": "Use Case",
+            "understandability": "+"
+        },
+        {
+            "id": "QF116",
+            "name": "Consistent level of abstraction",
+            "linguistic complexity": "Semantic",
+            "scope": "Use Case",
+            "understandability": "+",
+            "verifiability": "+"
+        },
+        {
+            "id": "QF117",
+            "name": "Consistent structure of variations",
+            "linguistic complexity": "Structural",
+            "scope": "Use Case",
+            "understandability": "-"
+        },
+        {
+            "id": "QF118",
+            "name": "Consistent structure of numbering",
+            "linguistic complexity": "Structural",
+            "scope": "Use Case"
+        },
+        {
+            "id": "QF119",
+            "name": "Consistent grammar",
+            "linguistic complexity": "Syntactic",
+            "scope": "Use Case"
+        },
+        {
+            "id": "QF120",
+            "name": "Separation of alternatives",
+            "linguistic complexity": "Structural",
+            "scope": "Use Case"
+        },
+        {
+            "id": "QF121",
+            "name": "Viability of alternatives",
+            "linguistic complexity": "Semantic",
+            "scope": "Use Case"
+        },
+        {
+            "id": "QF122",
+            "name": "Consistent numbering of alternatives",
+            "linguistic complexity": "Structural",
+            "scope": "Use Case"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D098",
+            "qf id": "QF110",
+            "reference": "R009",
+            "definition": "\"The use case should contain all that is required to answer the problem.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D099",
+            "qf id": "QF111",
+            "reference": "R009",
+            "definition": "\"The use case should only contain detail relevant to the problem statement. Extra unnecessary information provided is out of problem scope and not required.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D100",
+            "qf id": "QF112",
+            "reference": "R009",
+            "definition": "\"The use case should follow a logical path with events in the description in the correct order.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D101",
+            "qf id": "QF113",
+            "reference": "R009",
+            "definition": "\"The use case should complete as an end-to-end transaction (which can include alternative/exceptional flows).\", \"Dependencies can be defined as determining the completeness of the description; that is, that it describes a complete transaction [...]. At a finer-grained level, each event has a dependency on a previous event (logical coherence [...]). This implies referential continuity [...] and inference building [...].\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D102",
+            "qf id": "QF114",
+            "reference": "R009",
+            "definition": "\"The logic of the use case description should provide a plausible answer to the problem.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D122",
+            "qf id": "QF115",
+            "reference": "R009",
+            "definition": "\"The sentence being written should repeat a noun in the last sentence or a previous sentence, if possible.\"",
+            "impact": "\"The description is easier to read and quicker to understand if there is logical coherence throughout.\"",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D123",
+            "qf id": "QF116",
+            "reference": "R009",
+            "definition": "\"The use case should be at a consistent level of abstraction throughout.\"",
+            "impact": "\"Mixing abstraction levels (problem domain, interface specification, internal design mixes) may cause difficulty in understanding.\"",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D124",
+            "qf id": "QF117",
+            "reference": "R009",
+            "definition": "\"Alternative paths should be excluded from the main flow.\"",
+            "impact": "\"Inclusion of alternative paths in the main flow reduces readability.\"",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D125",
+            "qf id": "QF118",
+            "reference": "R009",
+            "definition": "\"Numbering of events in the main flow should be consistent.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D126",
+            "qf id": "QF119",
+            "reference": "R009",
+            "definition": "\"Simple present tense should be used throughout. Adverbs, adjectives, pronouns, synonyms and negatives should be avoided.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D127",
+            "qf id": "QF120",
+            "reference": "R009",
+            "definition": "\"There should be a separate section for any alternative/exceptional paths to the main flow.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D128",
+            "qf id": "QF121",
+            "reference": "R009",
+            "definition": "\"Alternatives should be viable and make sense.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D129",
+            "qf id": "QF122",
+            "reference": "R009",
+            "definition": "\"Alternative numberings should exactly match the numbers in the main flow.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": true
+        }
+    ],
+    "datasets": [
+        {
+            "id": "DS34",
+            "reference": "R009",
+            "embedded information": [
+                "D098",
+                "D099",
+                "D100",
+                "D101",
+                "D102",
+                "D122",
+                "D123",
+                "D124",
+                "D125",
+                "D126",
+                "D127",
+                "D128",
+                "D129"
+            ],
+            "description": "\"The project entailed re-engineering a critical straight through process of customer application, from customer application on the internet to lodging of that application in the system, to printing application forms for postage, and signing by the customer in order to activate the customer\u2019s account for online trading\"",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "None",
+            "size": 26,
+            "granularity": "Use Case",
+            "accessibility": "Private",
+            "source link": ""
+        }
+    ],
+    "approaches": []
+}

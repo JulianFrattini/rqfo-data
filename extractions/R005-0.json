@@ -1,0 +1,120 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R005",
+        "Refstring": "Femmer, H., Unterkalmsteiner, M., & Gorschek, T. (2017, September). Which requirements artifact quality defects are automatically detectable? A case study. In 2017 IEEE 25th International Requirements Engineering Conference Workshops (REW) (pp. 400-406). IEEE."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF132",
+            "name": "Using function",
+            "linguistic complexity": "Lexical",
+            "scope": "Word"
+        },
+        {
+            "id": "QF133",
+            "name": "Starting with subject",
+            "linguistic complexity": "Syntactic",
+            "scope": "Sentence"
+        },
+        {
+            "id": "QF134",
+            "name": "Obvious definitions",
+            "linguistic complexity": "Semantic",
+            "scope": "Sentence"
+        },
+        {
+            "id": "QF135",
+            "name": "Separation of supplementary information",
+            "linguistic complexity": "Semantic",
+            "scope": "Section"
+        },
+        {
+            "id": "QF136",
+            "name": "Referencing by document title",
+            "linguistic complexity": "Structural",
+            "scope": "Global"
+        },
+        {
+            "id": "QF137",
+            "name": "Explicit subjects",
+            "linguistic complexity": "Semantic",
+            "scope": "Sentence",
+            "understandability": "+"
+        },
+        {
+            "id": "QF138",
+            "name": "Requirements-free introduction",
+            "linguistic complexity": "Semantic",
+            "scope": "Document"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D142",
+            "qf id": "QF132",
+            "reference": "R005",
+            "definition": "\"The term \u201cfunction\u201d shall be used instead of the term \u201cfunctionality\u201d.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D143",
+            "qf id": "QF133",
+            "reference": "R005",
+            "definition": "\"Requirements shall start with the subject.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D144",
+            "qf id": "QF134",
+            "reference": "R005",
+            "definition": "\"Text consisting of a definition shall be preceded with the identifier \u201cDefinition:\u201d.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D145",
+            "qf id": "QF135",
+            "reference": "R005",
+            "definition": "\"If a functional requirement is supplemented with additional information to clarify how the requirement can be met, the additional information must be formulated as a separate requirement.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D146",
+            "qf id": "QF136",
+            "reference": "R005",
+            "definition": "\"References to other documents in the specification are done by reference to the document title.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D147",
+            "qf id": "QF137",
+            "reference": "R005",
+            "definition": "\"[T]he subject [of a requirement] must be indicated in the respective requirements (the subject must not be only defined in the section title).\"",
+            "impact": "\"Requirements must be understandable independently\"",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D148",
+            "qf id": "QF138",
+            "reference": "R005",
+            "definition": "\"The introductory section of the specification shall not contain any requirements.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": true
+        }
+    ],
+    "datasets": [],
+    "approaches": []
+}

@@ -1,0 +1,78 @@
+{
+    "extractor": "ex3",
+    "reference": {
+        "ID": "R003",
+        "Refstring": "Ferrari, A., Gnesi, S., & Tolomei, G. (2013, April). Using clustering to improve the structure of natural language requirements documents. In International Working Conference on Requirements Engineering: Foundation for Software Quality (pp. 34-49). Springer, Berlin, Heidelberg."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF176",
+            "name": "Sections independence",
+            "linguistic complexity": "Structural",
+            "scope": "Document",
+            "modifiability": "+",
+            "understandability": "+"
+        },
+        {
+            "id": "QF177",
+            "name": "Requirements relatedness",
+            "linguistic complexity": "Structural",
+            "scope": "Document"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D189",
+            "qf id": "QF176",
+            "reference": "R003",
+            "definition": "\"Each section is conceptually separated from the others.\"",
+            "impact": "\"A proper document structuring enables a better understanding of the requirements, and eases the modifiability of the overall requirements specification\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D190",
+            "qf id": "QF177",
+            "reference": "R003",
+            "definition": "\"Each requirement is conceptually connected with the requirements in the same section\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [
+        {
+            "id": "DS49",
+            "reference": "R003",
+            "embedded information": [
+                "D189",
+                "D190"
+            ],
+            "description": "EIRENE (European Integrated Railway radio Enhanced NEtwork)",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "Unknown",
+            "size": 583,
+            "granularity": "Requirement",
+            "accessibility": "Broken Link",
+            "source link": "http://www.uic.org/IMG/pdf/EIRENE_FRS_v7.pdf"
+        }
+    ],
+    "approaches": [
+        {
+            "id": "A25",
+            "reference": "R003",
+            "descriptions": [
+                "D189",
+                "D190"
+            ],
+            "name": "Sliding Head-Tail Component (S-HTC)",
+            "acronym": "",
+            "type": "Rule-based",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": false
+        }
+    ]
+}

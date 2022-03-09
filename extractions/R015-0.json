@@ -1,0 +1,57 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R015",
+        "Refstring": "Ninaus, G., Reinfrank, F., Stettinger, M., & Felfernig, A. (2014, August). Content-based recommendation techniques for requirements engineering. In 2014 IEEE 1st International Workshop on Artificial Intelligence for Requirements Engineering (AIRE) (pp. 27-34). IEEE."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [],
+    "descriptions": [],
+    "datasets": [
+        {
+            "id": "DS16",
+            "reference": "R015",
+            "embedded information": [
+                "D028",
+                "D029"
+            ],
+            "description": "Requirements for a sport watch",
+            "origin": "Mocked Data",
+            "ground truth annotators": "None",
+            "size": 30,
+            "granularity": "Requirement",
+            "accessibility": "No Link",
+            "source link": ""
+        }
+    ],
+    "approaches": [
+        {
+            "id": "A09",
+            "reference": "R015",
+            "descriptions": [
+                "D028"
+            ],
+            "name": "IntelliReq Keyword Recommender",
+            "acronym": "",
+            "type": "Rule-based",
+            "accessibility": "Broken Link",
+            "source link": "www.intellireq.org",
+            "empirical method applied": true,
+            "practitioners involved": false
+        },
+        {
+            "id": "A10",
+            "reference": "R015",
+            "descriptions": [
+                "D029"
+            ],
+            "name": "IntelliReq Dependency Recommender",
+            "acronym": "",
+            "type": "Rule-based",
+            "accessibility": "Broken Link",
+            "source link": "www.intellireq.org",
+            "empirical method applied": true,
+            "practitioners involved": false
+        }
+    ]
+}

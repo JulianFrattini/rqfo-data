@@ -1,0 +1,123 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R065",
+        "Refstring": "Ramos, R., Piveta, E. K., Castro, J., Ara\u00fajo, J., Moreira, A., Guerreiro, P., ... & Price, R. T. (2007, June). Improving the quality of requirements with refactoring. In Anais do VI Simp\u00f3sio Brasileiro de Qualidade de Software (pp. 141-155). SBC."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF054",
+            "name": "Large Requirement",
+            "linguistic complexity": "Syntactic",
+            "scope": "Requirement",
+            "understandability": "-"
+        },
+        {
+            "id": "QF030",
+            "name": "Lazy Requirement",
+            "linguistic complexity": "Semantic",
+            "scope": "Requirement",
+            "completeness": "-"
+        },
+        {
+            "id": "QF031",
+            "name": "Naming Problems",
+            "linguistic complexity": "Semantic",
+            "scope": "Requirement",
+            "consistency": "-"
+        },
+        {
+            "id": "QF032",
+            "name": "Duplicated Activities",
+            "linguistic complexity": "Semantic",
+            "scope": "Requirement"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D033",
+            "qf id": "QF054",
+            "reference": "R065",
+            "definition": "\"Large requirements occur when (i) a requirement is trying to handle several concerns at the same time or (ii) there are many alternative flows and steps.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D034",
+            "qf id": "QF029",
+            "reference": "R065",
+            "definition": "\"Complex conditional structures occur when a requirement has large or complex expressions or needs several other requirements to be complete. A requirement can contain complex conditional structures due to its nature or simply because it is poorly described. The second situation shows up when there are nested conditional structures or long sequences thereof.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D035",
+            "qf id": "QF030",
+            "reference": "R065",
+            "definition": "\"Lazy requirements correspond to one of the following cases: (i) when a requirement describes a small number of responsibilities or the impact of the requirements is unclear; (ii) when the size of a requirement is too small, in terms of its components; (iii) when a requirement does not capture all the activities related to a given concern, or is incomplete.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D036",
+            "qf id": "QF031",
+            "reference": "R065",
+            "definition": "\"Meaningless or inconsistent names are situations where the requirement\u2019s name bears no relation with the concept described or the same name is used for different concepts.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D037",
+            "qf id": "QF032",
+            "reference": "R065",
+            "definition": "\"Duplicated activities are a situation that occurs when (i) the same requirement is duplicated in different places in a requirements document or (ii) the same activities or the same pre-post conditions appear in several requirements.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [
+        {
+            "id": "DS14",
+            "reference": "R065",
+            "embedded information": [
+                "D033",
+                "D034",
+                "D035",
+                "D036",
+                "D037"
+            ],
+            "description": "Requirements document for Health Watcher, a web-based health complaint system aiming to improve the quality of the services provided by health care institutions.",
+            "origin": "Unknown",
+            "ground truth annotators": "None",
+            "size": 9,
+            "granularity": "Use Case",
+            "accessibility": "Broken Link",
+            "source link": "http://aosd.di.fct.unl.pt/ea-icse2007 "
+        },
+        {
+            "id": "DS15",
+            "reference": "R065",
+            "embedded information": [
+                "D033",
+                "D034",
+                "D035",
+                "D036",
+                "D037"
+            ],
+            "description": "Requirements document for an Order Processing System, which provides a collection of use cases to a mail based ordering processing system.",
+            "origin": "Unknown",
+            "ground truth annotators": "None",
+            "size": 13,
+            "granularity": "Use Case",
+            "accessibility": "No Link",
+            "source link": ""
+        }
+    ],
+    "approaches": []
+}

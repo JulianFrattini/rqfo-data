@@ -1,0 +1,100 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R100",
+        "Refstring": "Wang, Y., Wang, T., & Sun, J. (2019). PASER: a pattern-based approach to service requirements analysis. International Journal of Software Engineering and Knowledge Engineering, 29(04), 547-576."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF131",
+            "name": "Interface compliance between sequential actions",
+            "linguistic complexity": "Lexical",
+            "scope": "Structured/tabular text"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D141",
+            "qf id": "QF131",
+            "reference": "R100",
+            "definition": "\"There must exist sharing data between the output of the preceding action and the input of the subsequent action.\" AND \"There must exist at least one state between the postcondition of the preceding action and the precondition of the subsequent action.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [
+        {
+            "id": "DS42",
+            "reference": "R100",
+            "embedded information": [
+                "D141"
+            ],
+            "description": "ATM transaction system",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "Practitioners",
+            "size": -1,
+            "granularity": "Structured/tabular text",
+            "accessibility": "Private",
+            "source link": ""
+        },
+        {
+            "id": "DS43",
+            "reference": "R100",
+            "embedded information": [
+                "D141"
+            ],
+            "description": "Repair claim notification system",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "Practitioners",
+            "size": -1,
+            "granularity": "Structured/tabular text",
+            "accessibility": "Private",
+            "source link": ""
+        },
+        {
+            "id": "DS44",
+            "reference": "R100",
+            "embedded information": [
+                "D141"
+            ],
+            "description": "Claims creation system",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "Practitioners",
+            "size": -1,
+            "granularity": "Structured/tabular text",
+            "accessibility": "Private",
+            "source link": ""
+        },
+        {
+            "id": "DS45",
+            "reference": "R100",
+            "embedded information": [
+                "D141"
+            ],
+            "description": "Hotel service system",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "Practitioners",
+            "size": -1,
+            "granularity": "Structured/tabular text",
+            "accessibility": "Private",
+            "source link": ""
+        },
+        {
+            "id": "DS46",
+            "reference": "R100",
+            "embedded information": [
+                "D141"
+            ],
+            "description": "Purchase authorization system",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "Practitioners",
+            "size": -1,
+            "granularity": "Structured/tabular text",
+            "accessibility": "Private",
+            "source link": ""
+        }
+    ],
+    "approaches": []
+}

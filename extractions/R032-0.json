@@ -5,7 +5,17 @@
         "Refstring": "Juergens, E., Deissenboeck, F., Feilkas, M., Hummel, B., Schaetz, B., Wagner, S., ... & Streit, J. (2010, May). Can clone detection support quality assessments of requirements specifications?. In Proceedings of the 32nd ACM/IEEE International Conference on Software Engineering-Volume 2 (pp. 79-88)."
     },
     "timestamp": "2022-02-24 10:00:00",
-    "quality factors": [],
+    "factors": [
+        {
+            "id": "QF004",
+            "name": "Specification Clone",
+            "linguistic complexity": "Lexical",
+            "scope": "Words",
+            "necessity": "-",
+            "reusability": "-",
+            "understandability": "-"
+        }
+    ],
     "descriptions": [
         {
             "id": "D007",
@@ -17,6 +27,38 @@
             "practitioners involved": false
         }
     ],
-    "data sets": [],
-    "approaches": []
+    "datasets": [
+        {
+            "id": "DS04",
+            "reference": "R032",
+            "embedded information": [
+                "D007"
+            ],
+            "description": "28 requirements specifications from different domains, in total containing 8667 pages and 1,242,765 words",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "None",
+            "size": 28,
+            "granularity": "Document",
+            "accessibility": "No Link",
+            "source link": ""
+        }
+    ],
+    "approaches": [
+        {
+            "id": "A00",
+            "reference": "R032",
+            "descriptions": [
+                "D007"
+            ],
+            "name": "Extension to ConQAT",
+            "acronym": "",
+            "type": "Rule-based",
+            "accessibility": "Open Access Link",
+            "source link": "https://www.cqse.eu/en/news/blog/conqat-end-of-life/",
+            "empirical method applied": true,
+            "practitioners involved": false,
+            "tool": "y",
+            "source code": "y"
+        }
+    ]
 }

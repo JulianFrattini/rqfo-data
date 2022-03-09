@@ -1,0 +1,56 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R099",
+        "Refstring": "Mezghani, M., Kang, J., & S\u00e8des, F. (2018, August). Industrial requirements classification for redundancy and inconsistency detection in SEMIOS. In 2018 IEEE 26th International Requirements Engineering Conference (RE) (pp. 297-303). IEEE."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [],
+    "descriptions": [],
+    "datasets": [
+        {
+            "id": "DS22",
+            "reference": "R099",
+            "embedded information": [
+                "D044"
+            ],
+            "description": "Confidential corpus of requirements 1",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "None",
+            "size": 913,
+            "granularity": "Requirement",
+            "accessibility": "Private",
+            "source link": ""
+        },
+        {
+            "id": "DS23",
+            "reference": "R099",
+            "embedded information": [
+                "D044"
+            ],
+            "description": "Confidential corpus of requirements 2",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "None",
+            "size": 326,
+            "granularity": "Requirement",
+            "accessibility": "Private",
+            "source link": ""
+        }
+    ],
+    "approaches": [
+        {
+            "id": "A12",
+            "reference": "R099",
+            "descriptions": [
+                "D044"
+            ],
+            "name": "Extension to SEMIOS",
+            "acronym": "",
+            "type": "Unsupervised ML",
+            "accessibility": "Broken Link",
+            "source link": "http://www.semiosapp.com/",
+            "empirical method applied": true,
+            "practitioners involved": true
+        }
+    ]
+}

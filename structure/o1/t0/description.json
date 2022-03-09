@@ -14,11 +14,6 @@
             "elements": "factor",
             "mandatory": true
         }, {
-            "name": "r ids",
-            "type": "reflist",
-            "elements": "reference",
-            "mandatory": true
-        }, {
             "name": "definition",
             "type": "scope note",
             "description": "A definition is an informal rule, which must be complied with in order to ensure good quality of the requirement according to the authors. The definition may be simply postulated, but can also be derived empirically from data or developed in collaboration with industry.",

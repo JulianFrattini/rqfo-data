@@ -1,0 +1,44 @@
+{
+    "extractor": "ex3",
+    "reference": {
+        "ID": "R089",
+        "Refstring": "Arora, C., Sabetzadeh, M., & Briand, L. C. (2019). An empirical study on the potential usefulness of domain models for completeness checking of requirements. Empirical Software Engineering, 24(4), 2509-2539."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF199",
+            "name": "Internal Completeness",
+            "linguistic complexity": "Semantic",
+            "scope": "Document"
+        },
+        {
+            "id": "QF200",
+            "name": "External Completenes",
+            "linguistic complexity": "Semantic",
+            "scope": "Document"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D212",
+            "qf id": "QF199",
+            "reference": "R089",
+            "definition": "\"Internal completeness is concerned with ensuring that a given requirements specification is closed with respect to the statements and inferences that can be made solely based on that specification\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D213",
+            "qf id": "QF200",
+            "reference": "R089",
+            "definition": "\"External completeness is concerned with ensuring that all the information that is pertinent to the definition of a system is found within the specification\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [],
+    "approaches": []
+}

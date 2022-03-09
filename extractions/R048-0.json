@@ -1,0 +1,136 @@
+{
+    "extractor": "ex3",
+    "reference": {
+        "ID": "R048",
+        "Refstring": "Ott, D. (2012, September). Defects in natural language requirement specifications at mercedes-benz: An investigation using a combination of legacy data and expert opinion. In 2012 20th IEEE International Requirements Engineering Conference (RE) (pp. 291-296). IEEE."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF179",
+            "name": "Atomic",
+            "linguistic complexity": "Lexical",
+            "scope": "Requirement"
+        },
+        {
+            "id": "QF181",
+            "name": "Reduced",
+            "linguistic complexity": "Semantic",
+            "scope": "Document",
+            "atomicity": "+"
+        },
+        {
+            "id": "QF182",
+            "name": "Testcase-Derivable",
+            "linguistic complexity": "Semantic",
+            "scope": "Document",
+            "verifiability": "+"
+        },
+        {
+            "id": "QF183",
+            "name": "Source-Connected",
+            "linguistic complexity": "Structural",
+            "scope": "Requirement",
+            "traceability": "+"
+        },
+        {
+            "id": "QF185",
+            "name": "Well-written and graphically supported",
+            "linguistic complexity": "Structural",
+            "scope": "Document",
+            "correctness": "+"
+        },
+        {
+            "id": "QF187",
+            "name": "Classified and Quantified ",
+            "linguistic complexity": "Semantic",
+            "scope": "Document",
+            "completeness": "+"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D192",
+            "qf id": "QF179",
+            "reference": "R048",
+            "definition": "\"A specification entry is atomic, if it cannot be usefully separated in more entries\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D193",
+            "qf id": "QF109",
+            "reference": "R048",
+            "definition": "\"[I]f (a) all entries have the same meaning for all readers and (b) the specification includes no ambiguous words, phrases or sentences\"",
+            "impact": "\"A specification is unambiguous\"",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D194",
+            "qf id": "QF181",
+            "reference": "R048",
+            "definition": "\"[I]f (a) no unnecessary implementation details are described and (b) the specification contains no unnecessary entries or entries that could be formulated shorter.\"",
+            "impact": "\"A specification is concise\"",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D195",
+            "qf id": "QF182",
+            "reference": "R048",
+            "definition": "\"[I]f (a) each requirement has a method to check, if the system satisfies this requirement and (b) it is possible to derive test cases from the requirement.\"",
+            "impact": "\"A specification is testable\"",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D196",
+            "qf id": "QF183",
+            "reference": "R048",
+            "definition": "\"[I]f (a) every reader can retrace the source and the further usage in the project life cycle of every requirement and (b) all redundant, interdependent and complementary information are set into dependency.\"",
+            "impact": "\"A specification is traceable\"",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D197",
+            "qf id": "QF096",
+            "reference": "R048",
+            "definition": "\"[I]f there are no overlaps in the content of requirements (a) in the specification, (b) between the specification and other relevant documents and (c) all terms are consistently used. Special cases for overlaps are conflicting or redundant requirements\"",
+            "impact": "\"A specification is consistent\"",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D198",
+            "qf id": "QF185",
+            "reference": "R048",
+            "definition": "\"[I]f (a) there are no linguistic defects (e.g. spelling, punctuation or grammatical mistakes) and (b) the specification is structured and supported in a way by graphical representations that every reader\"",
+            "impact": "\"A specification is formally correct\"",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D199",
+            "qf id": "QF093",
+            "reference": "R048",
+            "definition": "\"[I]f (a) there are no terms, phrases or sentences in requirements with false content, (b) all\nrequirements are at the right location, and (c) the specification reflects all currently valid requirements\"",
+            "impact": "\"A specification is correct\"",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D200",
+            "qf id": "QF187",
+            "reference": "R048",
+            "definition": "\"[I]f (a) every requirement is classified according to its importance, priority, necessity and\nliability, (b) if no requirements, parts of requirements or additional documents are missing, and (c) each possible\nquantitative information has been specified, and all terms are defined.\"",
+            "impact": "\"A specification is complete\"",
+            "empirical evidence": false,
+            "practitioners involved": true
+        }
+    ],
+    "datasets": [],
+    "approaches": []
+}

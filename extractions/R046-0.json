@@ -1,0 +1,95 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R046",
+        "Refstring": "Huertas, C., & Ju\u00e1rez-Ram\u00edrez, R. (2012, September). NLARE, a natural language processing tool for automatic requirements evaluation. In Proceedings of the CUBE International Information Technology Conference (pp. 371-378)."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF068",
+            "name": "Foreign Words",
+            "linguistic complexity": "Lexical",
+            "scope": "Word"
+        },
+        {
+            "id": "QF071",
+            "name": "Avoidance of Conjunctives",
+            "linguistic complexity": "Syntactic",
+            "scope": "Word",
+            "verifiability": "-"
+        },
+        {
+            "id": "QF072",
+            "name": "4W-Compliance",
+            "linguistic complexity": "Syntactic",
+            "scope": "Sentence",
+            "completeness": "+"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D073",
+            "qf id": "QF068",
+            "reference": "R046",
+            "definition": "\"[...] [T]here are certain kind of words which are ambiguous by nature and this ones are being looked for ambiguity problems, this kind of words are foreign word\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D076",
+            "qf id": "QF071",
+            "reference": "R046",
+            "definition": "\"When t is a conjunction between two sets of words, it causes a lack of atomicity in a requirement.\"",
+            "impact": "\"[non-atomic requirements] may produce partially verifiable requirements that should be avoided.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D077",
+            "qf id": "QF072",
+            "reference": "R046",
+            "definition": "\"It is important to delegate 'who' will execute the functionality expressed in the requirement. [...] An obvious expected element in a functional requirement is indeed a function to perform, which is translated to 'what'. [...] Additional detail to complete conditionals for requirement functionality, this can be seen as 'where' and/or 'when'.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [
+        {
+            "id": "DS26",
+            "reference": "R046",
+            "embedded information": [
+                "D073",
+                "D076",
+                "D077"
+            ],
+            "description": "Requirements Specification for a new hardware device for tracking vehicle position based on GPS signal with data download via WIFI (from an anonymous telemetry company)",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "None",
+            "size": 1,
+            "granularity": "Document",
+            "accessibility": "Private",
+            "source link": ""
+        }
+    ],
+    "approaches": [
+        {
+            "id": "A14",
+            "reference": "R046",
+            "descriptions": [
+                "D073",
+                "D076",
+                "D077"
+            ],
+            "name": "Natural Language Automatic Requirements Evaluator (NLARE)",
+            "acronym": "",
+            "type": "Rule-based",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": true
+        }
+    ]
+}

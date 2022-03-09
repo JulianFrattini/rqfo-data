@@ -5,7 +5,38 @@
         "Refstring": "Lucassen, G., Dalpiaz, F., van der Werf, J. M. E., & Brinkkemper, S. (2017, February). Improving user story practice with the Grimm Method: A multiple case study in the software industry. In International Working Conference on Requirements Engineering: Foundation for Software Quality (pp. 235-252). Springer, Cham."
     },
     "timestamp": "2022-02-24 10:00:00",
-    "quality factors": [],
+    "factors": [
+        {
+            "id": "QF014",
+            "name": "Well-formedness",
+            "linguistic complexity": "Lexical",
+            "scope": "User Story"
+        },
+        {
+            "id": "QF015",
+            "name": "One-Feature Story",
+            "linguistic complexity": "Semantic",
+            "scope": "User Story"
+        },
+        {
+            "id": "QF016",
+            "name": "Minimal",
+            "linguistic complexity": "Lexical",
+            "scope": "User Story"
+        },
+        {
+            "id": "QF017",
+            "name": "Uniform",
+            "linguistic complexity": "Lexical",
+            "scope": "User Story"
+        },
+        {
+            "id": "QF018",
+            "name": "Unique",
+            "linguistic complexity": "Lexical",
+            "scope": "User Story"
+        }
+    ],
     "descriptions": [
         {
             "id": "D019",
@@ -53,6 +84,81 @@
             "practitioners involved": false
         }
     ],
-    "data sets": [],
-    "approaches": []
+    "datasets": [
+        {
+            "id": "DS11",
+            "reference": "R024",
+            "embedded information": [
+                "D019",
+                "D020",
+                "D021",
+                "D022",
+                "D023"
+            ],
+            "description": "User stories from one team of a large eCommerce Company working on a next edition of the platform",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "None",
+            "size": 176,
+            "granularity": "User Story",
+            "accessibility": "No Link",
+            "source link": ""
+        },
+        {
+            "id": "DS12",
+            "reference": "R024",
+            "embedded information": [
+                "D019",
+                "D020",
+                "D021",
+                "D022",
+                "D023"
+            ],
+            "description": "User stories from one team of a medium-sized software for digital healthcare producing organization",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "None",
+            "size": 66,
+            "granularity": "User Story",
+            "accessibility": "No Link",
+            "source link": ""
+        },
+        {
+            "id": "DS13",
+            "reference": "R024",
+            "embedded information": [
+                "D019",
+                "D020",
+                "D021",
+                "D022",
+                "D023"
+            ],
+            "description": "User stories from one team of a medium-sized software producing organization that develops a product for a housing cooperative.",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "None",
+            "size": 238,
+            "granularity": "User Story",
+            "accessibility": "No Link",
+            "source link": ""
+        }
+    ],
+    "approaches": [
+        {
+            "id": "A07",
+            "reference": "R024",
+            "descriptions": [
+                "D019",
+                "D020",
+                "D021",
+                "D022",
+                "D023"
+            ],
+            "name": "Automatic Quality User Story Artisan (AQUSA)",
+            "acronym": "",
+            "type": "Rule-based",
+            "accessibility": "Open Source Link",
+            "source link": "https://github.com/gglucass/AQUSA",
+            "empirical method applied": true,
+            "practitioners involved": true,
+            "source code": "y"
+        }
+    ]
 }

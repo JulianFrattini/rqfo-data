@@ -1,0 +1,47 @@
+{
+    "extractor": "ex2",
+    "reference": {
+        "ID": "R073",
+        "Refstring": "Yang, H., De Roeck, A., Gervasi, V., Willis, A., & Nuseibeh, B. (2010, September). Extending nocuous ambiguity analysis for anaphora in natural language requirements. In 2010 18th IEEE International Requirements Engineering Conference (pp. 25-34). IEEE."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [],
+    "descriptions": [
+        {
+            "id": "D002",
+            "qf id": "QF001",
+            "reference": "R073",
+            "definition": "\"An anaphor is an expression used, in language, to refer to another expression. Personal pronouns, such as he, she, it, those, our, etc. are examples of anaphora, or anaphoric expressions.\"",
+            "impact": "\"It is possible for different stakeholders to commit, legitimately, to different, incompatible reading of the same requirement.\"",
+            "empirical evidence": true,
+            "practitioners involved": true
+        },
+        {
+            "id": "D004",
+            "qf id": "QF002",
+            "reference": "R073",
+            "definition": "\"Ambiguity instances in requirements that are likely to lead to misunderstandings between stakeholders\"",
+            "impact": "\"conflicting interpretations by the readers\" ",
+            "empirical evidence": true,
+            "practitioners involved": true
+        }
+    ],
+    "datasets": [],
+    "approaches": [
+        {
+            "id": "A01",
+            "reference": "R073",
+            "descriptions": [
+                "D002",
+                "D004"
+            ],
+            "name": "Antecedent Classifier",
+            "acronym": "",
+            "type": "Supervised ML",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": true
+        }
+    ]
+}

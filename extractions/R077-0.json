@@ -1,0 +1,30 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R077",
+        "Refstring": "Liskin, O., Pham, R., Kiesling, S., & Schneider, K. (2014, May). Why we need a granularity concept for user stories. In International Conference on Agile Software Development (pp. 110-125). Springer, Cham."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF102",
+            "name": "Reasonable expected implementation duration",
+            "linguistic complexity": "Semantic",
+            "scope": "User Story",
+            "precision": "-"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D114",
+            "qf id": "QF102",
+            "reference": "R077",
+            "definition": "\"[...] Expected Implementation Duration [is] the estimated time (in days) that a developer or pair will need to implement a user story.\"",
+            "impact": "\"If the estimation of implementation time for a user story exceeds a certain threshold (for example, one week or more), chances are high that it becomes more inaccurate.\"",
+            "empirical evidence": true,
+            "practitioners involved": true
+        }
+    ],
+    "datasets": [],
+    "approaches": []
+}

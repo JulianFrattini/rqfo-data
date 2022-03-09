@@ -1,0 +1,155 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R078",
+        "Refstring": "St\u00e5lhane, T., & Wien, T. (2014, August). The DODT tool applied to sub-sea software. In 2014 IEEE 22nd International Requirements Engineering Conference (RE) (pp. 420-427). IEEE."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF038",
+            "name": "Ontological Overload",
+            "linguistic complexity": "Semantic",
+            "scope": "Phrase"
+        },
+        {
+            "id": "QF033",
+            "name": "Noise",
+            "linguistic complexity": "Lexical",
+            "scope": "Sentence",
+            "correctness": "-"
+        },
+        {
+            "id": "QF034",
+            "name": "Opacity",
+            "linguistic complexity": "Semantic",
+            "scope": "Requirement"
+        },
+        {
+            "id": "QF035",
+            "name": "Similarity",
+            "linguistic complexity": "Lexical",
+            "scope": "Requirements"
+        },
+        {
+            "id": "QF036",
+            "name": "Obsoleteness",
+            "linguistic complexity": "Lexical",
+            "scope": "Requirement"
+        },
+        {
+            "id": "QF037",
+            "name": "Ontological Completeness",
+            "linguistic complexity": "Semantic",
+            "scope": "Global"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D038",
+            "qf id": "QF033",
+            "reference": "R078",
+            "definition": "\"Terms not contained in the domain ontology\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D039",
+            "qf id": "QF034",
+            "reference": "R078",
+            "definition": "\"Unrelated terms in a requirement ...\"",
+            "impact": "\"... which possibly means that a concept is used erroneously.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D040",
+            "qf id": "QF035",
+            "reference": "R078",
+            "definition": "\"Requirement pairs that is similar by sharing a configurable number of concepts.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D041",
+            "qf id": "QF036",
+            "reference": "R078",
+            "definition": "\"Requirements using obsolete ontology concepts.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D042",
+            "qf id": "QF037",
+            "reference": "R078",
+            "definition": "\"[...] all ontology components are referred to in one or more requirements.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D043",
+            "qf id": "QF038",
+            "reference": "R078",
+            "definition": "\"[...] a term with the same meaning which is already in the ontology. If another term is defined in the ontology to precisely represent the intended concept the term from the ontology should be used instead.",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D274",
+            "qf id": "QF060",
+            "reference": "R078",
+            "definition": "\"Using terms that have multiple interpretations despite the reader\u2019s knowledge of the context. It does not matter whether the author unintentionally introduced the ambiguity, but knows what was meant, or he or she intentionally introduced the ambiguity to include all possible interpretations\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [
+        {
+            "id": "DS16",
+            "reference": "R078",
+            "embedded information": [
+                "D038",
+                "D039",
+                "D040",
+                "D041",
+                "D042",
+                "D043"
+            ],
+            "description": "Requirements specification originating from the ISO 13628-6 standard for subsea installations.",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "None",
+            "size": 97,
+            "granularity": "Requirement",
+            "accessibility": "Reachable Link",
+            "source link": "https://www.iso.org/standard/41322.html"
+        }
+    ],
+    "approaches": [
+        {
+            "id": "A08",
+            "reference": "R078",
+            "descriptions": [
+                "D038",
+                "D039",
+                "D040",
+                "D041",
+                "D042",
+                "D043"
+            ],
+            "name": "Domain Ontology Design Tool (DODT)",
+            "acronym": "",
+            "type": "Rule-based",
+            "accessibility": "Open Access Link",
+            "source link": "https://sourceforge.net/projects/gnlq/",
+            "empirical method applied": true,
+            "practitioners involved": true,
+            "source code": "y"
+        }
+    ]
+}

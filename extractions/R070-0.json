@@ -1,0 +1,117 @@
+{
+    "extractor": "ex3",
+    "reference": {
+        "ID": "R070",
+        "Refstring": "Li, F. L., Horkoff, J., Liu, L., Borgida, A., Guizzardi, G., & Mylopoulos, J. (2016, June). Engineering requirements with desiree: An empirical evaluation. In International Conference on Advanced Information Systems Engineering (pp. 221-238). Springer, Cham."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF188",
+            "name": "Invalid",
+            "linguistic complexity": "Semantic",
+            "scope": "Requirement"
+        },
+        {
+            "id": "QF193",
+            "name": "Unmodifiable",
+            "linguistic complexity": "Semantic",
+            "scope": "Document"
+        },
+        {
+            "id": "QF194",
+            "name": "Unsatisfiable",
+            "linguistic complexity": "Semantic",
+            "scope": "Requirement"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D201",
+            "qf id": "QF188",
+            "reference": "R070",
+            "definition": "\"A requirement is invalid if it is not the one that stakeholders want\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D202",
+            "qf id": "QF108",
+            "reference": "R070",
+            "definition": "\"(1) incomplete requirement - a requirement is incomplete if necessary information is missing for implementation; (2) incomplete specification: an SRS is incomplete if any requirement is missing\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D203",
+            "qf id": "QF109",
+            "reference": "R070",
+            "definition": "\"A requirement is ambiguous if it has more than one interpretation\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D204",
+            "qf id": "QF191",
+            "reference": "R070",
+            "definition": "\"A requirement is unverifiable if it specifies unclear or imprecise value regions\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D205",
+            "qf id": "QF096",
+            "reference": "R070",
+            "definition": "\"An SRS is inconsistent if there are: (1) conflicts between requirements; (2) terms are used in different ways in different places\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D206",
+            "qf id": "QF193",
+            "reference": "R070",
+            "definition": "An SRS is un-modifiable if its requirements are : (1) not structurally organized; (2) redundant; or (3) intermixing several requirements",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D207",
+            "qf id": "QF194",
+            "reference": "R070",
+            "definition": "A requirement is practically unsatisfiable (attainable) if it is impossible or too costly to fulfill",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [],
+    "approaches": [
+        {
+            "id": "A27",
+            "reference": "R070",
+            "descriptions": [
+                "D201",
+                "D202",
+                "D203",
+                "D204",
+                "D205",
+                "D206",
+                "D207"
+            ],
+            "name": "Desiree Framework",
+            "acronym": "",
+            "type": "Rule-based",
+            "accessibility": "Broken Link",
+            "source link": "https://goo.gl/oeJ9Fi",
+            "empirical method applied": true,
+            "practitioners involved": false,
+            "tool": "y"
+        }
+    ]
+}

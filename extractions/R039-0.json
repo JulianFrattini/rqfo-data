@@ -5,7 +5,47 @@
         "Refstring": "Ferrari, A., Gori, G., Rosadini, B., Trotta, I., Bacherini, S., Fantechi, A., & Gnesi, S. (2018). Detecting requirements defects with NLP patterns: an industrial experience in the railway domain. Empirical Software Engineering, 23(6), 3684-3733."
     },
     "timestamp": "2022-02-24 10:00:00",
-    "quality factors": [],
+    "factors": [
+        {
+            "id": "QF001",
+            "name": "Anaphora",
+            "linguistic complexity": "Syntactic",
+            "scope": "Sentence",
+            "unambiguouseness": "-"
+        },
+        {
+            "id": "QF005",
+            "name": "Coordination",
+            "linguistic complexity": "Structural",
+            "scope": "Sentence",
+            "unambiguouseness": "-"
+        },
+        {
+            "id": "QF230",
+            "name": "Modal",
+            "linguistic complexity": "Lexical",
+            "scope": "Word"
+        },
+        {
+            "id": "QF211",
+            "name": "No incomplete conditions",
+            "linguistic complexity": "Syntactic",
+            "scope": "Sentence",
+            "completeness": "+"
+        },
+        {
+            "id": "QF231",
+            "name": "Measurement Units",
+            "linguistic complexity": "Lexical",
+            "scope": "Words"
+        },
+        {
+            "id": "QF232",
+            "name": "Undefined Term",
+            "linguistic complexity": "Lexical",
+            "scope": "Word"
+        }
+    ],
     "descriptions": [
         {
             "id": "D261",
@@ -47,8 +87,8 @@
             "id": "D265",
             "qf id": "QF003",
             "reference": "R039",
-            "definition": "\"The use of passive voice is a defect of clarity in requirements, and can lead to ambiguous interpretations in those cases in which the passive verb is not followed by the subject that performs the action expressed by the verb [...]\"",
-            "impact": "",
+            "definition": "\"The use of passive voice is a defect of clarity in requirements [...]\"",
+            "impact": "\"[Passive voice] can lead to ambiguous interpretations in those cases in which the passive verb is not followed by the subject that performs the action expressed by the verb\"",
             "empirical evidence": false,
             "practitioners involved": false
         },
@@ -65,8 +105,8 @@
             "id": "D267",
             "qf id": "QF211",
             "reference": "R039",
-            "definition": "To be considered complete, each requirement expressing a condition through the if clause, shall have a corresponding else or otherwise clause.",
-            "impact": "",
+            "definition": "\"[E]ach requirement expressing a condition through the if clause, shall have a corresponding else or otherwise clause.\"",
+            "impact": "\"To be considered complete\"",
             "empirical evidence": false,
             "practitioners involved": false
         },
@@ -98,6 +138,6 @@
             "practitioners involved": false
         }
     ],
-    "data sets": [],
+    "datasets": [],
     "approaches": []
 }

@@ -1,0 +1,289 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R087",
+        "Refstring": "Usdadiya, C., Tiwari, S., & Banerjee, A. (2019, February). An Empirical Study on Assessing the Quality of Use Case Metrics. In Proceedings of the 12th Innovations on Software Engineering Conference (formerly known as India Software Engineering Conference) (pp. 1-11)."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF217",
+            "name": "Present and active",
+            "linguistic complexity": "Syntactic",
+            "scope": "Sentence"
+        },
+        {
+            "id": "QF218",
+            "name": "Free of GUI design",
+            "linguistic complexity": "Semantic",
+            "scope": "Sentence"
+        },
+        {
+            "id": "QF219",
+            "name": "Free of NFRs",
+            "linguistic complexity": "Semantic",
+            "scope": "Use Case"
+        },
+        {
+            "id": "QF220",
+            "name": "Free of compoind predicates",
+            "linguistic complexity": "Syntactic",
+            "scope": "Sentence"
+        },
+        {
+            "id": "QF221",
+            "name": "Free of negative adjectives",
+            "linguistic complexity": "Semantic",
+            "scope": "Word"
+        },
+        {
+            "id": "QF222",
+            "name": "Actor-Actor interaction",
+            "linguistic complexity": "Semantic",
+            "scope": "Use Case"
+        },
+        {
+            "id": "QF223",
+            "name": "Actor behavior",
+            "linguistic complexity": "Semantic",
+            "scope": "Sentence"
+        },
+        {
+            "id": "QF224",
+            "name": "Proper use of keywords",
+            "linguistic complexity": "Semantic",
+            "scope": "Use Case"
+        },
+        {
+            "id": "QF225",
+            "name": "Noun actor",
+            "linguistic complexity": "Semantic",
+            "scope": "Global"
+        },
+        {
+            "id": "QF226",
+            "name": "Declarative",
+            "linguistic complexity": "Syntactic",
+            "scope": "Sentence"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D232",
+            "qf id": "QF060",
+            "reference": "R087",
+            "definition": "\"Sentence should not contain vague word and adverb.\": \"(no. of sentences containing vague word or adverb) / (no. of sentences in the use case specification document)\"",
+            "impact": "",
+            "empirical evidence": true,
+            "practitioners involved": false
+        },
+        {
+            "id": "D233",
+            "qf id": "QF061",
+            "reference": "R087",
+            "definition": "\"Sentence should not contain word[s] which express personnel feeling or opinion.\": \"(no. of sentences referring to personnel opinions or feeling) / (no. of sentences in the use case specification document)\"",
+            "impact": "",
+            "empirical evidence": true,
+            "practitioners involved": false
+        },
+        {
+            "id": "D234",
+            "qf id": "QF062",
+            "reference": "R087",
+            "definition": "\"Sentence should not contain optional part.\": \"(no. of sentences containing optional part) / (no. of sentences in the use case specification document)\"",
+            "impact": "",
+            "empirical evidence": true,
+            "practitioners involved": false
+        },
+        {
+            "id": "D235",
+            "qf id": "QF063",
+            "reference": "R087",
+            "definition": "\"Sentence should not contain generic subject.\": \"(no. of sentences containing generic word) / (no. of sentences in the use case specification document)\"",
+            "impact": "",
+            "empirical evidence": true,
+            "practitioners involved": false
+        },
+        {
+            "id": "D236",
+            "qf id": "QF064",
+            "reference": "R087",
+            "definition": "\"Sentence should not contain weak verb and modal verb.\": \"(no. of sentences containing weak verb or modal verb) / (no. of sentences in the use case specification document)\"",
+            "impact": "",
+            "empirical evidence": true,
+            "practitioners involved": false
+        },
+        {
+            "id": "D237",
+            "qf id": "QF065",
+            "reference": "R087",
+            "definition": "\"Sentence should not contain word which specify class of object.\": \"(no. of sentences containing a word which specify class of object) / (no. of sentences in the use case specification document)\"",
+            "impact": "",
+            "empirical evidence": true,
+            "practitioners involved": false
+        },
+        {
+            "id": "D238",
+            "qf id": "QF217",
+            "reference": "R087",
+            "definition": "\"Sentence should be in present tense and in active voice.\": \"(no. of sentences in non-present tense or passive voice) / (no. of sentences in the use case specification document)\"",
+            "impact": "",
+            "empirical evidence": true,
+            "practitioners involved": false
+        },
+        {
+            "id": "D239",
+            "qf id": "QF218",
+            "reference": "R087",
+            "definition": "\"Sentence should not contain GUI element or its description.\": \"(no. of sentences containing GUI element or its description) / (no. of sentences in the use case specification document)\"",
+            "impact": "",
+            "empirical evidence": true,
+            "practitioners involved": false
+        },
+        {
+            "id": "D240",
+            "qf id": "QF219",
+            "reference": "R087",
+            "definition": "\"Sentence should not contain non-functional requirement.\": \"(no. of sentences containing non-functional requirement) / (no. of sentences in the use case specification document)\"",
+            "impact": "",
+            "empirical evidence": true,
+            "practitioners involved": false
+        },
+        {
+            "id": "D241",
+            "qf id": "QF220",
+            "reference": "R087",
+            "definition": "\"Sentence should not contain compound predicate.\": \"(no. of sentences containing compound predicate) / (no. of sentences in the use case specification document)\"",
+            "impact": "",
+            "empirical evidence": true,
+            "practitioners involved": false
+        },
+        {
+            "id": "D242",
+            "qf id": "QF167",
+            "reference": "R087",
+            "definition": "\"Sentence should not contain negative modifier.\": \"(no. of sentences containing negative modifier) / (no. of sentences in the use case specification document)\"",
+            "impact": "",
+            "empirical evidence": true,
+            "practitioners involved": false
+        },
+        {
+            "id": "D243",
+            "qf id": "QF221",
+            "reference": "R087",
+            "definition": "\"Sentence should not contain negative adjective.\": \"(no. of sentences containing negative adjective) / (no. of sentences in the use case specification document)\"",
+            "impact": "",
+            "empirical evidence": true,
+            "practitioners involved": false
+        },
+        {
+            "id": "D244",
+            "qf id": "QF222",
+            "reference": "R087",
+            "definition": "\"Sentence should not contain actor to actor interaction.\": \"(no. of sentences containing actor to actor interaction) / (no. of sentences in the use case specification document)\"",
+            "impact": "",
+            "empirical evidence": true,
+            "practitioners involved": false
+        },
+        {
+            "id": "D245",
+            "qf id": "QF223",
+            "reference": "R087",
+            "definition": "\"Subject of sentence in flow of events should be either actor or system.\": \"(no. of sentences containing actor as subject) / (no. of sentences in the use case specification document)\"",
+            "impact": "",
+            "empirical evidence": true,
+            "practitioners involved": false
+        },
+        {
+            "id": "D246",
+            "qf id": "QF224",
+            "reference": "R087",
+            "definition": "\"Keyword \u2018INCLUDE\u2019 should be used in basic flow, \u2018EXTEND\u2019 and \u2018IF...THEN\u2019 should be used in the alternate flow.\": \"(no. of times keyword used) / (no. of time keyword actually have to used)\"",
+            "impact": "",
+            "empirical evidence": true,
+            "practitioners involved": false
+        },
+        {
+            "id": "D247",
+            "qf id": "QF225",
+            "reference": "R087",
+            "definition": "\"All actors of the system should be noun.\": \"(no. of noun actor) / (no. of actor specified)\"",
+            "impact": "",
+            "empirical evidence": true,
+            "practitioners involved": false
+        },
+        {
+            "id": "D248",
+            "qf id": "QF226",
+            "reference": "R087",
+            "definition": "\"All sentences should be declarative.\": \"(no. of declarative sentences) / (no. of sentences in requirement document)\"",
+            "impact": "",
+            "empirical evidence": true,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [
+        {
+            "id": "DS55",
+            "reference": "R087",
+            "embedded information": [
+                "D232",
+                "D233",
+                "D234",
+                "D235",
+                "D236",
+                "D237",
+                "D238",
+                "D239",
+                "D240",
+                "D241",
+                "D242",
+                "D243",
+                "D244",
+                "D245",
+                "D246",
+                "D247",
+                "D248"
+            ],
+            "description": "Use cases from both industry and academia domain written in the Jacobsen template",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "Authors",
+            "size": 30,
+            "granularity": "Use Case",
+            "accessibility": "No link",
+            "source link": ""
+        }
+    ],
+    "approaches": [
+        {
+            "id": "A31",
+            "reference": "R087",
+            "descriptions": [
+                "D232",
+                "D233",
+                "D234",
+                "D235",
+                "D236",
+                "D237",
+                "D238",
+                "D239",
+                "D240",
+                "D241",
+                "D242",
+                "D243",
+                "D244",
+                "D245",
+                "D246",
+                "D247",
+                "D248"
+            ],
+            "name": "",
+            "acronym": "",
+            "type": "Rule-based",
+            "accessibility": "No Link",
+            "source link": "Only a demo video is available: https://drive.google.com/file/d/1iV2i7Qht4K5EoJfuVFWLs6o7hN1vJmr5/view",
+            "empirical method applied": true,
+            "practitioners involved": false
+        }
+    ]
+}

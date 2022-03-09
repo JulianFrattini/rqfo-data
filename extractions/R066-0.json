@@ -1,0 +1,62 @@
+{
+    "extractor": "ex2",
+    "reference": {
+        "ID": "R066",
+        "Refstring": "Yang, H., De Roeck, A., Gervasi, V., Willis, A., & Nuseibeh, B. (2012, September). Speculative requirements: Automatic detection of uncertainty in natural language requirements. In 2012 20th IEEE International Requirements Engineering Conference (RE) (pp. 11-20). IEEE."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF067",
+            "name": "Uncertainty",
+            "linguistic complexity": "Syntactic",
+            "scope": "Sentence",
+            "unambiguouseness": "-",
+            "verifiability": "-"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D072",
+            "qf id": "QF067",
+            "reference": "R066",
+            "definition": "\"Uncertainty, or more generally, hedging or speculation, is a language component that is often used to express tentativeness, skepticism, or doubt when authors are not completely certain of their claims/statements. Speculative language is a communicative strategy for weakening the force of a statement. It is usually triggered by particular words (e.g., possible, might, likely) or phrases (e.g., not sure, whether or not), called uncertainty cues, which weaken some clauses or propositions.\"",
+            "impact": "\"Uncertainty in requirements documents has several undesirable effects. It can lead to system behaviour that does not meet users' expectations, if no proper analysis of the root causes of the uncertainty is performed, and alternatives are not considered. It can also lead to untestable requirements and makes it difficult to plan and estimate development costs. It can cause developers to substitute their own preferences and expectations for the speculative requirements. In short, speculative requirements that survive till the implementation phase are potentially harmful.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [
+        {
+            "id": "DS25",
+            "reference": "R066",
+            "embedded information": [
+                "D072"
+            ],
+            "description": "Author labelled uncertainty dataset",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "Authors",
+            "size": 26829,
+            "granularity": "Sentence",
+            "accessibility": "No Link",
+            "source link": ""
+        }
+    ],
+    "approaches": [
+        {
+            "id": "A13",
+            "reference": "R066",
+            "descriptions": [
+                "D072"
+            ],
+            "name": "",
+            "acronym": "",
+            "type": "Supervised ML",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": false,
+            "tool": "y"
+        }
+    ]
+}

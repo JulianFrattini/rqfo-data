@@ -1,0 +1,180 @@
+{
+    "extractor": "ex3",
+    "reference": {
+        "ID": "R042",
+        "Refstring": "Wilson, W. M., Rosenberg, L. H., & Hyatt, L. E. (1997, May). Automated analysis of requirement specifications. In Proceedings of the 19th international conference on Software engineering (pp. 161-171)."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF109",
+            "name": "Multiple Interpretations",
+            "linguistic complexity": "Semantic",
+            "scope": "Sentence",
+            "unambiguouseness": "-",
+            "understandability": "-"
+        },
+        {
+            "id": "QF093",
+            "name": "Correct",
+            "linguistic complexity": "Semantic",
+            "scope": "Document"
+        },
+        {
+            "id": "QF094",
+            "name": "Ranked",
+            "linguistic complexity": "Semantic",
+            "scope": "Global"
+        },
+        {
+            "id": "QF096",
+            "name": "Consistent",
+            "linguistic complexity": "Semantic",
+            "scope": "Document"
+        },
+        {
+            "id": "QF097",
+            "name": "Modifiable",
+            "linguistic complexity": "Structural",
+            "scope": "Document"
+        },
+        {
+            "id": "QF098",
+            "name": "Uniquely identified",
+            "linguistic complexity": "Structural",
+            "scope": "Document",
+            "traceability": "+"
+        },
+        {
+            "id": "QF100",
+            "name": "Quantitatively assessable",
+            "linguistic complexity": "Semantic",
+            "scope": "Document"
+        },
+        {
+            "id": "QF101",
+            "name": "Validatable",
+            "linguistic complexity": "Semantic",
+            "scope": "Document"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D104",
+            "qf id": "QF178",
+            "reference": "R042",
+            "definition": "\"A complete requirements specification must precisely define all the real world situations that will be encountered and the capability\u2019s responses to them\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D105",
+            "qf id": "QF093",
+            "reference": "R042",
+            "definition": "\"For a requirements specification to be correct it must accurately and precisely identify the individual conditions and limitations of all situations that the desired capability will encounter and it must also define the capability\u2019s proper response to those situations\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D106",
+            "qf id": "QF094",
+            "reference": "R042",
+            "definition": "\"[...] ranked according to stability and/or importance is established in the requirements document\u2019s organization and structure\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D107",
+            "qf id": "QF109",
+            "reference": "R042",
+            "definition": "\"[...] a requirement is unambiguous if it can only be interpreted one way\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D108",
+            "qf id": "QF096",
+            "reference": "R042",
+            "definition": "\"A consistent specification is one where there is no conflict between individual requirement statements that define the behavior of essential capabilities; and specified behavioral properties and constraints do not have an adverse impact on that behavior\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D109",
+            "qf id": "QF097",
+            "reference": "R042",
+            "definition": "\"[...] for requirements specifications be modifiable, related concerns must be grouped together and unrelated concerns must be separated\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D110",
+            "qf id": "QF098",
+            "reference": "R042",
+            "definition": "\"Each statement of requirement must be uniquely identified [\u2026]\"",
+            "impact": "\"[\u2026] to achieve traceability\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D111",
+            "qf id": "QF116",
+            "reference": "R042",
+            "definition": "\"[R]equirement specifications at one level of abstraction must be consistent with those at another level of abstraction.\"",
+            "impact": "\"In order to be verifiable\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D112",
+            "qf id": "QF100",
+            "reference": "R042",
+            "definition": "\"[I]t must be stated in such as manner that pass/fail or quantitative assessment criteria can be derived from the specification itself and/or referenced information\"",
+            "impact": "\"to be testable\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D113",
+            "qf id": "QF101",
+            "reference": "R042",
+            "definition": "\"To validate a requirements specification all the project participants, managers, engineers and customer representatives, must be able to understand, analyze and accept or approve it\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [],
+    "approaches": [
+        {
+            "id": "A15",
+            "reference": "R042",
+            "descriptions": [
+                "D104",
+                "D105",
+                "D106",
+                "D107",
+                "D108",
+                "D109",
+                "D110",
+                "D111",
+                "D112",
+                "D113"
+            ],
+            "name": "Automated Requirements Measurement (ARM) software",
+            "acronym": "",
+            "type": "Rule-based",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": true,
+            "tool": "y"
+        }
+    ]
+}

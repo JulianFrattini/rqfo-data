@@ -1,0 +1,52 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R094",
+        "Refstring": "Halim, F., & Siahaan, D. (2019, August). Detecting Non-Atomic Requirements in Software Requirements Specifications Using Classification Methods. In 2019 1st International Conference on Cybernetics and Intelligent System (ICORIS) (Vol. 1, pp. 269-273). IEEE."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [],
+    "descriptions": [
+        {
+            "id": "D115",
+            "qf id": "QF179",
+            "reference": "R094",
+            "definition": "\"A requirement can be said to be atomic if the requirement can be fully defined as a system function, features, requirements, abilities, including all information, details, boundaries, and characteristics\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [
+        {
+            "id": "DS28",
+            "reference": "R094",
+            "embedded information": [
+                "D115"
+            ],
+            "description": "\"Requirements statements obtained from various sources including online sources such as ACMs OOPSLA DesignFest\"",
+            "origin": "Unknown",
+            "ground truth annotators": "Unknown",
+            "size": 600,
+            "granularity": "Requirement",
+            "accessibility": "No Link",
+            "source link": ""
+        }
+    ],
+    "approaches": [
+        {
+            "id": "A16",
+            "reference": "R094",
+            "descriptions": [
+                "D115"
+            ],
+            "name": "",
+            "acronym": "",
+            "type": "Supervised ML",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": true
+        }
+    ]
+}

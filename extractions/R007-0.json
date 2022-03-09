@@ -1,0 +1,220 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R007",
+        "Refstring": "Romano, J. J., & Palmer, J. D. (1998, October). TBRIM: decision support for validation/verification of requirements. In SMC'98 Conference Proceedings. 1998 IEEE International Conference on Systems, Man, and Cybernetics (Cat. No. 98CH36218) (Vol. 3, pp. 2489-2494). IEEE."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF028",
+            "name": "Requirements length",
+            "linguistic complexity": "Lexical",
+            "scope": "Requirement",
+            "unambiguouseness": "-",
+            "understandability": "-"
+        },
+        {
+            "id": "QF047",
+            "name": "Referential Integrity",
+            "linguistic complexity": "Lexical",
+            "scope": "Word"
+        },
+        {
+            "id": "QF050",
+            "name": "Ambiguous Adverbs or Adjectives",
+            "linguistic complexity": "Lexical",
+            "scope": "Word",
+            "unambiguouseness": "-",
+            "verifiability": "-"
+        },
+        {
+            "id": "QF051",
+            "name": "Loopholes",
+            "linguistic complexity": "Lexical",
+            "scope": "Phrase",
+            "unambiguouseness": "-",
+            "verifiability": "-"
+        },
+        {
+            "id": "QF048",
+            "name": "Technical Standards",
+            "linguistic complexity": "Lexical",
+            "scope": "Word",
+            "verifiability": "-"
+        },
+        {
+            "id": "QF049",
+            "name": "Technology Requirements",
+            "linguistic complexity": "Lexical",
+            "scope": "Word",
+            "feasibility": "-"
+        },
+        {
+            "id": "QF052",
+            "name": "Quality Goal Conflict",
+            "linguistic complexity": "Semantic",
+            "scope": "Requirements"
+        },
+        {
+            "id": "QF053",
+            "name": "Contradicting Interfaces",
+            "linguistic complexity": "Semantic",
+            "scope": "Requirements"
+        },
+        {
+            "id": "QF055",
+            "name": "Word Selection",
+            "linguistic complexity": "Lexical",
+            "scope": "Word",
+            "reusability": "-"
+        },
+        {
+            "id": "QF056",
+            "name": "Domain- and Technology-specific Terms",
+            "linguistic complexity": "Lexical",
+            "scope": "Word",
+            "simplicity": "-"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D052",
+            "qf id": "QF047",
+            "reference": "R007",
+            "definition": "\"Referential integrity in a specification requires that requirements incorporating references to other parts of the specification, or other documents are correct, so that the requirements are consistent, complete, and accurate.\"",
+            "impact": "\"Lack of referential integrity can produce technical problems and/or schedule delays during design or development of a system, or can result in deficiencies in the functionality or performance of the delivered system.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D053",
+            "qf id": "QF048",
+            "reference": "R007",
+            "definition": "\"Requirements that invoke technical standards [...]\"",
+            "impact": "\"Evaluating this [requirements that invoke technical standards] is often complicated by the fact that referenced standards usually are not included in or attached to the specification. In this case, the requirement may impose technical obligations that are unknown to the reviewer, inappropriate for the application, in draft form, or even nonexistent.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D054",
+            "qf id": "QF049",
+            "reference": "R007",
+            "definition": "\"Technology requirements often include a unit of measurement (e.g. seconds) with an accompanying numeric value.\"",
+            "impact": "\"The risks associated with this type of requirement are due to possible difficulties or the impossibility of meeting them with current technology or within budgetary and schedule constraints.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D055",
+            "qf id": "QF050",
+            "reference": "R007",
+            "definition": "\"Ambiguous requirements often result from the use of qualitative descriptions (e.g. fastest, greatest, highest) rather than quantitative terms containing numeric objectives and associated units of measure (e.g. 10 seconds).\"",
+            "impact": "\"System compliance with ambiguous requirements usually can not be verified in a manner acceptable to all parties involved.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D056",
+            "qf id": "QF051",
+            "reference": "R007",
+            "definition": "\"In other cases, deliberate attempts to make flexible requirements (e.g. at least, a minimum of) can create de facto ambiguity because a system that exactly meets the requirement may fall short of hidden expectations.\"",
+            "impact": "\"System compliance with ambiguous requirements usually can not be verified in a manner acceptable to all parties involved.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D057",
+            "qf id": "QF052",
+            "reference": "R007",
+            "definition": "\"Conflict between requirements exists when one requirement prescribes conditions, circumstances, or results that are inconsistent with those prescribed by another requirement or makes another requirement very difficult or impossible. Requirements can conflict on the basis of quality goals that they set, or by the functional and nonfunctional characteristics that they dictate.",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D058",
+            "qf id": "QF053",
+            "reference": "R007",
+            "definition": "\"These conflicts arise from the presence of requirements that dictate opposing inputs, operations, or outcomes.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D059",
+            "qf id": "QF028",
+            "reference": "R007",
+            "definition": "\"[...] requirements that long (greater than 26 words) are andor have more than one verb (e.g. compound or complex sentences) possess complexity risk potential.\"",
+            "impact": "\"Relatively short simple, sentences are most easily understood.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D060",
+            "qf id": "QF055",
+            "reference": "R007",
+            "definition": "\"To reduce complexity, jargon, cliches, and commonly misused words and phrases should be avoided.\"",
+            "impact": "\"The effectiveness of a document can be severely decreased as a consequence of faulty or inappropriate word selection.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D061",
+            "qf id": "QF056",
+            "reference": "R007",
+            "definition": "\"In those cases where uncommon domain or technology terms are unavoidable, it is extremely important that the specification includes appropriate clarification, or definitions, references to where definitions can be found.\"",
+            "impact": "\"Otherwise, the selection and use of otherwise a appropriate words in requirement can introduce complexity risk into the specification.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [
+        {
+            "id": "DS20",
+            "reference": "R007",
+            "embedded information": [
+                "D052",
+                "D053",
+                "D054",
+                "D055",
+                "D056",
+                "D057",
+                "D058",
+                "D059",
+                "D060",
+                "D061"
+            ],
+            "description": "Requirements Specification of a large-scale software system development project",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "None",
+            "size": 748,
+            "granularity": "Requirement",
+            "accessibility": "Private",
+            "source link": ""
+        }
+    ],
+    "approaches": [
+        {
+            "id": "A10",
+            "reference": "R007",
+            "descriptions": [
+                "D052",
+                "D053",
+                "D054",
+                "D055",
+                "D056",
+                "D059",
+                "D060",
+                "D061"
+            ],
+            "name": "Extension to Advanced Integrated Requirements Engineering System (AIRES)",
+            "acronym": "",
+            "type": "Rule-based",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": false
+        }
+    ]
+}

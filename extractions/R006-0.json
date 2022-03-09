@@ -1,0 +1,222 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R006",
+        "Refstring": "Femmer, H., Mund, J., & Fern\u00e1ndez, D. M. (2015, May). It's the activities, stupid! a new perspective on RE quality. In 2015 IEEE/ACM 2nd International Workshop on Requirements Engineering and Testing (pp. 13-19). IEEE."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF139",
+            "name": "Free of UI design details",
+            "linguistic complexity": "Semantic",
+            "scope": "Sentence",
+            "maintainability": "-",
+            "reusability": "+",
+            "understandability": "-",
+            "verifiability": "-"
+        },
+        {
+            "id": "QF140",
+            "name": "Contains unique ID",
+            "linguistic complexity": "Structural",
+            "scope": "Use Case",
+            "maintainability": "-",
+            "traceability": "+",
+            "understandability": "-"
+        },
+        {
+            "id": "QF141",
+            "name": "Contains subflows",
+            "linguistic complexity": "Structural",
+            "scope": "Use Case",
+            "modifiability": "+",
+            "traceability": "+",
+            "understandability": "-"
+        },
+        {
+            "id": "QF142",
+            "name": "Ease of discovering system capabilities",
+            "linguistic complexity": "Semantic",
+            "scope": "Use Case",
+            "verifiability": "+"
+        },
+        {
+            "id": "QF143",
+            "name": "Ease of discovering repeatedly used functionality",
+            "linguistic complexity": "Semantic",
+            "scope": "Use Case",
+            "traceability": "+",
+            "verifiability": "+"
+        },
+        {
+            "id": "QF144",
+            "name": "Requirement dependencies specified",
+            "linguistic complexity": "Semantic",
+            "scope": "Use Case",
+            "verifiability": "+"
+        },
+        {
+            "id": "QF145",
+            "name": "Valid understanding of prioritization",
+            "linguistic complexity": "Semantic",
+            "scope": "Use Case"
+        },
+        {
+            "id": "QF146",
+            "name": "Granularity of prioritization",
+            "linguistic complexity": "Structural",
+            "scope": "Use Case",
+            "verifiability": "+"
+        },
+        {
+            "id": "QF147",
+            "name": "System Environment Conditions specified",
+            "linguistic complexity": "Semantic",
+            "scope": "Use Case",
+            "verifiability": "+"
+        },
+        {
+            "id": "QF148",
+            "name": "Inputs and Outputs qualitatively specified",
+            "linguistic complexity": "Syntactic",
+            "scope": "Use Case",
+            "verifiability": "+"
+        },
+        {
+            "id": "QF149",
+            "name": "Inputs and Outputs specified at system boundary",
+            "linguistic complexity": "Semantic",
+            "scope": "Use Case",
+            "verifiability": "+"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D149",
+            "qf id": "QF139",
+            "reference": "R006",
+            "definition": "\"[T]he artifact should describe the problem domain instead of the solution domain\"",
+            "impact": "\"[T]he [requirements quality] model argues that [the UI details] make understanding a use case more efficient, as the visual support can increase the understanding of how the use case is executed. In addition, the UI details might help the tester to run the test case. However, UI details tend to change more often, which can lead to additional maintenance for the requirements engineers. Lastly, these details might lead to a non-optimal  solution, which might be rejected by the end-user.\"",
+            "empirical evidence": true,
+            "practitioners involved": true
+        },
+        {
+            "id": "D150",
+            "qf id": "QF140",
+            "reference": "R006",
+            "definition": "\"[E]ach use case should have a unique identifier in the name\"",
+            "impact": "\"The ID in the middle [of the name template] obviously serves purposes of identification and traceability. Furthermore, the experts explained us that the number enables to keep an overview as most file browsers thus display the use cases in a defined order. However, they agreed that the ID makes texts sometimes less efficient to read.",
+            "empirical evidence": true,
+            "practitioners involved": true
+        },
+        {
+            "id": "D151",
+            "qf id": "QF141",
+            "reference": "R006",
+            "definition": "\"Subflows are mechanisms for reuse that enable the author of a use case to extract a certain set of steps into a reusable subflow to prevent copy-and-past reuse (so-called cloning [17]) in the use cases\"",
+            "impact": "\"That way, if parts of the flow change, they only need to be changed in one location (the subflow), and not in each use case [17], hence the positive impact (efficiency) in the activity. This Update furthermore creates an explicit link between the use trace cases. However, in Microsoft Word use case documents, as currently used by Munich Re, subflows force the reader to jump between different positions in the text in order to read through the use case, which can be argued to lead to less readable use cases that are harder to understand\"",
+            "empirical evidence": true,
+            "practitioners involved": true
+        },
+        {
+            "id": "D152",
+            "qf id": "QF142",
+            "reference": "R006",
+            "definition": "\"[T]he system capabilities must be known to the test engineer. During the identification of test cases, the engineer must be able to obtain the system\u2019s capabilities in order to choose the test cases to\nbe created.\"",
+            "impact": "\"In order to estimate the efforts in testing, the system\u2019s desired functionality can serve as an indicator.\"",
+            "empirical evidence": true,
+            "practitioners involved": true
+        },
+        {
+            "id": "D153",
+            "qf id": "QF143",
+            "reference": "R006",
+            "definition": "\"Ease of discovering repeatedly used functionality\"",
+            "impact": "\"It can be argued that (parts of) system\u2019s functionality often used among different scenarios and use cases may be appropriate candidates for test automation.\"",
+            "empirical evidence": true,
+            "practitioners involved": true
+        },
+        {
+            "id": "D154",
+            "qf id": "QF144",
+            "reference": "R006",
+            "definition": "\"[T]he engineer must be understand how the requirements influence each other\"",
+            "impact": "\"[I]n order to create more approriate testing conditions\"",
+            "empirical evidence": true,
+            "practitioners involved": true
+        },
+        {
+            "id": "D155",
+            "qf id": "QF145",
+            "reference": "R006",
+            "definition": "\"Prioritization [must not] lack an unambiguous specification of what an associated priority means\"",
+            "impact": "",
+            "empirical evidence": true,
+            "practitioners involved": true
+        },
+        {
+            "id": "D156",
+            "qf id": "QF146",
+            "reference": "R006",
+            "definition": "\"[Clear] granularity of prioritization\"",
+            "impact": "\"The more fine-grained the prioritization, the better the test engineer could optimize his test budgets\"",
+            "empirical evidence": true,
+            "practitioners involved": true
+        },
+        {
+            "id": "D157",
+            "qf id": "QF147",
+            "reference": "R006",
+            "definition": "\"[T]he engineer must understand under what conditions the system will operate, e.g., regarding amounts of productive data, temperature, workload.\"",
+            "impact": "\"Part of the test cases is to describe the environment of the test as close as possible to the productive (end) system. \"",
+            "empirical evidence": true,
+            "practitioners involved": true
+        },
+        {
+            "id": "D158",
+            "qf id": "QF148",
+            "reference": "R006",
+            "definition": "\"[T]he system requires quantiatively precise inputs. Furthermore, the system emits quantitative results, where an acceptable range thereof must be defined in a test case.\"",
+            "impact": "\"to be able to produce executable test cases\"",
+            "empirical evidence": true,
+            "practitioners involved": true
+        },
+        {
+            "id": "D159",
+            "qf id": "QF149",
+            "reference": "R006",
+            "definition": "\"A test case has to be applicable directly on the system, i.e., inputs are submitted and outputs obtained at the system\u2019s interface\"",
+            "impact": "\"Inputs or outputs which happen in the environment of the system are not sufficient to create test cases.\"",
+            "empirical evidence": true,
+            "practitioners involved": true
+        }
+    ],
+    "datasets": [
+        {
+            "id": "DS47",
+            "reference": "R006",
+            "embedded information": [
+                "D149",
+                "D150",
+                "D151",
+                "D152",
+                "D153",
+                "D154",
+                "D155",
+                "D156",
+                "D157",
+                "D158",
+                "D159"
+            ],
+            "description": "Large software project at Munich Re, reinsurcance company",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "None",
+            "size": 51,
+            "granularity": "Document",
+            "accessibility": "Private",
+            "source link": ""
+        }
+    ],
+    "approaches": []
+}

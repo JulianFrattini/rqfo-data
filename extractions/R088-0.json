@@ -1,0 +1,68 @@
+{
+    "extractor": "ex3",
+    "reference": {
+        "ID": "R088",
+        "Refstring": "Kopczy\u0144ska, S., Nawrocki, J., & Ochodek, M. (2018). An empirical study on catalog of non-functional requirement templates: Usefulness and maintenance issues. Information and software technology, 103, 75-91."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF195",
+            "name": "Complete (individual)",
+            "linguistic complexity": "Semantic",
+            "scope": "Requirement"
+        },
+        {
+            "id": "QF196",
+            "name": "Verifiable",
+            "linguistic complexity": "Semantic",
+            "scope": "Requirement"
+        },
+        {
+            "id": "QF198",
+            "name": "Complete (set)",
+            "linguistic complexity": "Semantic",
+            "scope": "Document"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D208",
+            "qf id": "QF195",
+            "reference": "R088",
+            "definition": "\"Does a given NFR contain all the information necessary to implement it and verify the correctness of the implementation?\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D209",
+            "qf id": "QF196",
+            "reference": "R088",
+            "definition": "\"Is there a finite, cost-effective process to check if the software product satisfies a given requirement?\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D210",
+            "qf id": "QF109",
+            "reference": "R088",
+            "definition": "\"Will a given requirement be understood in the same way by different people (i.e., has it only one interpretation)?\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D211",
+            "qf id": "QF198",
+            "reference": "R088",
+            "definition": "\"Does a given set of NFRs contain everything pertinent to the definition of the software product being specified?\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [],
+    "approaches": []
+}

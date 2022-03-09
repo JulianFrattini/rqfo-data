@@ -1,0 +1,38 @@
+{
+    "extractor": "ex2",
+    "reference": {
+        "ID": "R101",
+        "Refstring": "Dalpiaz, F., Schalk, I. V. D., & Lucassen, G. (2018, March). Pinpointing ambiguity and incompleteness in requirements engineering via information visualization and NLP. In International Working Conference on Requirements Engineering: Foundation for Software Quality (pp. 119-135). Springer, Cham."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [],
+    "descriptions": [
+        {
+            "id": "D250",
+            "qf id": "QF109",
+            "reference": "R101",
+            "definition": "\"A requirement is ambiguous when it has multiple valid interpretations\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [],
+    "approaches": [
+        {
+            "id": "A33",
+            "reference": "R101",
+            "descriptions": [
+                "D250"
+            ],
+            "name": "NLP-Powered Identification of (Near)-Synonmy",
+            "acronym": "",
+            "type": "Unsupervised ML",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": false,
+            "tool": "y"
+        }
+    ]
+}

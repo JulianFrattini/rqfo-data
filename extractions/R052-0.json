@@ -1,0 +1,55 @@
+{
+    "extractor": "ex3",
+    "reference": {
+        "ID": "R052",
+        "Refstring": "B\u00e4umer, F. S., & Geierhos, M. (2018). Flexible ambiguity resolution and incompleteness detection in requirements descriptions via an indicator-based configuration of text analysis pipelines."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF108",
+            "name": "Missing information",
+            "linguistic complexity": "Semantic",
+            "scope": "Document",
+            "completeness": "-"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D120",
+            "qf id": "QF108",
+            "reference": "R052",
+            "definition": "[...] incomplete requirements descriptions as named software requirements that are imprecise because of missing information bits (so-called partially incomplete requirements)",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D121",
+            "qf id": "QF109",
+            "reference": "R052",
+            "definition": "[...] lexical ambiguity for a given token is triggered when more than one reading is probable.",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [],
+    "approaches": [
+        {
+            "id": "A20",
+            "reference": "R052",
+            "descriptions": [
+                "D120",
+                "D121"
+            ],
+            "name": "",
+            "acronym": "",
+            "type": "Rule-based",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": false
+        }
+    ]
+}

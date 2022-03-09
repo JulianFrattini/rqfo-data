@@ -1,0 +1,82 @@
+{
+    "extractor": "ex2",
+    "reference": {
+        "ID": "R045",
+        "Refstring": "Yang, H., De Roeck, A., Gervasi, V., Willis, A., & Nuseibeh, B. (2011). Analysing anaphoric ambiguity in natural language requirements. Requirements engineering, 16(3), 163-189."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF002",
+            "name": "Nocuous",
+            "linguistic complexity": "Semantic",
+            "scope": "Phrase",
+            "unambiguouseness": "-"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D003",
+            "qf id": "QF001",
+            "reference": "R045",
+            "definition": "\"An anaphor is a linguistic expression that refers to a preceding utterance in text.\"",
+            "impact": "\"It is possible for different stakeholders to commit, legitimately, to different, incompatible readings of the same requirement.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [
+        {
+            "id": "DS01",
+            "reference": "R045",
+            "embedded information": [
+                "D002",
+                "D003",
+                "D004",
+                "D005",
+                "D006",
+                "D009"
+            ],
+            "description": "11 requirements documents from RE@UTS web pages",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "Unknown",
+            "size": 11,
+            "granularity": "Document",
+            "accessibility": "Broken Link",
+            "source link": "http://research.it.uts.edu.au/re"
+        },
+        {
+            "id": "DS02",
+            "reference": "R045",
+            "embedded information": [
+                "D002",
+                "D003",
+                "D004",
+                "D072"
+            ],
+            "description": "anaphora instances containing different types of pronouns",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "Practitioners",
+            "size": 200,
+            "granularity": "Phrases",
+            "accessibility": "No Link",
+            "source link": ""
+        }
+    ],
+    "approaches": [
+        {
+            "id": "A02",
+            "reference": "R045",
+            "descriptions": [
+                "D003"
+            ],
+            "name": "",
+            "acronym": "",
+            "type": "Supervised ML",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": true
+        }
+    ]
+}

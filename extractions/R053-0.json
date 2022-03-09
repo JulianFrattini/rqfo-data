@@ -1,0 +1,61 @@
+{
+    "extractor": "ex2",
+    "reference": {
+        "ID": "R053",
+        "Refstring": "Landhau\u00dfer, M., Korner, S. J., Tichy, W. F., Keim, J., & Krisch, J. (2015, August). DeNom: a tool to find problematic nominalizations using NLP. In 2015 IEEE Second International Workshop on Artificial Intelligence for Requirements Engineering (AIRE) (pp. 1-8). IEEE."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF204",
+            "name": "Nominalization",
+            "linguistic complexity": "Syntactic",
+            "scope": "Sentence",
+            "simplicity": "-"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D217",
+            "qf id": "QF204",
+            "reference": "R053",
+            "definition": "\"A nominalization is the noun form of a verb [...]\"",
+            "impact": "\"[...] which is not problematic by itself but it may make a complex process sound like a simple event.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [
+        {
+            "id": "DS52",
+            "reference": "R053",
+            "embedded information": [
+                "D217"
+            ],
+            "description": "10 Specifications from Daimler AG",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "Unknown",
+            "size": 10,
+            "granularity": "Document",
+            "accessibility": "Private",
+            "source link": ""
+        }
+    ],
+    "approaches": [
+        {
+            "id": "A28",
+            "reference": "R053",
+            "descriptions": [
+                "D217"
+            ],
+            "name": "DeNom",
+            "acronym": "",
+            "type": "Rule-based",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": true,
+            "tool": "y"
+        }
+    ]
+}

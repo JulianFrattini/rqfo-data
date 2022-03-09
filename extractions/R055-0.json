@@ -1,0 +1,82 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R055",
+        "Refstring": "Eckhardt, J., Vogelsang, A., Femmer, H., & Mager, P. (2016, September). Challenging incompleteness of performance requirements by sentence patterns. In 2016 IEEE 24th International Requirements Engineering Conference (RE) (pp. 46-55). IEEE."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF201",
+            "name": "Strongly complete",
+            "linguistic complexity": "Syntactic",
+            "scope": "Requirement",
+            "completeness": "+",
+            "reusability": "+",
+            "verifiability": "+"
+        },
+        {
+            "id": "QF202",
+            "name": "Weakly complete",
+            "linguistic complexity": "Syntactic",
+            "scope": "Requirement",
+            "unambiguouseness": "-",
+            "understandability": "-"
+        },
+        {
+            "id": "QF203",
+            "name": "Missing mandatory content element",
+            "linguistic complexity": "Syntactic",
+            "scope": "Requirement",
+            "verifiability": "-"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D214",
+            "qf id": "QF201",
+            "reference": "R055",
+            "definition": "\"A performance requirement is strongly complete, if all mandatory content elements (w.r.t the content model [R055]) are explicitly contained in its textual representation.\"",
+            "impact": "\"[R]equirements in class strongly complete contain all content necessary to be implemented and tested\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D215",
+            "qf id": "QF202",
+            "reference": "R055",
+            "definition": "\"A performance requirement is weakly complete, if all mandatory content elements (w.r.t. the content model [R055]) are explicitly or implicitly contained in its textual representation.\"",
+            "impact": "\"[R]equirements in class weakly complete need to be interpreted by the developer and/or tester and therefore bear the risk of misinterpretations.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D216",
+            "qf id": "QF203",
+            "reference": "R055",
+            "definition": "\"A performance requirement is incomplete, if at least one mandatory content elements (w.r.t. the content model [R055]) is missing in its textual representation.\"",
+            "impact": "\"[R]equirements of class incomplete are not testable at all.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [
+        {
+            "id": "DS51",
+            "reference": "R055",
+            "embedded information": [
+                "D214",
+                "D215",
+                "D216"
+            ],
+            "description": "Subset of a dataset of \"530 non-functional requirements extracted from 11 industrial specifications from 5 different companies for different application domains and of different sizes\"",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "None",
+            "size": 58,
+            "granularity": "Requirement",
+            "accessibility": "Private",
+            "source link": ""
+        }
+    ],
+    "approaches": []
+}

@@ -5,7 +5,7 @@
         "Refstring": "Natt och Dag, J., Regnell, B., Carlshamre, P., Andersson, M., & Karlsson, J. (2002). A feasibility study of automated natural language requirements analysis in market-driven development. Requirements Engineering, 7(1), 20-33."
     },
     "timestamp": "2022-02-24 10:00:00",
-    "quality factors": [],
+    "factors": [],
     "descriptions": [
         {
             "id": "D010",
@@ -17,6 +17,36 @@
             "practitioners involved": false
         }
     ],
-    "data sets": [],
-    "approaches": []
+    "datasets": [
+        {
+            "id": "DS05",
+            "reference": "R037",
+            "embedded information": [
+                "D010"
+            ],
+            "description": "Requirements database by Telelogic",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "Practitioners",
+            "size": 1920,
+            "granularity": "Requirement",
+            "accessibility": "No Link",
+            "source link": ""
+        }
+    ],
+    "approaches": [
+        {
+            "id": "A04",
+            "reference": "R037",
+            "descriptions": [
+                "D010"
+            ],
+            "name": "",
+            "acronym": "",
+            "type": "Rule-based",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": true
+        }
+    ]
 }

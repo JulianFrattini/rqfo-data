@@ -1,0 +1,63 @@
+{
+    "extractor": "ex3",
+    "reference": {
+        "ID": "R004",
+        "Refstring": "Ferrari, A., Spagnolo, G. O., & Gnesi, S. (2014, April). Measuring and improving the completeness of natural language requirements. In International Working Conference on Requirements Engineering: Foundation for Software Quality (pp. 23-38). Springer, Cham."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF178",
+            "name": "Specification Completeness",
+            "linguistic complexity": "Semantic",
+            "scope": "Document",
+            "compliance": "+",
+            "consistency": "+",
+            "correctness": "+"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D191",
+            "qf id": "QF178",
+            "reference": "R004",
+            "definition": "\"A requirements document is complete with respect to the input documents if all the relevant concepts and interactions among concepts expressed in the input documents are also treated in the requirements.\"",
+            "impact": "\"[...] bring to several problems: if the missing information resides in the transcripts of meetings with the customers, the product might not address the customer\u2019s expectations; if some information is overseen from the reference standards, the resulting product might not comply to the norms; when concepts from legacy documentation and preliminary specifications are not taken into account, re-work on the product or on the process artifacts is hard to avoid.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [
+        {
+            "id": "DS50",
+            "reference": "R004",
+            "embedded information": [
+                "D191"
+            ],
+            "description": "Automatic Train Supervision (ATS) component of a Communications-based Train Control system (CBTC)",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "Unknown",
+            "size": 57,
+            "granularity": "Requirement",
+            "accessibility": "Private",
+            "source link": ""
+        }
+    ],
+    "approaches": [
+        {
+            "id": "A26",
+            "reference": "R004",
+            "descriptions": [
+                "D191"
+            ],
+            "name": "Completeness Assistant for Requirements (CAR)",
+            "acronym": "",
+            "type": "Rule-based",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": false,
+            "tool": "y"
+        }
+    ]
+}

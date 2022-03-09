@@ -1,0 +1,37 @@
+{
+    "extractor": "ex2",
+    "reference": {
+        "ID": "R051",
+        "Refstring": "Sinpang, J. S., Sulaiman, S., & Idris, N. (2017). Detecting ambiguity in requirements analysis using Mamdani fuzzy inference. Journal of Telecommunication, Electronic and Computer Engineering (JTEC), 9(3-4), 157-162."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [],
+    "descriptions": [
+        {
+            "id": "D249",
+            "qf id": "QF060",
+            "reference": "R051",
+            "definition": "\"Statement that concede marginal case or relative interpretation\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [],
+    "approaches": [
+        {
+            "id": "A32",
+            "reference": "R051",
+            "descriptions": [
+                "D249"
+            ],
+            "name": "Mamdani Fuzzy Interence",
+            "acronym": "",
+            "type": "Rule-based",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": false
+        }
+    ]
+}

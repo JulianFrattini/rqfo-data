@@ -1,0 +1,119 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R061",
+        "Refstring": "Ramos, R., Castro, J., Alencar, F., Ara\u00fajo, J., Moreira, A., da Computacao, C. D. E., & Penteado, R. (2009, October). Quality improvement for use case model. In 2009 XXIII Brazilian Symposium on Software Engineering (pp. 187-195). IEEE."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF029",
+            "name": "Complex Conditional Structure",
+            "linguistic complexity": "Syntactic",
+            "scope": "Requirements"
+        },
+        {
+            "id": "QF074",
+            "name": "Duplicate Steps",
+            "linguistic complexity": "Lexical",
+            "scope": "Use Case"
+        },
+        {
+            "id": "QF075",
+            "name": "Large Use Case",
+            "linguistic complexity": "Lexical",
+            "scope": "Use Case"
+        },
+        {
+            "id": "QF077",
+            "name": "Lazy Use Case",
+            "linguistic complexity": "Semantic",
+            "scope": "Use Case"
+        },
+        {
+            "id": "QF078",
+            "name": "Use Case Naming Problems",
+            "linguistic complexity": "Semantic",
+            "scope": "Use Case"
+        },
+        {
+            "id": "QF079",
+            "name": "Tangled Requirements",
+            "linguistic complexity": "Semantic",
+            "scope": "Use Case"
+        },
+        {
+            "id": "QF080",
+            "name": "Scattered Requirements",
+            "linguistic complexity": "Semantic",
+            "scope": "Use Case"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D080",
+            "qf id": "QF074",
+            "reference": "R061",
+            "definition": "\"Duplicated steps is a situation that occurs when (i) the same use case step is duplicated in different places in a requirements 'document or (ii) the same steps or the same pre-post conditions appear in several use cases.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D081",
+            "qf id": "QF075",
+            "reference": "R061",
+            "definition": "\"Large Use Case occur when (i) an use case is trying to handle several different requirements at the same time or (ii) there are many alternative flows and steps. This problem is particularly significant when the maximum size of each use case has already been set by the organization\u2019s Software Quality Assurance Team.\"",
+            "impact": "",
+            "empirical evidence": true,
+            "practitioners involved": true
+        },
+        {
+            "id": "D082",
+            "qf id": "QF029",
+            "reference": "R061",
+            "definition": "\"Complex conditional structures occur when a use case has large or complex expressions or needs several other use cases to be complete. A use case can contain complex conditional structures due to its nature or simply because it is poorly described. The second situation shows up when there are nested conditional structures or long sequences thereof.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D083",
+            "qf id": "QF077",
+            "reference": "R061",
+            "definition": "\"Lazy use case correspond to one of the following situations: (i) when a use case describes a small number of responsibilities or the impact of the requirements is unclear; (ii) when the size of a use case is too small, in terms of its components (steps); (iii) when a use case does not capture all the activities related to a given concern, or is incomplete. These problems happen when only the steps of a flow are described and the output is ill-defined or unclear, and also, when after some modifications are performed, the use case is no longer appropriate. Other situations are due to the incomplete nature of the use case descriptions, as well as use case descriptions which were delayed (perhaps due to low priority) and not described in sufficient detail.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D084",
+            "qf id": "QF078",
+            "reference": "R061",
+            "definition": "\"Meaningless or inconsistent names are situations where the use case\u2019s name bears no relation with the concept described or the same name is used for different concepts. Inconsistent names occur when two use cases are represented by the same identifier but have different meanings. Other problems include excessive use of synonyms, absence of clear definitions, partially overlapping concepts described by different names with no clear definitions and usage of names with different meanings.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D085",
+            "qf id": "QF079",
+            "reference": "R061",
+            "definition": "\"A tangled requirement is a situation that occurs when a use case contains descriptions of several requirements or different functionalities. A use case that contains several different functionalities could be hard to understand. Thus it offers an opportunity for refactoring.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D086",
+            "qf id": "QF080",
+            "reference": "R061",
+            "definition": "\"A scattered requirement is a situation that occurs when the specification of one functionality is not encapsulated in a single use case. When the requirements that treat of the same specific functionality are disperse by the requirement document the general localization is more difficult harder and in consequence difficult they reuse and maintenance.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [],
+    "approaches": []
+}

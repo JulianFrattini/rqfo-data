@@ -5,7 +5,46 @@
         "Refstring": "Antinyan, V., & Staron, M. (2017). Rendex: A method for automated reviews of textual requirements. Journal of Systems and Software, 131, 63-77."
     },
     "timestamp": "2022-02-24 10:00:00",
-    "quality factors": [],
+    "factors": [
+        {
+            "id": "QF060",
+            "name": "Vague",
+            "linguistic complexity": "Lexical",
+            "scope": "Word",
+            "unambiguouseness": "-"
+        },
+        {
+            "id": "QF091",
+            "name": "Conjunctive Complexity",
+            "linguistic complexity": "Lexical",
+            "scope": "Sentence",
+            "simplicity": "-",
+            "understandability": "-"
+        },
+        {
+            "id": "QF151",
+            "name": "Referring to fixed terms",
+            "linguistic complexity": "Lexical",
+            "scope": "Word",
+            "understandability": "+"
+        },
+        {
+            "id": "QF152",
+            "name": "Referring to other documents",
+            "linguistic complexity": "Lexical",
+            "scope": "Word",
+            "reusability": "+",
+            "understandability": "+"
+        },
+        {
+            "id": "QF153",
+            "name": "Number of words",
+            "linguistic complexity": "Lexical",
+            "scope": "Requirement",
+            "maintainability": "-",
+            "understandability": "-"
+        }
+    ],
     "descriptions": [
         {
             "id": "D160",
@@ -53,6 +92,6 @@
             "practitioners involved": true
         }
     ],
-    "data sets": [],
+    "datasets": [],
     "approaches": []
 }

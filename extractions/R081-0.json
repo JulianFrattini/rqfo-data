@@ -1,0 +1,38 @@
+{
+    "extractor": "ex2",
+    "reference": {
+        "ID": "R081",
+        "Refstring": "Chantree, F., Nuseibeh, B., De Roeck, A., & Willis, A. (2006, September). Identifying nocuous ambiguities in natural language requirements. In 14th IEEE International Requirements Engineering Conference (RE'06) (pp. 59-68). IEEE."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [],
+    "descriptions": [
+        {
+            "id": "D008",
+            "qf id": "QF005",
+            "reference": "R081",
+            "definition": "\"Coordination ambiguity can occur whenever a coordinating conjunction is used.\"",
+            "impact": "\"The uncertainty about which reading is intended will affect what type of [result] is implemented as a result of this requirement.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [],
+    "approaches": [
+        {
+            "id": "A03",
+            "reference": "R081",
+            "descriptions": [
+                "D005",
+                "D008"
+            ],
+            "name": "",
+            "acronym": "",
+            "type": "Rule-based",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": true
+        }
+    ]
+}

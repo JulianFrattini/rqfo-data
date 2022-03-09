@@ -5,7 +5,7 @@
         "Refstring": "Femmer, H., Ku\u010dera, J., & Vetr\u00f2, A. (2014, September). On the impact of passive voice requirements on domain modelling. In Proceedings of the 8th ACM/IEEE International Symposium on Empirical Software Engineering and Measurement (pp. 1-4)."
     },
     "timestamp": "2022-02-24 10:00:00",
-    "quality factors": [],
+    "factors": [],
     "descriptions": [
         {
             "id": "D001",
@@ -17,6 +17,21 @@
             "practitioners involved": false
         }
     ],
-    "data sets": [],
+    "datasets": [
+        {
+            "id": "DS00",
+            "reference": "R027",
+            "embedded information": [
+                "D001"
+            ],
+            "description": "Seven sentences with passive voice, and the same seven sentences with corrected active voice.",
+            "origin": "Unknown",
+            "ground truth annotators": "Unknown",
+            "size": 14,
+            "granularity": "Requirement",
+            "accessibility": "Broken Link",
+            "source link": "https://www.in.tum.de/i04/~femmer/data/passives_experiment.zip"
+        }
+    ],
     "approaches": []
 }

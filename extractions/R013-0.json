@@ -1,0 +1,65 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R013",
+        "Refstring": "Osada, A., Ozawa, D., Kaiya, H., & Kaijiri, K. (2007, February). The role of domain knowledge representation in requirements elicitation. In 25th IASTED International Multi-Conference Software Engineering (pp. 84-92)."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [],
+    "descriptions": [],
+    "datasets": [
+        {
+            "id": "DS14",
+            "reference": "R013",
+            "embedded information": [
+                "D024",
+                "D025",
+                "D026",
+                "D027"
+            ],
+            "description": "Domain knowledge representation (UML) of a conference management system",
+            "origin": "Unknown",
+            "ground truth annotators": "None",
+            "size": 104,
+            "granularity": "Structured/tabular text",
+            "accessibility": "No Link",
+            "source link": ""
+        },
+        {
+            "id": "DS15",
+            "reference": "R013",
+            "embedded information": [
+                "D024",
+                "D025",
+                "D026",
+                "D027"
+            ],
+            "description": "Domain knowledge representation (text) of a conference management system",
+            "origin": "Unknown",
+            "ground truth annotators": "None",
+            "size": 32,
+            "granularity": "Sentence",
+            "accessibility": "No Link",
+            "source link": ""
+        }
+    ],
+    "approaches": [
+        {
+            "id": "A08",
+            "reference": "R013",
+            "descriptions": [
+                "D024",
+                "D025",
+                "D026",
+                "D027"
+            ],
+            "name": "",
+            "acronym": "",
+            "type": "Rule-based",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": false
+        }
+    ]
+}

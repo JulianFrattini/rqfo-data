@@ -1,0 +1,133 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R076",
+        "Refstring": "El-Attar, M., & Miller, J. (2010). Improving the quality of use case models using antipatterns. Software & systems modeling, 9(2), 141-160."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF205",
+            "name": "Containing common and exceptional functionality",
+            "linguistic complexity": "Semantic",
+            "scope": "Use Case",
+            "correctness": "-"
+        },
+        {
+            "id": "QF206",
+            "name": "Functional decomposition (include)",
+            "linguistic complexity": "Semantic",
+            "scope": "Use Case",
+            "designindependence": "-"
+        },
+        {
+            "id": "QF207",
+            "name": "Functional decomposition (extend)",
+            "linguistic complexity": "Semantic",
+            "scope": "Use Case",
+            "designindependence": "-"
+        },
+        {
+            "id": "QF208",
+            "name": "Functional decomposition (pre- and postconditions)",
+            "linguistic complexity": "Semantic",
+            "scope": "Use Case",
+            "designindependence": "-"
+        },
+        {
+            "id": "QF209",
+            "name": "Multiple actors",
+            "linguistic complexity": "Lexical",
+            "scope": "Use Case",
+            "unambiguouseness": "-",
+            "modifiability": "-"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D218",
+            "qf id": "QF205",
+            "reference": "R076",
+            "definition": "\"[W]hen applying the concept of reuse, the include and extend relationships can be misused, leading to the creation of UCs containing both common and exception handling behavior. [...] The shared UC currently contains common and exceptional behavior required by the two base UCs.\"",
+            "impact": "\"[W]hen either base UCs initiate the shared UC, additional undesired functionality is performed.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D219",
+            "qf id": "QF206",
+            "reference": "R076",
+            "definition": "\"Functional decomposition commonly occurs due to the misuse of the include relationship. Inclusion UCs are set to describe tasks that are required to perform parts of a complete service offered by their base UC. The tasks described by the inclusion UCs represent functions in a program, or menu options.\"",
+            "impact": "\"Functional decomposition embodies premature design decisions which severely limits the creativity of designers and forces them to abide to these decisions\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D220",
+            "qf id": "QF207",
+            "reference": "R076",
+            "definition": "\"If an extension UC contains general behavior that would be useful to more than one base UC, this would be a strong indication that the extension UC has degraded into a function.\"",
+            "impact": "\"Functional decomposition embodies premature design decisions which severely limits the creativity of designers and forces them to abide to these decisions\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D221",
+            "qf id": "QF208",
+            "reference": "R076",
+            "definition": "\"Modelers misuse the pre and postconditions in UCs to explicitly declare a virtual call sequence between the UCs. It can be deduced that the virtual sequence is likely to be the result of UCs degrading into functions\"",
+            "impact": "\"Functional decomposition embodies premature design decisions which severely limits the creativity of designers and forces them to abide to these decisions\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D222",
+            "qf id": "QF209",
+            "reference": "R076",
+            "definition": "\"A UC is associated with more than one actor.\"",
+            "impact": "\"Actors should have unique roles when interacting with a shared UC. This leads designers to create different implementations of a UCwhen it is interacting with different actors, even though the implementation should be the same.\", \"themodel will need to be changed frequently as instances of a type of the system\u2019s users are frequently added and removed.\", \"The actual functionality developed will only cater to one of the actors, or perhaps none.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [
+        {
+            "id": "DS54",
+            "reference": "R076",
+            "embedded information": [
+                "D218",
+                "D219",
+                "D220",
+                "D221",
+                "D222"
+            ],
+            "description": "MAPSTEDI (Mountains and Plains Spatio-Temporal Database Informatics) Use Case Model",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "None",
+            "size": -1,
+            "granularity": "Use Case",
+            "accessibility": "Broken Link",
+            "source link": ""
+        }
+    ],
+    "approaches": [
+        {
+            "id": "A30",
+            "reference": "R076",
+            "descriptions": [
+                "D218",
+                "D219",
+                "D220",
+                "D221",
+                "D222"
+            ],
+            "name": "Automated Risk-Based Inspector of UC Models (ARBIUM)",
+            "acronym": "",
+            "type": "Rule-based",
+            "accessibility": "Broken Link",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": false
+        }
+    ]
+}

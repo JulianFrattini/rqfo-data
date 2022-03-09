@@ -1,0 +1,156 @@
+{
+    "extractor": "ex2",
+    "reference": {
+        "ID": "R017",
+        "Refstring": "Femmer, H., Fern\u00e1ndez, D. M., Wagner, S., & Eder, S. (2017). Rapid quality assurance with requirements smells. Journal of Systems and Software, 123, 190-213."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF061",
+            "name": "Subjective",
+            "linguistic complexity": "Lexical",
+            "scope": "Words"
+        },
+        {
+            "id": "QF191",
+            "name": "Open-ended terms",
+            "linguistic complexity": "Semantic",
+            "scope": "Requirement",
+            "verifiability": "-"
+        },
+        {
+            "id": "QF070",
+            "name": "Superlatives",
+            "linguistic complexity": "Syntactic",
+            "scope": "Word"
+        },
+        {
+            "id": "QF069",
+            "name": "Comparatives",
+            "linguistic complexity": "Syntactic",
+            "scope": "Word"
+        },
+        {
+            "id": "QF228",
+            "name": "Negatives",
+            "linguistic complexity": "Lexical",
+            "scope": "Word"
+        },
+        {
+            "id": "QF229",
+            "name": "Vague Pronouns",
+            "linguistic complexity": "Lexical",
+            "scope": "Word"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D252",
+            "qf id": "QF061",
+            "reference": "R017",
+            "definition": "\"Subjective Language refers to words of which the semantics is not objectively de\ufb01ned, such as user friendly, easy to use, cost e\ufb00ective.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D253",
+            "qf id": "QF050",
+            "reference": "R017",
+            "definition": "\"Ambiguous Adverbs and Adjectives refer to certain adverbs and adjectives that are unspeci\ufb01c by nature, such as almost always, signi\ufb01cant and minimal.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D254",
+            "qf id": "QF051",
+            "reference": "R017",
+            "definition": "\"Loopholes refer to phrases that express that the following requirement must be ful\ufb01lled only to a certain, imprecisely de\ufb01ned extent.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D255",
+            "qf id": "QF191",
+            "reference": "R017",
+            "definition": "\"Open-ended, non-veri\ufb01able terms\"",
+            "impact": "\"Open-ended, non-verifiable terms are hard to verify as they o\ufb00er a choice of possibilities, e.g. for the developers.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D256",
+            "qf id": "QF070",
+            "reference": "R017",
+            "definition": "\"Superlatives refer to requirements that express a relation of the system to all other systems.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D257",
+            "qf id": "QF069",
+            "reference": "R017",
+            "definition": "\"Comparatives are used in requirements that express a relation of the system to speci\ufb01c other systems or previous situations.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D258",
+            "qf id": "QF228",
+            "reference": "R017",
+            "definition": "\"Negative Statements are 'statements of system capability not to be provided'. Some argue that negative statements can lead to underspeci\ufb01cation, such as lack of explaining the system\u2019s reaction on such a case.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D259",
+            "qf id": "QF229",
+            "reference": "R017",
+            "definition": "\"Vague Pronouns are unclear relations of a pronoun.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D260",
+            "qf id": "QF047",
+            "reference": "R017",
+            "definition": "\"Incomplete References are references that a reader cannot follow (e.g. no location provided).\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [],
+    "approaches": [
+        {
+            "id": "A34",
+            "reference": "R017",
+            "descriptions": [
+                "D252",
+                "D253",
+                "D254",
+                "D255",
+                "D256",
+                "D257",
+                "D258",
+                "D259",
+                "D260"
+            ],
+            "name": "Smella",
+            "acronym": "",
+            "type": "Rule-based",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": true,
+            "tool": "y"
+        }
+    ]
+}

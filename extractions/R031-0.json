@@ -5,7 +5,26 @@
         "Refstring": "Kaiya, H., & Saeki, M. (2006, September). Using domain ontology as domain knowledge for requirements elicitation. In 14th IEEE International Requirements Engineering Conference (RE'06) (pp. 189-198). IEEE."
     },
     "timestamp": "2022-02-24 10:00:00",
-    "quality factors": [],
+    "factors": [
+        {
+            "id": "QF123",
+            "name": "Ontological Correctness",
+            "linguistic complexity": "Semantic",
+            "scope": "Global"
+        },
+        {
+            "id": "QF125",
+            "name": "Ontological Consistency",
+            "linguistic complexity": "Semantic",
+            "scope": "Global"
+        },
+        {
+            "id": "QF126",
+            "name": "Ontological Unambiguousness",
+            "linguistic complexity": "Semantic",
+            "scope": "Global"
+        }
+    ],
     "descriptions": [
         {
             "id": "D133",
@@ -18,7 +37,7 @@
         },
         {
             "id": "D134",
-            "qf id": "QF124",
+            "qf id": "QF037",
             "reference": "R031",
             "definition": "\"The ontological elements that did not have any mapped requirements items can be candidates for missing requirements items.\"",
             "impact": "",
@@ -44,6 +63,24 @@
             "practitioners involved": false
         }
     ],
-    "data sets": [],
+    "datasets": [
+        {
+            "id": "DS35",
+            "reference": "R031",
+            "embedded information": [
+                "D133",
+                "D134",
+                "D135",
+                "D136"
+            ],
+            "description": "Initial set of requirements for a music player software",
+            "origin": "Unknown",
+            "ground truth annotators": "None",
+            "size": 6,
+            "granularity": "Requirement",
+            "accessibility": "Available in Paper",
+            "source link": ""
+        }
+    ],
     "approaches": []
 }

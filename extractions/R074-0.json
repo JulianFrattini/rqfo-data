@@ -1,0 +1,80 @@
+{
+    "extractor": "ex2",
+    "reference": {
+        "ID": "R074",
+        "Refstring": "Kiyavitskaya, N., Zeni, N., Mich, L., & Berry, D. M. (2008). Requirements for tools for ambiguity identification and measurement in natural language requirements specifications. Requirements engineering, 13(3), 207-239."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF090",
+            "name": "Language Error",
+            "linguistic complexity": "Syntactic",
+            "scope": "Sentence"
+        },
+        {
+            "id": "QF089",
+            "name": "Software Engineering",
+            "linguistic complexity": "Semantic",
+            "scope": "Sentence"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D091",
+            "qf id": "QF085",
+            "reference": "R074",
+            "definition": "\"[...] when a word has several meanings.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D092",
+            "qf id": "QF086",
+            "reference": "R074",
+            "definition": "\"[...] when a given sequence of words can be given more than one grammatical structure, and each has a different meaning.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D093",
+            "qf id": "QF087",
+            "reference": "R074",
+            "definition": "\"[...] when a sentence has more than one way of reading it within its context although it contains no lexical or structural ambiguity. Semantic ambiguity can be viewed as ambiguity with respect to the logical form, usually expressed in predicate logic, of a sentence.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D094",
+            "qf id": "QF088",
+            "reference": "R074",
+            "definition": "\"[...] when a sentence has several meanings in the context in which it is uttered. The context comprises the language context, i.e., the sentences uttered before and after, and the context beyond language, i.e., the situation, the background knowledge, and expectations of the speaker or hearer and the writer or reader.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D095",
+            "qf id": "QF089",
+            "reference": "R074",
+            "definition": "\"[...] when different implementations of otherwise uniguous text behave differently, often subtly so.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D096",
+            "qf id": "QF090",
+            "reference": "R074",
+            "definition": "\"[...] when different people interpret text with a language error differently, including not even recognizing that a language error exists.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [],
+    "approaches": []
+}

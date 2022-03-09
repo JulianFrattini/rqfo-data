@@ -5,7 +5,169 @@
         "Refstring": "Parra, E., Dimou, C., Llorens, J., Moreno, V., & Fraga, A. (2015). A methodology for the classification of quality of requirements using machine learning techniques. Information and Software Technology, 67, 180-195."
     },
     "timestamp": "2022-02-24 10:00:00",
-    "quality factors": [],
+    "factors": [
+        {
+            "id": "QF003",
+            "name": "Passive Voice",
+            "linguistic complexity": "Syntactic",
+            "scope": "Sentence",
+            "unambiguouseness": "-",
+            "understandability": "-"
+        },
+        {
+            "id": "QF154",
+            "name": "Ambiguous expressions",
+            "linguistic complexity": "Lexical",
+            "scope": "Word",
+            "unambiguouseness": "-",
+            "understandability": "-"
+        },
+        {
+            "id": "QF155",
+            "name": "Boilerplate conformant",
+            "linguistic complexity": "Syntactic",
+            "scope": "Sentence",
+            "correctness": "+"
+        },
+        {
+            "id": "QF156",
+            "name": "Assertive",
+            "linguistic complexity": "Syntactic",
+            "scope": "Sentence"
+        },
+        {
+            "id": "QF157",
+            "name": "Low number of connectors",
+            "linguistic complexity": "Lexical",
+            "scope": "Sentence",
+            "atomicity": "-"
+        },
+        {
+            "id": "QF158",
+            "name": "Low number of references",
+            "linguistic complexity": "Structural",
+            "scope": "Requirement",
+            "understandability": "-"
+        },
+        {
+            "id": "QF159",
+            "name": "Free of design expressions",
+            "linguistic complexity": "Lexical",
+            "scope": "Word"
+        },
+        {
+            "id": "QF160",
+            "name": "Low number of domain concepts used",
+            "linguistic complexity": "Lexical",
+            "scope": "Word",
+            "adequacy": "-",
+            "designindependence": "-"
+        },
+        {
+            "id": "QF161",
+            "name": "Low number of domain verbs used",
+            "linguistic complexity": "Lexical",
+            "scope": "Word",
+            "adequacy": "-"
+        },
+        {
+            "id": "QF162",
+            "name": "Free of flow expressions",
+            "linguistic complexity": "Lexical",
+            "scope": "Requirement",
+            "designindependence": "-"
+        },
+        {
+            "id": "QF163",
+            "name": "Imperative",
+            "linguistic complexity": "Syntactic",
+            "scope": "Sentence"
+        },
+        {
+            "id": "QF164",
+            "name": "Explicit",
+            "linguistic complexity": "Syntactic",
+            "scope": "Sentence",
+            "atomicity": "-"
+        },
+        {
+            "id": "QF165",
+            "name": "Free of incompleteness expressions",
+            "linguistic complexity": "Lexical",
+            "scope": "Sentence",
+            "completeness": "-"
+        },
+        {
+            "id": "QF166",
+            "name": "Low number of in-links",
+            "linguistic complexity": "Structural",
+            "scope": "Requirement",
+            "understandability": "+"
+        },
+        {
+            "id": "QF167",
+            "name": "Positive",
+            "linguistic complexity": "Syntactic",
+            "scope": "Sentence",
+            "understandability": "+"
+        },
+        {
+            "id": "QF168",
+            "name": "Flat hierarchy",
+            "linguistic complexity": "Structural",
+            "scope": "Document",
+            "understandability": "+"
+        },
+        {
+            "id": "QF169",
+            "name": "Correct punctuation",
+            "linguistic complexity": "Lexical",
+            "scope": "Section",
+            "understandability": "+"
+        },
+        {
+            "id": "QF170",
+            "name": "Low number of out-links",
+            "linguistic complexity": "Structural",
+            "scope": "Requirement",
+            "understandability": "+"
+        },
+        {
+            "id": "QF171",
+            "name": "Justification-free",
+            "linguistic complexity": "Semantic",
+            "scope": "Requirement"
+        },
+        {
+            "id": "QF172",
+            "name": "Readable",
+            "linguistic complexity": "Lexical",
+            "scope": "Requirement",
+            "understandability": "+"
+        },
+        {
+            "id": "QF173",
+            "name": "Decisive",
+            "linguistic complexity": "Lexical",
+            "scope": "Word",
+            "unambiguouseness": "+"
+        },
+        {
+            "id": "QF174",
+            "name": "Objective",
+            "linguistic complexity": "Lexical",
+            "scope": "Word"
+        },
+        {
+            "id": "QF175",
+            "name": "Number of paragraphs",
+            "linguistic complexity": "Structural",
+            "scope": "Requirement",
+            "atomicity": "-",
+            "designindependence": "-",
+            "necessity": "-"
+        }
+    ],
     "descriptions": [
         {
             "id": "D165",
@@ -224,6 +386,82 @@
             "practitioners involved": false
         }
     ],
-    "data sets": [],
-    "approaches": []
+    "datasets": [
+        {
+            "id": "DS48",
+            "reference": "R025",
+            "embedded information": [
+                "D165",
+                "D166",
+                "D167",
+                "D168",
+                "D169",
+                "D170",
+                "D171",
+                "D172",
+                "D173",
+                "D174",
+                "D175",
+                "D176",
+                "D177",
+                "D178",
+                "D179",
+                "D180",
+                "D181",
+                "D182",
+                "D183",
+                "D184",
+                "D185",
+                "D186",
+                "D187",
+                "D188"
+            ],
+            "description": "A corpus of requirements supplied by the requirements qorking group of INCOSE",
+            "origin": "Unknown",
+            "ground truth annotators": "Unknown",
+            "size": 1035,
+            "granularity": "Requirement",
+            "accessibility": "No link",
+            "source link": ""
+        }
+    ],
+    "approaches": [
+        {
+            "id": "A24",
+            "reference": "R025",
+            "descriptions": [
+                "D165",
+                "D166",
+                "D167",
+                "D168",
+                "D169",
+                "D170",
+                "D171",
+                "D172",
+                "D173",
+                "D174",
+                "D175",
+                "D176",
+                "D177",
+                "D178",
+                "D179",
+                "D180",
+                "D181",
+                "D182",
+                "D183",
+                "D184",
+                "D185",
+                "D186",
+                "D187",
+                "D188"
+            ],
+            "name": "Extension to RQF",
+            "acronym": "",
+            "type": "Supervised ML",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": false
+        }
+    ]
 }

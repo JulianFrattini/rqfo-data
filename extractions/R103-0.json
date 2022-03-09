@@ -1,0 +1,29 @@
+{
+    "extractor": "ex3",
+    "reference": {
+        "ID": "R103",
+        "Refstring": "Tiwari, S., & Gupta, A. (2020). Use case specifications: How complete are they?. Journal of Software: Evolution and Process, 32(1), e2218."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF234",
+            "name": "Functional Completeness",
+            "linguistic complexity": "Semantic",
+            "scope": "Use Case"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D273",
+            "qf id": "QF234",
+            "reference": "R103",
+            "definition": "\"The completeness of the use case specification can be depicted in the sense of coverage (\u201cdo they cover every function that they should?\u201d), and some structural completeness (\u201cdo they have all the required pieces?\u201d).\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [],
+    "approaches": []
+}

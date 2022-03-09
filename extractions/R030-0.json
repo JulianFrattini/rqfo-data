@@ -5,7 +5,7 @@
         "Refstring": "Rago, A., Marcos, C., & Diaz-Pace, J. A. (2016). Identifying duplicate functionality in textual use cases by aligning semantic actions. Software & Systems Modeling, 15(2), 579-603."
     },
     "timestamp": "2022-02-24 10:00:00",
-    "quality factors": [],
+    "factors": [],
     "descriptions": [
         {
             "id": "D011",
@@ -17,6 +17,21 @@
             "practitioners involved": false
         }
     ],
-    "data sets": [],
-    "approaches": []
+    "datasets": [],
+    "approaches": [
+        {
+            "id": "A05",
+            "reference": "R030",
+            "descriptions": [
+                "D011"
+            ],
+            "name": "ReQFligner",
+            "acronym": "",
+            "type": "Supervised ML",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": true
+        }
+    ]
 }

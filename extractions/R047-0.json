@@ -1,0 +1,54 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R047",
+        "Refstring": "Huertas, C., & Ju\u00e1rez-Ram\u00edrez, R. (2013, July). Towards assessing the quality of functional requirements using English/Spanish controlled languages and context free grammar. In Proc. Third International Conference on Digital Information and Communication Technology and its Applications (DICTAP 2013), Ostrava, Czech Republic on (pp. 234-241)."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF073",
+            "name": "Single-Sentence",
+            "linguistic complexity": "Lexical",
+            "scope": "Requirement"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D078",
+            "qf id": "QF072",
+            "reference": "R047",
+            "definition": "\"Incompleteness exists if any of the sets actor A, function F, or detail D are not found.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D079",
+            "qf id": "QF073",
+            "reference": "R047",
+            "definition": "\"To check if a requirement is atomic, it is expected to have only one sentence.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [
+        {
+            "id": "DS27",
+            "reference": "R047",
+            "embedded information": [
+                "D078",
+                "D079"
+            ],
+            "description": "Student Projects",
+            "origin": "Student Data",
+            "ground truth annotators": "None",
+            "size": 60,
+            "granularity": "Document",
+            "accessibility": "No Link",
+            "source link": ""
+        }
+    ],
+    "approaches": []
+}

@@ -1,0 +1,200 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R079",
+        "Refstring": "Verma, K., Kass, A., & Vasquez, R. (2014). Using syntactic and semantic analyses to improve the quality of requirements documentation. Semantic Web, 5(5), 405-419."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF127",
+            "name": "Problematic phrases",
+            "linguistic complexity": "Lexical",
+            "scope": "Phrase",
+            "unambiguouseness": "-"
+        },
+        {
+            "id": "QF128",
+            "name": "Terminological Inconsistency",
+            "linguistic complexity": "Lexical",
+            "scope": "Global",
+            "understandability": "-"
+        },
+        {
+            "id": "QF129",
+            "name": "Missing contextual information",
+            "linguistic complexity": "Semantic",
+            "scope": "Sentence",
+            "understandability": "-"
+        },
+        {
+            "id": "QF130",
+            "name": "Missing interaction requirements",
+            "linguistic complexity": "Semantic",
+            "scope": "Global",
+            "understandability": "-"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D137",
+            "qf id": "QF127",
+            "reference": "R079",
+            "definition": "\"There are a number of problematic phrases [...] such as quick, easy to use and flexible\"",
+            "impact": "\"[The] problematic phrases [...] lead to vagueness or ambiguity in requirements [...]\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D138",
+            "qf id": "QF128",
+            "reference": "R079",
+            "definition": "\"Terminological inconsistency refers to using different terms to refer to the same entity/verb\"",
+            "impact": "\"[...] leading to potential confusion.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D139",
+            "qf id": "QF129",
+            "reference": "R079",
+            "definition": "\"Users often leave out key contextual information such as which agent/actor should perform an action.\"",
+            "impact": "\"[The missing information] may be obvious to [the authors] but it can lead to confusion and potentially expensive rework.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D140",
+            "qf id": "QF130",
+            "reference": "R079",
+            "definition": "\"Consider a large software project, where a newly developed enterprise portal has to be integrated with a number of existing systems. Often times, an interaction with another system, say the \u201ccustomer management system\u201d may be overlooked, either because the stakeholders forgot about it or the business analyst did not note it down.\"",
+            "impact": "\"Since, the requirements documents can often span hundreds of pages, the missing interaction may not be discovered until much later, where it is much more expensive to fix\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [
+        {
+            "id": "DS36",
+            "reference": "R079",
+            "embedded information": [
+                "D137",
+                "D138",
+                "D139"
+            ],
+            "description": "ERP implementation of a new system that automates some manual processes",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "None",
+            "size": 164,
+            "granularity": "Requirement",
+            "accessibility": "Private",
+            "source link": ""
+        },
+        {
+            "id": "DS37",
+            "reference": "R079",
+            "embedded information": [
+                "D140"
+            ],
+            "description": "Project for an auto-insurance company",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "None",
+            "size": 33,
+            "granularity": "Requirement",
+            "accessibility": "Private",
+            "source link": ""
+        },
+        {
+            "id": "DS38",
+            "reference": "R079",
+            "embedded information": [
+                "D140"
+            ],
+            "description": "Single release cycle of a medium-sized telecommunications project",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "None",
+            "size": 50,
+            "granularity": "Use Case",
+            "accessibility": "Private",
+            "source link": ""
+        },
+        {
+            "id": "DS39",
+            "reference": "R079",
+            "embedded information": [
+                "D140"
+            ],
+            "description": "Government project",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "None",
+            "size": 5000,
+            "granularity": "Requirement",
+            "accessibility": "Private",
+            "source link": ""
+        },
+        {
+            "id": "DS40",
+            "reference": "R079",
+            "embedded information": [
+                "D137",
+                "D138",
+                "D139"
+            ],
+            "description": "\"[L]arge project in retail industry involved integrating 6 new Java-based sys-tems (with about 70 sub-systems) with 19 existing systems.\"",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "None",
+            "size": 3000,
+            "granularity": "Requirement",
+            "accessibility": "Private",
+            "source link": ""
+        },
+        {
+            "id": "DS41",
+            "reference": "R079",
+            "embedded information": [
+                "D137",
+                "D138",
+                "D139"
+            ],
+            "description": "Software for a mobile company",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "None",
+            "size": -1,
+            "granularity": "Requirement",
+            "accessibility": "Private",
+            "source link": ""
+        }
+    ],
+    "approaches": [
+        {
+            "id": "A22",
+            "reference": "R079",
+            "descriptions": [
+                "D137",
+                "D138",
+                "D139"
+            ],
+            "name": "Requirements Analysis Tool (RAT)",
+            "acronym": "",
+            "type": "Rule-based",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": true
+        },
+        {
+            "id": "A23",
+            "reference": "R079",
+            "descriptions": [
+                "D140"
+            ],
+            "name": "PASER",
+            "acronym": "",
+            "type": "Rule-based",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": true
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R075",
+        "Refstring": "Antinyan, V., Staron, M., Sandberg, A., & Hansson, J. (2016, October). A complexity measure for textual requirements. In 2016 Joint Conference of the International Workshop on Software Measurement and the International Conference on Software Process and Product Measurement (IWSM-MENSURA) (pp. 148-158). IEEE."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [],
+    "descriptions": [
+        {
+            "id": "D103",
+            "qf id": "QF091",
+            "reference": "R075",
+            "definition": "\"Conjunctive complexity (NC) of a textual requirement is the complexity that emerges due to the number of conjunct actions described in the requirement\u2019s text.\"",
+            "impact": "\"[...] even though the NC measure is not a very strong indicator it nevertheless has significant correlation with the perceived understandability of requirements and can be used for detecting complex requirements\"",
+            "empirical evidence": false,
+            "practitioners involved": true
+        }
+    ],
+    "datasets": [],
+    "approaches": []
+}

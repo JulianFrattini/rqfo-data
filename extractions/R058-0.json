@@ -1,0 +1,170 @@
+{
+    "extractor": "ex2",
+    "reference": {
+        "ID": "R058",
+        "Refstring": "Lami, G., Gnesi, S., Fabbrini, F., Fusani, M., & Trentanni, G. (2004). An automatic tool for the analysis of natural language requirements. Informe t\u00e9cnico, CNR Information Science and Technology Institute, Pisa, Italia, Setiembre."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF062",
+            "name": "Optional",
+            "linguistic complexity": "Lexical",
+            "scope": "Words"
+        },
+        {
+            "id": "QF063",
+            "name": "Implicit",
+            "linguistic complexity": "Syntactic",
+            "scope": "Sentence"
+        },
+        {
+            "id": "QF064",
+            "name": "Weakness",
+            "linguistic complexity": "Lexical",
+            "scope": "Sentence"
+        },
+        {
+            "id": "QF065",
+            "name": "Under-specification",
+            "linguistic complexity": "Lexical",
+            "scope": "Word"
+        },
+        {
+            "id": "QF066",
+            "name": "Multiple [Focus]",
+            "linguistic complexity": "Syntactic",
+            "scope": "Sentence"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D065",
+            "qf id": "QF060",
+            "reference": "R058",
+            "definition": "\"The sentence contains items having a no uniquely quantifiable meaning. Typical words are:: clear, easy, strong, good, bad, useful, significant, adequate, recent, ....\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D066",
+            "qf id": "QF061",
+            "reference": "R058",
+            "definition": "\"The sentence expresses personal opinions or feelings. Subjective words or phrases include: similar, similarly, having in mind, take into account, as [adjective] as possible, \u2026\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D067",
+            "qf id": "QF062",
+            "reference": "R058",
+            "definition": "\"The sentence contains an optional part (i.e. a part that can or cannot be considered) Optional examples: possibly, eventually, case, if possible, if appropriate, if needed, ...\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D068",
+            "qf id": "QF063",
+            "reference": "R058",
+            "definition": "\"The sentence does not specify the subject or object by means of its specific name but uses a pronoun or other indirect reference. Words alone are not sufficient and the syntax must be considered. Implicit use is checked when the sentence contains:\n- Subjects or complements expressed by means of: Demonstrative adjectives (this, these, that, those) or Pronouns (it, they\u2026) or\n- Terms having the determiner expressed by a demonstrative adjective (this, these, that, those) or implicit adjective (e.g. previous, next, following, last...) or preposition (e.g.: above, below...)\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D069",
+            "qf id": "QF064",
+            "reference": "R058",
+            "definition": "\"The sentence contains a \"weak\" verb. A verb that makes the sentence not imperative is considered weak (i.e. can, could, may,..)\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D070",
+            "qf id": "QF065",
+            "reference": "R058",
+            "definition": "\"The sentence contains a word identifying a class of objects without a modifier specifying an instance of this class, e.g. flow instead of data flow, control flow; access instead of write access, remote access, authorized access; testing instead of functional testing, structural testing, unit testing, etc\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D071",
+            "qf id": "QF066",
+            "reference": "R058",
+            "definition": "\"The sentence has more than one main verb, subject or object\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [
+        {
+            "id": "DS21",
+            "reference": "R058",
+            "embedded information": [
+                "D065",
+                "D066",
+                "D067",
+                "D068",
+                "D069",
+                "D070",
+                "D071"
+            ],
+            "description": "Single Document with 445 sentences or fragments",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "None",
+            "size": 445,
+            "granularity": "Requirement",
+            "accessibility": "No Link",
+            "source link": ""
+        },
+        {
+            "id": "DS22",
+            "reference": "R058",
+            "embedded information": [
+                "D065",
+                "D066",
+                "D067",
+                "D068",
+                "D069",
+                "D070",
+                "D071"
+            ],
+            "description": "External company documents",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "None",
+            "size": 2396,
+            "granularity": "Requirement",
+            "accessibility": "Private",
+            "source link": ""
+        }
+    ],
+    "approaches": [
+        {
+            "id": "A12",
+            "reference": "R058",
+            "descriptions": [
+                "D065",
+                "D066",
+                "D067",
+                "D068",
+                "D069",
+                "D070",
+                "D071"
+            ],
+            "name": "Quality Analyzer for Requirements Specification (QuARS)",
+            "acronym": "",
+            "type": "Rule-based",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": true,
+            "tool": "y"
+        }
+    ]
+}

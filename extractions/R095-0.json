@@ -1,0 +1,132 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R095",
+        "Refstring": "Hasso, H., Dembach, M., Geppert, H., & Toews, D. (2019). Detection of Defective Requirements using Rule-based Scripts. In REFSQ Workshops."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF210",
+            "name": "Empty Verb Phrases",
+            "linguistic complexity": "Semantic",
+            "scope": "Sentence"
+        },
+        {
+            "id": "QF212",
+            "name": "No redundant subordinate clauses",
+            "linguistic complexity": "Semantic",
+            "scope": "Sentence"
+        },
+        {
+            "id": "QF213",
+            "name": "Use conditional clauses instead of temporal clauses",
+            "linguistic complexity": "Semantic",
+            "scope": "Sentence",
+            "understandability": "-"
+        },
+        {
+            "id": "QF214",
+            "name": "No incomplete comparisons",
+            "linguistic complexity": "Syntactic",
+            "scope": "Sentence"
+        },
+        {
+            "id": "QF215",
+            "name": "No universal quantifiers",
+            "linguistic complexity": "Lexical",
+            "scope": "Sentence"
+        },
+        {
+            "id": "QF216",
+            "name": "No conjunctions",
+            "linguistic complexity": "Lexical",
+            "scope": "Sentence"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D223",
+            "qf id": "QF003",
+            "reference": "R095",
+            "definition": "\"No use of passive voice\"",
+            "impact": "\"The passive voice is to be avoided as it may not specify, who is supposed to perform the action described: 'The data has to be entered every morning.' The sentence would be more informative in active voice: 'The administrator has to enter the data every morning.'\"",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D224",
+            "qf id": "QF210",
+            "reference": "R095",
+            "definition": "\"Empty verbs are verbs of such very broad meaning that they transfer the expression of the actual process to a noun.\"",
+            "impact": "\"They should not be used, as the process in question should be derivable from the main verb of a requirement. E.g.: 'The system should perform a data transfer regularly.' In this example, the empty verb would be 'perform'. Better: 'The system should transfer data regularly.'\"",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D225",
+            "qf id": "QF211",
+            "reference": "R095",
+            "definition": "\"Requirements with incomplete conditions describe the desired behavior for a speci\fc case, but they do not explain the desired behavior for the default case. E.g.: 'In a state of emergency, the system needs to transfer data via radio.' Better: 'In state of emergency, the system needs to transfer data via radio, in all other cases transfer via cable is su\u000ecient.'\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D226",
+            "qf id": "QF212",
+            "reference": "R095",
+            "definition": "\"Redundant subordinate clauses explain aspects that are irrelevant for the requirement. E.g.: 'The administrator needs to change data at any time in order to help the user with his problems.\" It would be better to delete the subordinate clause completely and, if necessary, store this information in an additional note.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D227",
+            "qf id": "QF213",
+            "reference": "R095",
+            "definition": "\"In most cases, [temporal clauses] are actually to be understood as a condition, in which case a conditional clause should be used. E.g.: 'While the system is booting up, data mustn't be sent.\" Better: 'If the system is booting, data mustn't be sent.'\"",
+            "impact": "\"Temporal clauses can be confusing in the context of requirements, because their function may not be clear.\"",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D228",
+            "qf id": "QF214",
+            "reference": "R095",
+            "definition": "\"A comparison is incomplete if there is no value for reference. E.g.: 'The system needs to be faster'. Better: 'The system needs to be faster than 1000 MB/s.'\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D229",
+            "qf id": "QF215",
+            "reference": "R095",
+            "definition": "\"Be careful with universal quantifiers\"",
+            "impact": "\"Such quantifi\fers might indicate a defect and should at the very least be questioned. E.g.: 'All users should have access to the database.' Should all of the users really have access?",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D230",
+            "qf id": "QF216",
+            "reference": "R095",
+            "definition": "\"The use of 'and' in certain positions is one indicator [for a lack of atomicity], among others.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": true
+        },
+        {
+            "id": "D231",
+            "qf id": "QF060",
+            "reference": "R095",
+            "definition": "\"Vague adjectives have no de\ffinite meaning.\"",
+            "impact": "\"They are considered a defect if they, similar to incomplete conditions, appear without any speci\fcation. E.g.: 'The system should transmit data quickly.' Better: 'The system should transmit data at a speed of 1000 MB/s.'\"",
+            "empirical evidence": false,
+            "practitioners involved": true
+        }
+    ],
+    "datasets": [],
+    "approaches": []
+}

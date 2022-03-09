@@ -1,0 +1,76 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R043",
+        "Refstring": "Moser, T., Winkler, D., Heindl, M., & Biffl, S. (2011, July). Automating the detection of complex semantic conflicts between software requirements. In The 23rd International Conference on Software Engineering and Knowledge Engineering, Miami."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF105",
+            "name": "Logical inconsistencies",
+            "linguistic complexity": "Semantic",
+            "scope": "Structured/tabular text"
+        },
+        {
+            "id": "QF106",
+            "name": "Numerical discrepancies",
+            "linguistic complexity": "Semantic",
+            "scope": "Structured/tabular text"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D117",
+            "qf id": "QF105",
+            "reference": "R043",
+            "definition": "Two requirements, which are connected to the same concepts, but where one is negated, contradict each other.",
+            "impact": "",
+            "empirical evidence": true,
+            "practitioners involved": true
+        },
+        {
+            "id": "D118",
+            "qf id": "QF106",
+            "reference": "R043",
+            "definition": "Two requirements, which are connected to the same concepts, but where the numerical information is inconsistent, contradict each other.",
+            "impact": "",
+            "empirical evidence": true,
+            "practitioners involved": true
+        }
+    ],
+    "datasets": [
+        {
+            "id": "DS30",
+            "reference": "R043",
+            "embedded information": [
+                "D117",
+                "D118"
+            ],
+            "description": "Software development project with the goal to design and implement a web application that serves as a platform for communication and networking between technology experts.",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "Authors",
+            "size": 38,
+            "granularity": "Requirement",
+            "accessibility": "Private",
+            "source link": ""
+        }
+    ],
+    "approaches": [
+        {
+            "id": "A18",
+            "reference": "R043",
+            "descriptions": [
+                "D117",
+                "D118"
+            ],
+            "name": "OntReq (extension to Trac)",
+            "acronym": "",
+            "type": "Rule-based",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": true
+        }
+    ]
+}

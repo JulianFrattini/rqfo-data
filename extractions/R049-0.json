@@ -1,0 +1,74 @@
+{
+    "extractor": "ex2",
+    "reference": {
+        "ID": "R049",
+        "Refstring": "Yang, H., Willis, A., De Roeck, A., & Nuseibeh, B. (2010, September). Automatic detection of nocuous coordination ambiguities in natural language requirements. In Proceedings of the IEEE/ACM international conference on Automated software engineering (pp. 53-62)."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [],
+    "descriptions": [
+        {
+            "id": "D005",
+            "qf id": "QF002",
+            "reference": "R049",
+            "definition": "\"ambiguities which people read in different ways have multiple readings\"",
+            "impact": "\"an incorrect implementation may occur\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D006",
+            "qf id": "QF002",
+            "reference": "R049",
+            "definition": "\"[...] nocuous ambiguities give rise to different interpretations by different readers [...]\"",
+            "impact": "\"[...] misunderstandings between stakeholders.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D009",
+            "qf id": "QF005",
+            "reference": "R049",
+            "definition": "\"A coordination structure connects two words, phrases, or clauses together via a coordination conjunction [...]\"",
+            "impact": "\"[...] the risk of diverging interpretation is high.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [
+        {
+            "id": "DS03",
+            "reference": "R049",
+            "embedded information": [
+                "D005",
+                "D006",
+                "D008",
+                "D009"
+            ],
+            "description": "sentences containing multiple structure coordination ambiguity with and, or or and/or",
+            "origin": "Unknown",
+            "ground truth annotators": "Authors",
+            "size": 639,
+            "granularity": "Sentence",
+            "accessibility": "Broken Link",
+            "source link": "http://mcs.open.ac.uk/fjc44/Research/Data.htm"
+        }
+    ],
+    "approaches": [
+        {
+            "id": "A11",
+            "reference": "R049",
+            "descriptions": [
+                "D009"
+            ],
+            "name": "Nocuous Ambiguity Identification (NAI)",
+            "acronym": "",
+            "type": "Supervised ML",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": false,
+            "tool": "y"
+        }
+    ]
+}

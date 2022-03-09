@@ -1,0 +1,103 @@
+{
+    "extractor": "ex3",
+    "reference": {
+        "ID": "R092",
+        "Refstring": "Ko, D., Kim, S., & Park, S. (2019). Automatic recommendation to omitted steps in use case specification. Requirements Engineering, 24(4), 431-458."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF233",
+            "name": "No omitted requirements",
+            "linguistic complexity": "Semantic",
+            "scope": "Document",
+            "completeness": "+"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D272",
+            "qf id": "QF233",
+            "reference": "R092",
+            "definition": "\"Completeness of an SRS indicates that an SRS should have no omitted requirements\"",
+            "impact": "Incomplete requirements specification can lead stakeholder to miss systems\u2019 functions as well as critical qualities, which eventually causes project failure",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [
+        {
+            "id": "DS17",
+            "reference": "R092",
+            "embedded information": [
+                "D046",
+                "D047",
+                "D048",
+                "D049",
+                "D050",
+                "D051"
+            ],
+            "description": "Military Air Defense System",
+            "origin": "Mocked Data",
+            "ground truth annotators": "None",
+            "size": 20,
+            "granularity": "Requirement",
+            "accessibility": "Available in Paper",
+            "source link": ""
+        },
+        {
+            "id": "DS18",
+            "reference": "R092",
+            "embedded information": [
+                "D046",
+                "D047",
+                "D048",
+                "D049",
+                "D050",
+                "D051"
+            ],
+            "description": "VaMaSU project",
+            "origin": "Unknown",
+            "ground truth annotators": "None",
+            "size": 66,
+            "granularity": "Requirement",
+            "accessibility": "Broken Link",
+            "source link": "https://sites.google.com/a/digitaalinentuoteprosessi.fi/digitaalinentuoteprosessi/tutkimusprojektit/vamasu"
+        },
+        {
+            "id": "DS19",
+            "reference": "R092",
+            "embedded information": [
+                "D046",
+                "D047",
+                "D048",
+                "D049",
+                "D050",
+                "D051"
+            ],
+            "description": "Public Health Information Network Preparedness INitiative (PHIN)",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "None",
+            "size": 152,
+            "granularity": "Requirement",
+            "accessibility": "Broken Link",
+            "source link": "http://archived.naccho.org/topics/infrastructure/informatics/upload/OM_RSv1-0.pdf"
+        }
+    ],
+    "approaches": [
+        {
+            "id": "A36",
+            "reference": "R092",
+            "descriptions": [
+                "D272"
+            ],
+            "name": "ScenarioAmigo",
+            "acronym": "",
+            "type": "Rule-Based",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": true
+        }
+    ]
+}

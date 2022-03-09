@@ -1,0 +1,45 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R044",
+        "Refstring": "Dzung, D. V., & Ohnishi, A. (2013, July). Evaluation of ontology-based checking of software requirements specification. In 2013 IEEE 37th Annual Computer Software and Applications Conference (pp. 425-430). IEEE."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [],
+    "descriptions": [],
+    "datasets": [
+        {
+            "id": "DS17",
+            "reference": "R044",
+            "embedded information": [
+                "D030",
+                "D031",
+                "D032"
+            ],
+            "description": "Requirements for a working schedule management software",
+            "origin": "Unknown",
+            "ground truth annotators": "Authors",
+            "size": 15,
+            "granularity": "Requirement",
+            "accessibility": "No Link",
+            "source link": ""
+        },
+        {
+            "id": "DS18",
+            "reference": "R044",
+            "embedded information": [
+                "D030",
+                "D031",
+                "D032"
+            ],
+            "description": "Requirements for a test editor software",
+            "origin": "Unknown",
+            "ground truth annotators": "Authors",
+            "size": 13,
+            "granularity": "Requirement",
+            "accessibility": "No Link",
+            "source link": ""
+        }
+    ],
+    "approaches": []
+}

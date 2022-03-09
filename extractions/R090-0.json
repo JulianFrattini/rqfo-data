@@ -1,0 +1,52 @@
+{
+    "extractor": "ex2",
+    "reference": {
+        "ID": "R090",
+        "Refstring": "Ferrari, A., & Esuli, A. (2019). An NLP approach for cross-domain ambiguity detection in requirements engineering. Automated Software Engineering, 26(3), 559-598."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [],
+    "descriptions": [
+        {
+            "id": "D271",
+            "qf id": "QF109",
+            "reference": "R090",
+            "definition": "They define the ambiguity of a word as the degree of difference bewteen multiple word embeddings from a set of domain documents, where the chosen domains are the relevant ones in a given context.",
+            "impact": "\"[...] these are the words that are commonly used in more than one domain, and thus they may cause frequent misunderstandings when they are used with different meanings by the stakeholders.\"",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [
+        {
+            "id": "DS56",
+            "reference": "R090",
+            "embedded information": [
+                "D271"
+            ],
+            "description": "Domain-specific word lists, embeddings, and labels",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "Authors",
+            "size": 600,
+            "granularity": "Word",
+            "accessibility": "Open Access Link",
+            "source link": "https://doi.org/10.5281/zenodo.1476902"
+        }
+    ],
+    "approaches": [
+        {
+            "id": "A35",
+            "reference": "R090",
+            "descriptions": [
+                "D271"
+            ],
+            "name": "",
+            "acronym": "",
+            "type": "Unsupervised ML",
+            "accessibility": "Open Source Link",
+            "source link": "https://doi.org/10.5281/zenodo.1476902",
+            "empirical method applied": true,
+            "practitioners involved": false
+        }
+    ]
+}

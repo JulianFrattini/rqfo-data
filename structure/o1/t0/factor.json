@@ -14,72 +14,67 @@
             "description": "The name of a quality factor shall reflect the quality factor in relation to the whole set of quality factors. This means that the name can be extracted from the paper directly, but if the name does not sufficiently demarcate the quality factor from others, then it is feasible to select a new name. This is due to the fact that several publications propose and name a quality factor without awareness of other quality factors, which makes demarcation by design impossible.",
             "unique": true,
             "mandatory": true,
-            "rule": "If the publication explicity names the quality factor and this name sufficiently demarcates the factor from all other existing factors, use the name mentioned in the publication. Otherwise, select a name representing the factor in respect to all other factors."
-        }, {
-            "name": "r ids",
-            "type": "reflist",
-            "elements": "reference",
-            "mandatory": true
+            "extraction rule": "If the publication explicity names the quality factor and this name sufficiently demarcates the factor from all other existing factors, use the name mentioned in the publication. Otherwise, select a name representing the factor in respect to all other factors."
         }, {
             "name": "aspect",
             "type": "dimension cluster",
             "description": "This dimension-cluster is built on the conceptual notion that a quality factor is a normative rule, where a violation against it is hypothesized to have an impact of the type aspect on an activity in which the requirement is used. It captures all quality aspects that are explicitly mentioned in the description of the impact of the QA.",
-            "extraction rule": "A violation against the quality attribute has an impact on",
+            "extraction rule": "A violation against the quality factor has an impact on",
             "dimensions": [
                 {
-                    "dimension": "adequacy",
-                    "description": ""
+                    "value": "adequacy",
+                    "description": "the appropriateness of the requirement in its respective context"
                 }, {
-                    "dimension": "atomicity",
-                    "description": ""
+                    "value": "atomicity",
+                    "description": "the confinement of the requirements scope to only one, not further splittable element"
                 }, {
-                    "dimension":  "completeness",
-                    "description": "The explicit availability of all relevant information"
+                    "value":  "completeness",
+                    "description": "the explicit availability of all relevant information"
                 }, {
-                    "dimension":  "compliance",
-                    "description": ""
+                    "value":  "compliance",
+                    "description": "the adherence to external rules"
                 }, {
-                    "dimension":  "consistency",
-                    "description": "The satisfiability of all requirements in conjunction"
+                    "value":  "consistency",
+                    "description": "the satisfiability of all requirements in conjunction"
                 }, {
-                    "dimension":  "correctness",
-                    "description": "The alignment of the stated text with the intended objects"
+                    "value":  "correctness",
+                    "description": "the alignment of the stated text with the intended objects"
                 }, {
-                    "dimension":  "design-independence",
-                    "description": ""
+                    "value":  "designindependence",
+                    "description": "the confinement of the requirement to the problem space"
                 }, {
-                    "dimension":  "feasibility",
-                    "description": ""
+                    "value":  "feasibility",
+                    "description": "the chance of realistically implementing the requirement"
                 }, {
-                    "dimension":  "maintainability",
-                    "description": ""
+                    "value":  "maintainability",
+                    "description": "the ability to continuously ensure the quality of the requirement"
                 }, {
-                    "dimension":  "modifiability",
-                    "description": ""
+                    "value":  "modifiability",
+                    "description": "the ability to change the requirement"
                 }, {
-                    "dimension":  "necessity",
-                    "description": "The exclusivity of written text"
+                    "value":  "necessity",
+                    "description": "the singularity of written text"
                 }, {
-                    "dimension":  "precision",
-                    "description": ""
+                    "value":  "precision",
+                    "description": "the level of unique specification of the text"
                 }, {
-                    "dimension":  "reusability",
-                    "description": "The ease of reuse"
+                    "value":  "reusability",
+                    "description": "the ease of reuse"
                 }, {
-                    "dimension":  "simplicity",
-                    "description": "The intricacy of the written text"
+                    "value":  "simplicity",
+                    "description": "the intricacy of the written text"
                 }, {
-                    "dimension":  "traceability",
-                    "description": "The explicit connections to other artifacts"
+                    "value":  "traceability",
+                    "description": "the explicit connections to other artifacts"
                 }, {
-                    "dimension": "unambiguouseness",
-                    "description": "The unique interpretation of a requirement"
+                    "value": "unambiguouseness",
+                    "description": "the unique interpretation of a requirement"
                 }, {
-                    "dimension":  "understandability",
-                    "description": "The comprehensibility of written text"
+                    "value":  "understandability",
+                    "description": "the comprehensibility of written text"
                 }, {
-                    "dimension":  "verifiability",
-                    "description": "The ability to assess whether a requirement is met"
+                    "value":  "verifiability",
+                    "description": "the ability to assess whether a requirement is met"
                 }
             ],
             "characteristics": [
@@ -91,7 +86,8 @@
                     "description": "in a positive way"
                 }, {
                     "value": "?",
-                    "description": "in an unknown way"
+                    "description": "in an unknown way",
+                    "default": true
                 }, {
                     "value": "",
                     "description": "no way at all"
@@ -116,9 +112,6 @@
                 }, {
                     "value": "semantic",
                     "description": "the meaning of the words (i.e., a semantic comprehension of the text is necessary to automate the rule)."
-                }, {
-                    "value": "pragmatic",
-                    "description": "Pragmatic ambiguity occurs when a sentence has several meanings in the context in which it is uttered."
                 }
             ],
             "mandatory": true
@@ -133,7 +126,7 @@
                     "description": "a single token/word"
                 }, {
                     "value": "phrase",
-                    "description": "a substring of a sentence"
+                    "description": "multiple, coherent words"
                 }, {
                     "value": "sentence",
                     "description": "a full, grammatically correct sentence"
@@ -141,11 +134,11 @@
                     "value": "structured/tabular text",
                     "description": "a structured text (use case specification, user story, feature table)"
                 }, {
-                    "value": "user Story",
-                    "description": ""
+                    "value": "user story",
+                    "description": "a structured text following the Cohn/Connextra template ('As a <user> I want to <goal> so that <justification>.')"
                 }, {
                     "value": "use case",
-                    "description": ""
+                    "description": "a structured text describing a set of connected scenarios in the form of consecutive steps"
                 }, {
                     "value": "requirement",
                     "description": "a structured functional, non-functional, or process requirement"

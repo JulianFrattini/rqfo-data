@@ -1,0 +1,74 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R062",
+        "Refstring": "Espa\u00f1a, S., Condori-Fernandez, N., Gonz\u00e1lez, A., & Pastor, \u00d3. (2009, August). Evaluating the completeness and granularity of functional requirements specifications: A controlled experiment. In 2009 17th IEEE International Requirements Engineering Conference (pp. 161-170). IEEE."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF081",
+            "name": "Functional encapsulations completeness",
+            "linguistic complexity": "Semantic",
+            "scope": "Structured/tabular text"
+        },
+        {
+            "id": "QF082",
+            "name": "Linked communications completeness",
+            "linguistic complexity": "Semantic",
+            "scope": "Structured/tabular text"
+        },
+        {
+            "id": "QF083",
+            "name": "Functional fragmentation error",
+            "linguistic complexity": "Semantic",
+            "scope": "Structured/tabular text"
+        },
+        {
+            "id": "QF084",
+            "name": "Functional aggregation error",
+            "linguistic complexity": "Semantic",
+            "scope": "Structured/tabular text"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D087",
+            "qf id": "QF081",
+            "reference": "R062",
+            "definition": "\"All functional requirements specified in the reference model have been specified in the model.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D088",
+            "qf id": "QF082",
+            "reference": "R062",
+            "definition": "\"All linked communications specified in the reference model have been specified in the model.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D089",
+            "qf id": "QF083",
+            "reference": "R062",
+            "definition": "\"This error is the result of modelling two or more functional encapsulations for a part of the domain which, according to the given unity criteria, should have been modelled as only one encapsulation.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D090",
+            "qf id": "QF084",
+            "reference": "R062",
+            "definition": "\"This error is the result of modelling certain part of the domain as one functional encapsulation when, according to the unity criteria, the phenomena should be modelled using two or more encapsulations.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [],
+    "approaches": []
+}

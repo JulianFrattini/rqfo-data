@@ -11,7 +11,7 @@
         }, {
             "name": "description",
             "description": "The description of a data set object contains information about the origin of this data. Descriptions may be vague in the case of confidential data or explicit in the case of open-source data.", 
-            "type": "string",
+            "type": "scope note",
             "mandatory": true
         }, {
             "name": "embedded information",
@@ -88,11 +88,11 @@
                     "value": "structured/tabular text",
                     "description": "a structured text (use case specification, user story, feature table)"
                 }, {
-                    "value": "user Story",
-                    "description": ""
+                    "value": "user story",
+                    "description": "a structured text following the Cohn/Connextra template ('As a <user> I want to <goal> so that <justification>.')"
                 }, {
                     "value": "use case",
-                    "description": ""
+                    "description": "a structured text describing a set of connected scenarios in the form of consecutive steps"
                 }, {
                     "value": "requirement",
                     "description": "a structured functional, non-functional, or process requirement"

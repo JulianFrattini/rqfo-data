@@ -5,7 +5,14 @@
         "Refstring": "Al Balushi, T., Khod, O., Sampaio, P. R. F., Patel, M., Manchester, B. S. W., Corcho, O., & Loucopoulos, P. (2008). Identifying NFRs conflicts using quality ontologies. Combining SOA and BPM Technologies for Cross-System Process Automation, 929."
     },
     "timestamp": "2022-02-24 10:00:00",
-    "quality factors": [],
+    "factors": [
+        {
+            "id": "QF104",
+            "name": "Free of NFR-Class Conflicts",
+            "linguistic complexity": "Semantic",
+            "scope": "Requirement"
+        }
+    ],
     "descriptions": [
         {
             "id": "D116",
@@ -17,6 +24,36 @@
             "practitioners involved": false
         }
     ],
-    "data sets": [],
-    "approaches": []
+    "datasets": [
+        {
+            "id": "DS29",
+            "reference": "R022",
+            "embedded information": [
+                "D116"
+            ],
+            "description": "Quality requirements for a university helpdesk web application",
+            "origin": "Student Data",
+            "ground truth annotators": "None",
+            "size": 11,
+            "granularity": "Requirement",
+            "accessibility": "Available in Paper",
+            "source link": ""
+        }
+    ],
+    "approaches": [
+        {
+            "id": "A17",
+            "reference": "R022",
+            "descriptions": [
+                "D116"
+            ],
+            "name": "Extension to the ElicitO tool",
+            "acronym": "",
+            "type": "Rule-based",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": true
+        }
+    ]
 }

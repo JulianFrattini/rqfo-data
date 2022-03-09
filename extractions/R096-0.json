@@ -1,0 +1,32 @@
+{
+    "extractor": "ex2",
+    "reference": {
+        "ID": "R096",
+        "Refstring": "Winter, K., Femmer, H., & Vogelsang, A. (2020, March). How Do Quantifiers Affect the Quality of Requirements?. In International Working Conference on Requirements Engineering: Foundation for Software Quality (pp. 3-18). Springer, Cham."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF227",
+            "name": "Quantifiers",
+            "linguistic complexity": "Lexical",
+            "scope": "Words",
+            "correctness": "+",
+            "reusability": "+",
+            "understandability": "+"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D251",
+            "qf id": "QF227",
+            "reference": "R096",
+            "definition": "\"While determiners in general describe what a noun refers to, for instance, \u201cthe\u201d, \u201csome\u201d, or \u201ctheir\u201d, quanti\ufb01ers represent a subcategory of determiners referring to a certain quantity of the noun.\"",
+            "impact": "Overall better readability, correctness, and less difficult when working with affirmative quantifiers, compared to their negative equivalences.",
+            "empirical evidence": true,
+            "practitioners involved": true
+        }
+    ],
+    "datasets": [],
+    "approaches": []
+}
