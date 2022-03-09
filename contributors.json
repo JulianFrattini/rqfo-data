@@ -1,7 +1,15 @@
 [
     {
-        "id": "jfr",
-        "name": "Julian Frattini",
-        "contact": "julian.frattini@bth.se"
+        "id": "ex1",
+        "name": "Extractor 1",
+        "contact": "anonymous.extractor1@gmail.com"
+    }, {
+        "id": "ex2",
+        "name": "Extractor 2",
+        "contact": "anonymous.extractor2@gmail.com"
+    }, {
+        "id": "ex3",
+        "name": "Extractor 3",
+        "contact": "anonymous.extractor3@gmail.com"
     }
 ]
