@@ -196,7 +196,7 @@
     ],
     "approaches": [
         {
-            "id": "A10",
+            "id": "A37",
             "reference": "R007",
             "descriptions": [
                 "D052",
@@ -208,8 +208,8 @@
                 "D060",
                 "D061"
             ],
-            "name": "Extension to Advanced Integrated Requirements Engineering System (AIRES)",
-            "acronym": "",
+            "name": "Extension to Advanced Integrated Requirements Engineering System",
+            "acronym": "AIRES",
             "type": "Rule-based",
             "accessibility": "No Link",
             "source link": "",

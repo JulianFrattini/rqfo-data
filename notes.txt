@@ -1,0 +1,6 @@
+Disregarded since their respective QFs have been determined to be irrelevant:
+* R013
+* R015
+* R044
+* R063
+* R099

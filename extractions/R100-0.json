@@ -96,5 +96,20 @@
             "source link": ""
         }
     ],
-    "approaches": []
+    "approaches": [
+        {
+            "id": "A23",
+            "reference": "R079",
+            "descriptions": [
+                "D141"
+            ],
+            "name": "PASER",
+            "acronym": "",
+            "type": "Rule-based",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": true
+        }
+    ]
 }

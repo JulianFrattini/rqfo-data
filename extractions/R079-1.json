@@ -174,10 +174,10 @@
                 "D138",
                 "D139"
             ],
-            "name": "Requirements Analysis Tool (RAT)",
-            "acronym": "",
+            "name": "Requirements Analysis Tool",
+            "acronym": "RAT",
             "type": "Rule-based",
-            "accessibility": "No Link",
+            "accessibility": "Private",
             "source link": "",
             "empirical method applied": true,
             "practitioners involved": true

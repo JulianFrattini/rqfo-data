@@ -1,0 +1,71 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R056",
+        "Refstring": "Christophe, F., Mokammel, F., Coatan\u00e9a, E., Nguyen, A., Bakhouya, M., & Bernard, A. (2014). A methodology supporting syntactic, lexical and semantic clarification of requirements in systems engineering. International Journal of Product Development, 19(4), 173-190."
+    },
+    "timestamp": "2023-02-07 16:00:00",
+    "factors": [
+        {
+            "id": "QF085",
+            "name": "Lexical",
+            "linguistic complexity": "Lexical",
+            "scope": "Word"
+        },
+        {
+            "id": "QF087",
+            "name": "Semantic",
+            "linguistic complexity": "Semantic",
+            "scope": "Sentence"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D130",
+            "qf id": "QF085",
+            "reference": "R056",
+            "definition": "\"Lexical refers to the vocabulary used in a language apart from its grammar or construction. For example, the words \u2018tree\u2019, \u2018branch\u2019, \u2018root\u2019, \u2018wood\u2019 belong to the same lexical field.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D131",
+            "qf id": "QF086",
+            "reference": "R056",
+            "definition": "\"Syntactic refers to the way words are associated together to form a sentence.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D132",
+            "qf id": "QF087",
+            "reference": "R056",
+            "definition": "\"Semantic refers to the meaning of language. In the case of analyzing semantics of requirements, the meaning of the whole sentence must be derived. It consists of extracting the exact meaning of each word of the sentence according to its context of use in this sentence (why is it together with the other words of the sentence?) and, then, extracting the general meaning for the whole sentence.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [],
+    "approaches": [
+        {
+            "id": "A21",
+            "reference": "R056",
+            "descriptions": [
+                "D130",
+                "D131",
+                "D132"
+            ],
+            "name": "Recursive Object Model Refinement",
+            "acronym": "ROM",
+            "type": "Rule-based",
+            "accessibility": "Proprietary",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": false,
+            "tool": "y"
+        }
+    ]
+}

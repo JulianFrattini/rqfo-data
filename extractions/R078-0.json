@@ -120,7 +120,7 @@
             "ground truth annotators": "None",
             "size": 97,
             "granularity": "Requirement",
-            "accessibility": "Reachable Link",
+            "accessibility": "Broken Link",
             "source link": "https://www.iso.org/standard/41322.html"
         }
     ],
@@ -136,10 +136,10 @@
                 "D042",
                 "D043"
             ],
-            "name": "Domain Ontology Design Tool (DODT)",
-            "acronym": "",
+            "name": "Domain Ontology Design Tool",
+            "acronym": "DODT",
             "type": "Rule-based",
-            "accessibility": "Open Access Link",
+            "accessibility": "Open Source Link",
             "source link": "https://sourceforge.net/projects/gnlq/",
             "empirical method applied": true,
             "practitioners involved": true,

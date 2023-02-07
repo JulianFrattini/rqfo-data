@@ -4,7 +4,7 @@
         "ID": "R076",
         "Refstring": "El-Attar, M., & Miller, J. (2010). Improving the quality of use case models using antipatterns. Software & systems modeling, 9(2), 141-160."
     },
-    "timestamp": "2022-02-24 10:00:00",
+    "timestamp": "2023-02-07 16:00:00",
     "factors": [
         {
             "id": "QF205",
@@ -106,8 +106,8 @@
             "ground truth annotators": "None",
             "size": -1,
             "granularity": "Use Case",
-            "accessibility": "Broken Link",
-            "source link": "mapstedi.colorado.edu/documents/Mapstedi_High_Level_Use_Case_Model.pdf"
+            "accessibility": "No Link",
+            "source link": ""
         }
     ],
     "approaches": [
@@ -121,11 +121,11 @@
                 "D221",
                 "D222"
             ],
-            "name": "Automated Risk-Based Inspector of UC Models (ARBIUM)",
-            "acronym": "",
+            "name": "Automated Risk-Based Inspector of UC Models",
+            "acronym": "ARBIUM",
             "type": "Rule-based",
-            "accessibility": "Broken Link",
-            "source link": "",
+            "accessibility": "Open Access Link",
+            "source link": "https://doi.org/10.5281/zenodo.7528522",
             "empirical method applied": true,
             "practitioners involved": false
         }
