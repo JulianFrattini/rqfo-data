@@ -41,10 +41,12 @@ def checkobject(type, structure, object, collection):
         # ATTRIBUTE: UNIQUE
         if 'unique' in attribute.keys() and attribute['unique'] == True: 
             # obtain the values of all objects
-            values = list(map(lambda o: o[name], collection[type]))
+            #values = list(map(lambda o: o[name], collection[type]))
+            values = [obj[name] for obj in collection[type]]
+            values.sort()
             # check that the value is unique
             if values.count(object[name]) > 1:
-                print(f'Error: {type} {oid} has a non-unique value in attribute {name} ({object[name]})')
+                print(f'Error: the {name} of {type} {oid} ({object[name]}) is not unique (last value: {values[-1]})')
 
         # ATTRIBUTE: TYPE
         if attribute['type'] == 'dimension':
@@ -70,21 +72,18 @@ def checkobject(type, structure, object, collection):
                     if object[dimension] not in availablecharacteristics:
                         print(f'Error: {type} {oid}, dimension {dimension} has an invalid value {object[dimension]} (allowed: {availablecharacteristics})')
 
-        elif attribute['type'] == 'ref':
-            reference = object[name]
-            target = attribute['elements']
+        elif attribute['type'] in ['ref', 'reflist']:
+            references = object[name] # reference values
+            target = attribute['elements'] # name of the element that is referred to
 
-            availablevalues = list(map(lambda o: o['id'], collection[target]))
-            if reference not in availablevalues:
-                print(f'Error: {type} {oid} references {reference} in attribute {name}, but this reference does not exist')
-        elif attribute['type'] == 'reflist':
-            references = object[name]
-            target = attribute['elements']
+            availablerefs = [obj['id'] for obj in collection[target]]
 
-            availablevalues = list(map(lambda o: o['id'], collection[target]))
+            if attribute['type'] == 'ref':
+                references = [references]
+
             for reference in references:
-                if reference not in availablevalues:
-                    print(f'Error: {type} {oid} references {reference} in attribute {name}, but this reference does not exist')
+                if reference not in availablerefs:
+                    print(f"Error: {type} {oid}'s {name} references {target} {reference}, but that element does not exist")
 
 def compileall(extractions):
     collection = {}
@@ -132,6 +131,6 @@ if __name__ == "__main__":
             print(f'Investigating {exid}')
             extraction = extractions[exid]
             for structure in structures:
-                #print('Checking ' + str(len(extraction[taxmap[structure]])) + ' ' + str(taxmap[structure]))
+                # print(str(len(extraction[taxmap[structure]])) + ' ' + str(taxmap[structure]))
                 for extractedobject in extraction[taxmap[structure]]:
                     checkobject(structure, structures[structure], extractedobject, collection)
