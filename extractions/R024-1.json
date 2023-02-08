@@ -151,10 +151,10 @@
                 "D022",
                 "D023"
             ],
-            "name": "Automatic Quality User Story Artisan (AQUSA)",
-            "acronym": "",
+            "name": "Automatic Quality User Story Artisan",
+            "acronym": "AQUSA",
             "type": "Rule-based",
-            "accessibility": "Open Access Link",
+            "accessibility": "Open Access",
             "source link": "https://doi.org/10.5281/zenodo.7573781",
             "empirical method applied": true,
             "practitioners involved": true,

@@ -1,0 +1,149 @@
+{
+    "name": "Data Set",
+    "description": "A data set object is an arbitrarily large set of natural language requirements, which may make one or more specific quality factors explicit (e.g., through annotations) and are usable as gold standards to evaluate newly proposed approaches.",
+    "attributes": [
+        {
+            "name": "id",
+            "type": "identifier",
+            "format": "^DS\\d{3}$",
+            "unique": true,
+            "mandatory": true
+        }, {
+            "name": "description",
+            "description": "The description of a data set object contains information about the origin of this data. Descriptions may be vague in the case of confidential data or explicit in the case of open-source data.", 
+            "type": "scope note",
+            "mandatory": true
+        }, {
+            "name": "embedded information",
+            "type": "reflist",
+            "elements": "description"
+        }, {
+            "name": "origin",
+            "type": "dimension",
+            "description": "This dimension classifies a data set object regarding the type of the author. If no author is ever explicitly mentioned in the reference and accessing the reference does not reveal the author either, the data sets author must be exposed as unknown.",
+            "characteristics": [
+                {
+                    "value": "practitioner data",
+                    "description": "Data that was extracted from contexts in which practitioners work"
+                }, {
+                    "value": "student data",
+                    "description": "Data that was created or extracted in the context of student work."
+                }, {
+                    "value": "mocked data",
+                    "description": "Data that was fabricated for the purpose of being studied."
+                }, {
+                    "value": "unknown",
+                    "description": "A dataset exists, but it is not clear who created the data."
+                }
+            ],
+            "mandatory": true
+        }, {
+            "name": "ground truth annotators",
+            "type": "dimension",
+            "description": "This dimension classifies an object regarding who is responsible for annotating the ground truth embedded in the data set if such an annotation exists. Data that is used as is without any additional information embedded into it have a ground truth annotator of none.", 
+            "characteristics": [
+                {
+                    "value": "practitioners",
+                    "description": "Practitioners annotated the data."
+                }, {
+                    "value": "researchers",
+                    "description": "Ph.D., PostDocs, Professors, or independent researchers annotated the data. "
+                }, {
+                    "value": "students",
+                    "description": "BSc or MSc students annotated the data."
+                }, {
+                    "value": "authors",
+                    "description": "Researchers listed as authors on the paper."
+                }, {
+                    "value": "inherent",
+                    "description": "The truth is embedded in the data in some way. Could be just analysing the data the way it is, or the truth was added to the data in the way it was created."
+                }, {
+                    "value": "none",
+                    "description": "Data was not annotated"
+                }, {
+                    "value": "unknown",
+                    "description": "The dataset was annotated, but it is not clear who annotated the data"
+                }
+            ],
+            "mandatory": true
+        }, {
+            "name": "size",
+            "type": "numeric",
+            "description": "This dimension quantifies an object regarding the number of contained elements, which shall support to estimate whether a data set contains a sufficient amount of entries for specific training tasks."
+        }, {
+            "name": "granularity",
+            "type": "dimension",
+            "description": "The granularity classifies an object regarding the scope of the elements contained in the data set.",
+            "characteristics": [
+                {
+                    "value": "word",
+                    "description": "a single token/word"
+                }, {
+                    "value": "phrase",
+                    "description": "a substring of a sentence"
+                }, {
+                    "value": "sentence",
+                    "description": "a full, grammatically correct sentence"
+                }, {
+                    "value": "structured/tabular text",
+                    "description": "a structured text (use case specification, user story, feature table)"
+                }, {
+                    "value": "user story",
+                    "description": "a structured text following the Cohn/Connextra template ('As a <user> I want to <goal> so that <justification>.')"
+                }, {
+                    "value": "use case",
+                    "description": "a structured text describing a set of connected scenarios in the form of consecutive steps"
+                }, {
+                    "value": "requirement",
+                    "description": "a structured functional, non-functional, or process requirement"
+                }, {
+                    "value": "section",
+                    "description": "a full, coherent section"
+                }, {
+                    "value": "document",
+                    "description": "a full, coherent document"
+                }, {
+                    "value": "global",
+                    "description": "all textual requirements artifacts associated to the product/service"
+                }
+            ],
+            "mandatory": true
+        }, {
+            "name": "accessibility",
+            "type": "dimension",
+            "description": "The accessibility classifies an object regarding the degree to which it is currently available and usable.",
+            "characteristics": [
+                {
+                    "value": "open access",
+                    "description": "The dataset is hosted in a service that satisfies the following criteria: (1) Immutable URL: cannot be altered by the author or someone else, (2) Permanent: the hosting organization has a mission to maintain artefacts for the foreseeable future, (3) Accessible: There is a DOI pointing to the real datasource URL, (4) Open-Source License: The dataset has a proper licence which grants access and re-use of data, material, and source code"
+                }, {
+                    "value": "available in paper",
+                    "description": "The dataset is small enough that the authors disclose the entire dataset in the paper itself (e.g. a set of 14 requirements, listed in a table)."
+                }, {
+                    "value": "reachable link",
+                    "description": "The dataset is reachable now, but is missing some aspect above to be considered Open Access."
+                }, {
+                    "value": "broken link",
+                    "description": "Link in paper, but does not resolve."
+                }, {
+                    "value": "no link",
+                    "description": "A dataset is discussed, but no link is provided."
+                }, {
+                    "value": "upon request",
+                    "description": "Authors say the dataset is available upon request."
+                }, {
+                    "value": "private",
+                    "description": "The authors say that a dataset exists, but is private for some reasons (such as industry collaboration with private data, etc.)."
+                }, {
+                    "value": "proprietary",
+                    "description": "The approach is available but proprietary"
+                }
+            ],
+            "mandatory": true
+        }, {
+            "name": "source link",
+            "description": "The source or link is the pointer towards the location where the object can be found.",
+            "type": "scope note"
+        }
+    ]
+}

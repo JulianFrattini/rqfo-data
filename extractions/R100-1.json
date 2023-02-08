@@ -4,7 +4,7 @@
         "ID": "R100",
         "Refstring": "Wang, Y., Wang, T., & Sun, J. (2019). PASER: a pattern-based approach to service requirements analysis. International Journal of Software Engineering and Knowledge Engineering, 29(04), 547-576."
     },
-    "timestamp": "2022-02-24 10:00:00",
+    "timestamp": "2023-02-07 16:00:00",
     "factors": [
         {
             "id": "QF131",
@@ -96,5 +96,20 @@
             "source link": ""
         }
     ],
-    "approaches": []
+    "approaches": [
+        {
+            "id": "A23",
+            "reference": "R079",
+            "descriptions": [
+                "D141"
+            ],
+            "name": "Pattern-based Approach to Service Requirements analysis",
+            "acronym": "PASER",
+            "type": "Rule-based",
+            "accessibility": "No Link",
+            "source link": "",
+            "empirical method applied": true,
+            "practitioners involved": true
+        }
+    ]
 }

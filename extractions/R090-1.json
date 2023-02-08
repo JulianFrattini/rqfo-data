@@ -29,7 +29,7 @@
             "ground truth annotators": "Authors",
             "size": 600,
             "granularity": "Word",
-            "accessibility": "Open Access Link",
+            "accessibility": "Open Access",
             "source link": "https://doi.org/10.5281/zenodo.1476902"
         }
     ],
@@ -43,7 +43,7 @@
             "name": "",
             "acronym": "",
             "type": "Unsupervised ML",
-            "accessibility": "Open Access Link",
+            "accessibility": "Open Access",
             "source link": "https://doi.org/10.5281/zenodo.1476902",
             "empirical method applied": true,
             "practitioners involved": false

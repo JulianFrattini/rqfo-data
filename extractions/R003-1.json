@@ -54,7 +54,7 @@
             "ground truth annotators": "Unknown",
             "size": 583,
             "granularity": "Requirement",
-            "accessibility": "Open Access Link",
+            "accessibility": "Open Access",
             "source link": "https://zenodo.org/record/1414117"
         }
     ],
@@ -69,7 +69,7 @@
             "name": "Sliding Head-Tail Component (S-HTC)",
             "acronym": "Tailspin",
             "type": "Rule-based",
-            "accessibility": "Open Access Link",
+            "accessibility": "Open Access",
             "source link": "https://doi.org/10.5281/zenodo.7584181",
             "empirical method applied": true,
             "practitioners involved": false

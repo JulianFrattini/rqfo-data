@@ -4,7 +4,7 @@
         "ID": "R035",
         "Refstring": "Din, C. Y., & Rine, D. C. (2008). Requirements content goodness and complexity measurement based on NP chunks. VDM Publishing."
     },
-    "timestamp": "2022-02-24 10:00:00",
+    "timestamp": "2023-02-07 16:00:00",
     "factors": [
         {
             "id": "QF057",
@@ -68,7 +68,7 @@
             "ground truth annotators": "None",
             "size": 1,
             "granularity": "Document",
-            "accessibility": "Broken Link",
+            "accessibility": "No Link",
             "source link": "M. Ricker, Requirements Specification\nUnderstandability Evaluation with Cohesion, Context,\nand Coupling, Doctoral Dissertation, George Mason\nUniversity, Fairfax, VA, 1995"
         },
         {
@@ -84,8 +84,8 @@
             "ground truth annotators": "None",
             "size": 4,
             "granularity": "Document",
-            "accessibility": "Private",
-            "source link": ""
+            "accessibility": "Open Access",
+            "source link": "https://doi.org/10.5281/zenodo.7619051"
         }
     ],
     "approaches": []

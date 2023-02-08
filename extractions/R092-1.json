@@ -4,7 +4,7 @@
         "ID": "R092",
         "Refstring": "Ko, D., Kim, S., & Park, S. (2019). Automatic recommendation to omitted steps in use case specification. Requirements Engineering, 24(4), 431-458."
     },
-    "timestamp": "2022-02-24 10:00:00",
+    "timestamp": "2023-02-07 16:00:00",
     "factors": [
         {
             "id": "QF233",
@@ -25,7 +25,20 @@
             "practitioners involved": false
         }
     ],
-    "datasets": [],
+    "datasets": [
+        {
+            "id": "DS66",
+            "reference": "R092",
+            "embedded information": [],
+            "description": "Use case scenarios from 12 academic or proprietary industrial software projects",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "None",
+            "size": 231,
+            "granularity": "Use Case",
+            "accessibility": "No Link",
+            "source link": ""
+        }
+    ],
     "approaches": [
         {
             "id": "A36",
@@ -36,8 +49,8 @@
             "name": "ScenarioAmigo",
             "acronym": "",
             "type": "Rule-Based",
-            "accessibility": "No Link",
-            "source link": "",
+            "accessibility": "Open Source",
+            "source link": "https://github.com/maniara/ScenarioAmigo",
             "empirical method applied": true,
             "practitioners involved": true
         }

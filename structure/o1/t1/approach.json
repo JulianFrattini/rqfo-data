@@ -1,0 +1,203 @@
+{
+    "name": "Approach",
+    "description": "An approach is an implementation of automatic detection of a violation against the formal rule which the quality attribute entails.",
+    "attributes": [
+        {
+            "name": "id",
+            "type": "identifier",
+            "format": "^A0\\d{3}$",
+            "unique": true,
+            "mandatory": true
+        }, {
+            "name": "name",
+            "type": "scope note",
+            "mandatory": true
+        }, {
+            "name": "acronym",
+            "type": "scope note"
+        }, {
+            "name": "descriptions",
+            "type": "reflist",
+            "elements": "description",
+            "mandatory": true
+        }, {
+            "name": "type",
+            "type": "dimension",
+            "description": "The type of proposed solution classifies an approach regarding the general paradigm utilized to implement a detection algorithm.",
+            "characteristics": [
+                {
+                    "value": "rule-based",
+                    "description": "Violations against the quality attribute are detected based on a static set of predefined rules."
+                }, {
+                    "value": "supervised ml",
+                    "description": "The detection of violations against the quality attribute is realized through a supervised machine learning approach."
+                }, {
+                    "value": "unsupervised ml",
+                    "description": "The detection of violations against the quality attribute is realized through an unsupervised machine learning approach."
+                }, {
+                    "value": "supervised dl",
+                    "description": "The detection of violations against the quality attribute is realized through a supervised deep learning approach."
+                }, {
+                    "value": "unsupervised dl",
+                    "description": "The detection of violations against the quality attribute is realized through an unsupervised deep learning approach."
+                }
+            ],
+            "mandatory": true
+        }, {
+            "name": "accessibility",
+            "type": "dimension",
+            "description": "The accessibility classifies an approach regarding the degree to which it is available.",
+            "characteristics": [
+                {
+                    "value": "open access",
+                    "description": "The approach is hosted in a service that satisfies all of the following criteria: (1) Immutable URL: cannot be altered by the author or someone else, (2) Permanent: the hosting organization has a mission to maintain artefacts for the foreseeable future, (3) Accessible: There is a DOI pointing to the real approach URL, (4) Open-Source License: The approach has a proper licence which grants access and re-use of data, material, and source code"
+                }, {
+                    "value": "open source",
+                    "description": "The approach is available for all to use and the codebase has been disclosed"
+                }, {
+                    "value": "reachable link",
+                    "description": "The approach is reachable now, but is missing some aspect above to be considered Open Access."
+                }, {
+                    "value": "broken link",
+                    "description": "A link is given in paper, but does not resolve."
+                }, {
+                    "value": "no link",
+                    "description": "An approach is discussed, but no link is provided."
+                }, {
+                    "value": "upon request",
+                    "description": "Authors say the approach is available upon request."
+                }, {
+                    "value": "private",
+                    "description": "The authors say that an approach exists, but is private for some reasons (such as industry collaboration with private data, etc.)"
+                }, {
+                    "value": "proprietary",
+                    "description": "The approach is available but proprietary"
+                }
+            ],
+            "mandatory": true
+        }, {
+            "name": "source link",
+            "type": "scope note",
+            "description": "The source or link is the pointer towards the location where the object can be found."
+        }, {
+            "name": "empirical method applied",
+            "type": "dimension",
+            "description": "This dimension determines whether an approach has been evaluated with some sort of empirical method: this can be a formal experiment comparing the efficiency of the approach, but may also appear in the form of interviews confirming the findings of the approach.","characteristics": [
+                {
+                    "value": true,
+                    "description": "An empirical method has been applied to validate the approach."
+                }, {
+                    "value": false,
+                    "description": "The approach has simply been postulated without any empirical validation."
+                }
+            ],
+            "mandatory": true
+        }, {
+            "name": "practitioners involved",
+            "type": "dimension",
+            "description": "This dimension captures whether the application/evaluation of the approach involved actual practitioners. We currently do not differentiate whether the practitioners involved with the evaluation were also the practitioners who worked with the data set used for the evaluation.",
+            "characteristics": [
+                {
+                    "value": true,
+                    "description": "The evaluation of the approach involved practitioners, which primarily work in industry."
+                }, {
+                    "value": false,
+                    "description": "The evaluation of the approach involved no practitioners (hence instead: authors, research staff, students, etc.)."
+                }
+            ],
+            "mandatory": true
+        }, {
+            "name": "releases",
+            "type": "dimension cluster",
+            "description": "The relase classifies an approach regarding the type of solution that was disclosed to the public. While some approaches are disclosed in the form of executable tools, also publishing the source code in order to improve reuse and maintainance shall be encouraged.",
+            "dimensions": [
+                {
+                    "value": "tool",
+                    "description": "A standalone tool"
+                }, {
+                    "value": "webservice",
+                    "description": "A online interface hosted as a webservice"
+                }, {
+                    "value": "library",
+                    "description": "A library"
+                }, {
+                    "value": "api",
+                    "description": "An API or library"
+                }, {
+                    "value": "code",
+                    "description": "The source code of the approach"
+                }, {
+                    "value": "notebook",
+                    "description": "A (Jupyter) notebook demonstrating the approach"
+                }, {
+                    "value": "model",
+                    "description": "A pre-trained model (resulting from an ML/DL solution)"
+                }
+            ],
+            "characteristics": [
+                {
+                    "value": "y",
+                    "description": "has been released"
+                }, {
+                    "value": "",
+                    "description": "has not been released",
+                    "default": true
+                }
+            ]
+        }, {
+            "name": "necessary information",
+            "type": "dimension cluster",
+            "description": "The necessary information classifies an approach regarding the type of information that needs to be available in order to automatically determine a violation against the formal rule.", 
+            "extraction rule": "To automatically determine a violation against the formal rule of the quality factor, ", 
+            "dimensions": [
+                {
+                    "value": "part-of-speech tags",
+                    "description": "an association of each token with its corresponding part-of-speech tag"
+                }, {
+                    "value": "dependency tags",
+                    "description": "an association of each token with the token it depends on"
+                }, {
+                    "value": "consistyency tags",
+                    "description": "an association of each token with its parenting constituent"
+                }, {
+                    "value": "lemmatization",
+                    "description": "an association of each token with its lemmatized form"
+                }, {
+                    "value": "stemming",
+                    "description": "an association of each token with its word stem"
+                }, {
+                    "value": "phrase chunks",
+                    "description": "an association of phrases to containing chunks"
+                }, {
+                    "value": "stop word removal",
+                    "description": "the automatic removal of words that do not add value to the text"
+                }, {
+                    "value": "semantic role labeling",
+                    "description": "the annotation of semantic roles to parts of the text"
+                }, {
+                    "value": "thesaurus",
+                    "description": "a graph connecting words with synonyms"
+                }, {
+                    "value": "named entity recognition",
+                    "description": "the automatic recognition of named entities from noun phrases"
+                }, {
+                    "value": "parse tree",
+                    "description": "an acyclic graph representing the syntactical hierarchy of a sentence"
+                }
+            ],
+            "characteristics": [
+                {
+                    "value": "y",
+                    "description": "is necessary"
+                }, {
+                    "value": "?",
+                    "description": "is unclear whether it is necessary",
+                    "default": true
+                }, {
+                    "value": "",
+                    "description": "is not necessary"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,103 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R067",
+        "Refstring": "Arora, C., Sabetzadeh, M., Briand, L., & Zimmer, F. (2015). Automated checking of conformance to requirements templates using natural language processing. IEEE transactions on Software Engineering, 41(10), 944-968."
+    },
+    "timestamp": "2023-02-07 16:00:00",
+    "factors": [
+        {
+            "id": "QF107",
+            "name": "Template-conformance",
+            "linguistic complexity": "Syntactic",
+            "scope": "Sentence",
+            "unambiguouseness": "+",
+            "completeness": "+",
+            "consistency": "+",
+            "verifiability": "+"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D119",
+            "qf id": "QF107",
+            "reference": "R067",
+            "definition": "\"[...] enforcing proper use of noun phrases and verb phrases. [according to Rupp's or the EARS template].\"",
+            "impact": "\"When properly followed, templates serve as a simple and yet effective tool for increasing the quality of requirements by avoiding complex structures, ambiguity, and inconsistency in requirements. Templates further facilitate automated analysis by making NL requirements more easily transformable into analyzable artifacts, e.g., models\"",
+            "empirical evidence": false,
+            "practitioners involved": true
+        }
+    ],
+    "datasets": [
+        {
+            "id": "DS31",
+            "reference": "R067",
+            "embedded information": [
+                "D119"
+            ],
+            "description": "Software component in a satellite ground station",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "Authors",
+            "size": 380,
+            "granularity": "Requirement",
+            "accessibility": "Private",
+            "source link": ""
+        },
+        {
+            "id": "DS32",
+            "reference": "R067",
+            "embedded information": [
+                "D119"
+            ],
+            "description": "Tool suite for managing the safety information used during the safety certification of embedded systems.",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "Authors",
+            "size": 110,
+            "granularity": "Requirement",
+            "accessibility": "Private",
+            "source link": ""
+        },
+        {
+            "id": "DS33",
+            "reference": "R067",
+            "embedded information": [
+                "D119"
+            ],
+            "description": "Safety requirements for nuclear facilities developed by the Finnish Radiation and Nuclear Safety Authority",
+            "origin": "Practitioner Data",
+            "ground truth annotators": "Authors",
+            "size": 890,
+            "granularity": "Requirement",
+            "accessibility": "Private",
+            "source link": ""
+        }
+    ],
+    "approaches": [
+        {
+            "id": "A19",
+            "reference": "R067",
+            "descriptions": [
+                "D119",
+                "D261",
+                "D262",
+                "D263",
+                "D264",
+                "D265",
+                "D266",
+                "D267",
+                "D268",
+                "D269",
+                "D270"
+            ],
+            "name": "Requirements Template Analyzer (RETA) (extension to GATE)",
+            "acronym": "",
+            "type": "Rule-based",
+            "accessibility": "Open Source",
+            "source link": "https://gate.ac.uk/",
+            "empirical method applied": true,
+            "practitioners involved": true,
+            "tool": "y",
+            "code": "y"
+        }
+    ]
+}

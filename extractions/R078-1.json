@@ -4,7 +4,7 @@
         "ID": "R078",
         "Refstring": "St\u00e5lhane, T., & Wien, T. (2014, August). The DODT tool applied to sub-sea software. In 2014 IEEE 22nd International Requirements Engineering Conference (RE) (pp. 420-427). IEEE."
     },
-    "timestamp": "2022-02-24 10:00:00",
+    "timestamp": "2023-02-08 14:00:00",
     "factors": [
         {
             "id": "QF038",
@@ -120,7 +120,7 @@
             "ground truth annotators": "None",
             "size": 97,
             "granularity": "Requirement",
-            "accessibility": "Reachable Link",
+            "accessibility": "Proprietary",
             "source link": "https://www.iso.org/standard/41322.html"
         }
     ],
@@ -136,10 +136,10 @@
                 "D042",
                 "D043"
             ],
-            "name": "Domain Ontology Design Tool (DODT)",
-            "acronym": "",
+            "name": "Domain Ontology Design Tool",
+            "acronym": "DODT",
             "type": "Rule-based",
-            "accessibility": "Open Access Link",
+            "accessibility": "Open Source",
             "source link": "https://sourceforge.net/projects/gnlq/",
             "empirical method applied": true,
             "practitioners involved": true,
