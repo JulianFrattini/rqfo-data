@@ -92,7 +92,7 @@
     ],
     "datasets": [
         {
-            "id": "DS54",
+            "id": "DS54-1",
             "reference": "R076",
             "embedded information": [
                 "D218",
@@ -112,7 +112,7 @@
     ],
     "approaches": [
         {
-            "id": "A30",
+            "id": "A30-1",
             "reference": "R076",
             "descriptions": [
                 "D218",

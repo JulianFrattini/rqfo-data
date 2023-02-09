@@ -19,7 +19,7 @@
     ],
     "datasets": [
         {
-            "id": "DS56",
+            "id": "DS56-1",
             "reference": "R090",
             "embedded information": [
                 "D271"
@@ -35,7 +35,7 @@
     ],
     "approaches": [
         {
-            "id": "A35",
+            "id": "A35-1",
             "reference": "R090",
             "descriptions": [
                 "D271"

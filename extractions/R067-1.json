@@ -74,7 +74,7 @@
     ],
     "approaches": [
         {
-            "id": "A19",
+            "id": "A19-1",
             "reference": "R067",
             "descriptions": [
                 "D119",
@@ -89,8 +89,8 @@
                 "D269",
                 "D270"
             ],
-            "name": "Requirements Template Analyzer (RETA) (extension to GATE)",
-            "acronym": "",
+            "name": "Requirements Template Analyzer (extension to GATE)",
+            "acronym": "RETA",
             "type": "Rule-based",
             "accessibility": "Open Source",
             "source link": "https://gate.ac.uk/",

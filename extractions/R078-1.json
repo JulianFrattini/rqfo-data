@@ -105,7 +105,7 @@
     ],
     "datasets": [
         {
-            "id": "DS16",
+            "id": "DS16-1",
             "reference": "R078",
             "embedded information": [
                 "D038",
@@ -126,7 +126,7 @@
     ],
     "approaches": [
         {
-            "id": "A08",
+            "id": "A08-1",
             "reference": "R078",
             "descriptions": [
                 "D038",

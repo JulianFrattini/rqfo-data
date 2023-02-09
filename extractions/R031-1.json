@@ -1,0 +1,92 @@
+{
+    "extractor": "ex1",
+    "reference": {
+        "ID": "R031",
+        "Refstring": "Kaiya, H., & Saeki, M. (2006, September). Using domain ontology as domain knowledge for requirements elicitation. In 14th IEEE International Requirements Engineering Conference (RE'06) (pp. 189-198). IEEE."
+    },
+    "timestamp": "2022-02-24 10:00:00",
+    "factors": [
+        {
+            "id": "QF037",
+            "name": "Ontological Completeness",
+            "linguistic complexity": "Semantic",
+            "scope": "Global"
+        },
+        {
+            "id": "QF123",
+            "name": "Ontological Correctness",
+            "linguistic complexity": "Semantic",
+            "scope": "Global"
+        },
+        {
+            "id": "QF125",
+            "name": "Ontological Consistency",
+            "linguistic complexity": "Semantic",
+            "scope": "Global"
+        },
+        {
+            "id": "QF126",
+            "name": "Ontological Unambiguousness",
+            "linguistic complexity": "Semantic",
+            "scope": "Global"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "D133",
+            "qf id": "QF123",
+            "reference": "R031",
+            "definition": "\"The requirements items that were mapped into ontological elements can be considered as requirements appropriate for a problem domain.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D134",
+            "qf id": "QF037",
+            "reference": "R031",
+            "definition": "\"The ontological elements that did not have any mapped requirements items can be candidates for missing requirements items.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D135",
+            "qf id": "QF125",
+            "reference": "R031",
+            "definition": "\"If requirements items include ontological concepts that are connected through 'contradict' relationship in the ontology, they are inconsistent.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        },
+        {
+            "id": "D136",
+            "qf id": "QF126",
+            "reference": "R031",
+            "definition": "\"If a requirements item is mapped into several concepts that have no semantical relationships, it can have multiple meaning.\"",
+            "impact": "",
+            "empirical evidence": false,
+            "practitioners involved": false
+        }
+    ],
+    "datasets": [
+        {
+            "id": "DS35-1",
+            "reference": "R031",
+            "embedded information": [
+                "D133",
+                "D134",
+                "D135",
+                "D136"
+            ],
+            "description": "Initial set of requirements for a music player software",
+            "origin": "Unknown",
+            "ground truth annotators": "None",
+            "size": 6,
+            "granularity": "Requirement",
+            "accessibility": "No Link",
+            "source link": ""
+        }
+    ],
+    "approaches": []
+}

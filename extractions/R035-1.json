@@ -56,7 +56,7 @@
     ],
     "datasets": [
         {
-            "id": "DS23",
+            "id": "DS23-1",
             "reference": "R035",
             "embedded information": [
                 "D062",
@@ -72,7 +72,7 @@
             "source link": "M. Ricker, Requirements Specification\nUnderstandability Evaluation with Cohesion, Context,\nand Coupling, Doctoral Dissertation, George Mason\nUniversity, Fairfax, VA, 1995"
         },
         {
-            "id": "DS24",
+            "id": "DS24-1",
             "reference": "R035",
             "embedded information": [
                 "D062",
