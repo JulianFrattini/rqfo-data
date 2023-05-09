@@ -1,10 +1,7 @@
 import json
 import os
 
-def readfile(path):
-    with open(path, 'r') as f:
-        data = json.load(f)
-        return data
+from src.util.fileloader import read_file
 
 def readelements(basepath, whitelist=None):
     filenames = os.listdir(basepath)
@@ -13,11 +10,11 @@ def readelements(basepath, whitelist=None):
         elementname = filename.split('.')[0]
 
         if whitelist == None:
-            element = readfile(basepath + '/' + filename)
+            element = read_file(basepath + '/' + filename)
             elements[elementname] = element
         else:
             if elementname in whitelist:
-                element = readfile(basepath + '/' + filename)
+                element = read_file(basepath + '/' + filename)
                 elements[elementname] = element
     return elements
 
