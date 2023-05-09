@@ -10,6 +10,9 @@ def read_file(path: str) -> dict:
         data -- JSON file parsed to a python dictionary
         None -- if the file does not exist      
     """
-    with open(path, 'r') as f:
-        data = json.load(f)
-        return data
+    try:
+        with open(path, 'r') as f:
+            data = json.load(f)
+            return data
+    except OSError:
+        return None
