@@ -20,3 +20,10 @@ def test_nonexiting_file():
 
         result = read_file(path="test.json")
         assert result == None
+
+
+@pytest.mark.integration
+def test_real():
+    result = read_file(path='structure/o1/t0/factor.json')
+
+    assert result['name'] == "Quality Factor"
