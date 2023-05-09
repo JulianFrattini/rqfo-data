@@ -15,4 +15,4 @@ def read_file(path: str) -> dict:
             data = json.load(f)
             return data
     except OSError:
-        return {}
+        return None
