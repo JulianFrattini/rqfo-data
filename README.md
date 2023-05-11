@@ -1,5 +1,9 @@
 # Requirements Quality Factor Ontology Structure and Content
 
+[![GitHub](https://img.shields.io/github/license/JulianFrattini/rqfo-data)](./LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6583690.svg)](https://doi.org/10.5281/zenodo.6583690)
+[![Pytest](https://github.com/JulianFrattini/rqfo-data/actions/workflows/pytest.yml/badge.svg)](https://github.com/JulianFrattini/rqfo-data/actions/workflows/pytest.yml)
+
 ## Summary of Artifact
 
 This artifact contains both the structure and the content of the requirements quality factor ontology. A quality factor is a normative metric which maps a textual requirement of a specific granularity to a scale which informs about the quality of this input. We attempt to harmonize the perspective on requirements quality factors and gather established factors, related data sets, and automatic detection approaches in this repository. The ontology was first proposed in our paper ["A Live Extensible Ontology of Quality Factors for Textual Requirements"](https://arxiv.org/abs/2206.05959) at the requirements engineering conference.
