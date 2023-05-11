@@ -23,7 +23,7 @@ def read_elements(basepath: str, whitelist: list[str]=None) -> dict:
 
     parameters:
         basepath -- Path of the directory containing the files of interest
-        whitelist -- Optional list of file names; If provided, read only those files
+        whitelist -- Optional list of file names (without file extensions); If provided, read only those files
 
     returns:
         elements -- Dictionary mapping file names to the parsed JSON files in dictionary format.
@@ -36,11 +36,8 @@ def read_elements(basepath: str, whitelist: list[str]=None) -> dict:
         # retrieve the name of the file (filename minus the file extension)
         elementname = filename.split('.')[0]
 
-        if whitelist == None:
+        if whitelist == None or elementname in whitelist:
             element = read_file(basepath + '/' + filename)
             elements[elementname] = element
-        else:
-            if elementname in whitelist:
-                element = read_file(basepath + '/' + filename)
-                elements[elementname] = element
+            
     return elements

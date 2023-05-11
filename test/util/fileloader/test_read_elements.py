@@ -41,5 +41,5 @@ def test_whitelist(mocked_listdir):
     with patch('src.util.fileloader.read_file') as mocked_read_file:
         mocked_read_file.side_effect = mock_read_file
 
-        result = read_elements(basepath='dir', whitelist=['file2.json'])
+        result = read_elements(basepath='dir', whitelist=['file2'])
         assert result == {'file2': {'name': 'bar'}}
