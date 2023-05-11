@@ -1,22 +1,7 @@
 import json
 import os
 
-from src.util.fileloader import read_file
-
-def readelements(basepath, whitelist=None):
-    filenames = os.listdir(basepath)
-    elements = {}
-    for filename in filenames:
-        elementname = filename.split('.')[0]
-
-        if whitelist == None:
-            element = read_file(basepath + '/' + filename)
-            elements[elementname] = element
-        else:
-            if elementname in whitelist:
-                element = read_file(basepath + '/' + filename)
-                elements[elementname] = element
-    return elements
+from src.util.fileloader import read_elements
 
 def checkobject(type, structure, object, collection) -> list[str]:
     errormsgs: list[str] = []
@@ -116,7 +101,7 @@ taxmap = {
 
 if __name__ == "__main__":
     # iterate through all versions
-    versions = readelements('versions')
+    versions = read_elements('versions')
 
     for version in versions:
         currentversion = versions[version]
@@ -125,12 +110,12 @@ if __name__ == "__main__":
         versionerrormsgs = []
 
         # obtain the structure files of the current version
-        structures = readelements('structure/o' + str(currentversion['version']['ontology']) + '/t' + str(currentversion['version']['taxonomy']))
+        structures = read_elements('structure/o' + str(currentversion['version']['ontology']) + '/t' + str(currentversion['version']['taxonomy']))
 
         # get all extraction files
         extractionmap = currentversion['extraction']['current']
         extractionids = list(extractionmap.values())
-        extractions = readelements('extractions', whitelist=extractionids)
+        extractions = read_elements('extractions', whitelist=extractionids)
 
         # compile all objects
         collection = compileall(extractions)
