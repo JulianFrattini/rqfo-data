@@ -11,7 +11,7 @@ def mock_read_file(path: str):
         return {'name': 'bar'}
     return None
 
-@pytest.mark.staging
+@pytest.mark.unit
 @patch('os.listdir')
 def test_files_existing(mocked_listdir):
     mocked_listdir.return_value = ['file1.json', 'file2.json']
@@ -22,7 +22,7 @@ def test_files_existing(mocked_listdir):
         result = read_elements(basepath='dir')
         assert result == {'file1': {'name': 'foo'}, 'file2': {'name': 'bar'}}
 
-@pytest.mark.staging
+@pytest.mark.unit
 @patch('os.listdir')
 def test_files_not_existing(mocked_listdir):
     mocked_listdir.return_value = []
@@ -33,7 +33,7 @@ def test_files_not_existing(mocked_listdir):
         result = read_elements(basepath='dir')
         assert result == {}
 
-@pytest.mark.staging
+@pytest.mark.unit
 @patch('os.listdir')
 def test_whitelist(mocked_listdir):
     mocked_listdir.return_value = ['file1.json', 'file2.json']
