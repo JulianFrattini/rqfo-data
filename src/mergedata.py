@@ -3,22 +3,14 @@ import json
 
 from src.util.fileloader import read_elements
 
-if __name__ == "__main__":
-    result: dict = {}
-    
+if __name__ == "__main__":    
     versions: dict = read_elements('versions')
+    extractions: dict = read_elements('extractions')
 
-    for versionfilename in versions:
-        version = versions[versionfilename]
-        versioninfo: dict = version['version']
-        versionstring: str = f'v{versioninfo["ontology"]}.{versioninfo["taxonomy"]}.{versioninfo["content"]}'
+    result: dict = {
+        'versions': versions,
+        'extractions': extractions
+    }
 
-        structures = read_elements('structure/o' + str(versioninfo['ontology']) + '/t' + str(versioninfo['taxonomy']))
-
-        result[versionstring] = {
-            'description': version['description'],
-            'timestamp': version['timestamp']
-        }
-
-
-    print(result)
+    with open('./merged/rqfo-data.json' , 'w') as fp:
+        json.dump(result, fp)
