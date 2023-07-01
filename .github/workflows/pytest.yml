@@ -32,3 +32,7 @@ jobs:
       - name: Integration Tests
         run: |
           python -m pytest -m integration
+
+      - name: System Tests
+        run: |
+          python -m pytest -m system
