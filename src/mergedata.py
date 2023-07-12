@@ -26,6 +26,9 @@ if __name__ == "__main__":
     versions: dict = read_elements('versions')
     extractions: dict = read_elements('extractions')
 
+    for versionid in versions:
+        versions[versionid]['extraction'] = versions[versionid]['extraction']['current']
+
     result: dict = {
         'versions': convert_dict_to_list(versions),
         'extractions': convert_dict_to_list(extractions)
